@@ -1,0 +1,2671 @@
+{
+ "521-sexy-f": {
+  "nome": "521 Sexy",
+  "genero": "F",
+  "inspiradoEm": "212 Sexy",
+  "marca": "Carolina Herrera",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Intenso",
+  "topo": [
+   "Pimenta Rosa",
+   "Tangerina",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Algodão-doce",
+   "Gardênia",
+   "Pelargonium",
+   "Rosa"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Almíscar",
+   "Sândalo",
+   "Caramelo",
+   "Patchouli",
+   "Violeta"
+  ]
+ },
+ "521-vip-f": {
+  "nome": "521 Vip",
+  "genero": "F",
+  "inspiradoEm": "212 VIP",
+  "marca": "Carolina Herrera",
+  "estilo": "Adocicado",
+  "grupo": "Adocicado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Rum",
+   "Maracujá"
+  ],
+  "coracao": [
+   "Gardênia",
+   "Almíscar"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Fava Tonka"
+  ]
+ },
+ "521-vip-rose-f": {
+  "nome": "521 Vip Rosé",
+  "genero": "F",
+  "inspiradoEm": "212 VIP Rosé",
+  "marca": "Carolina Herrera",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Moderado",
+  "topo": [
+   "Champanhe",
+   "Notas Frutadas"
+  ],
+  "coracao": [
+   "Flor de Pêssego"
+  ],
+  "fundo": [
+   "Almíscar Branco",
+   "Notas Amadeiradas",
+   "Âmbar"
+  ]
+ },
+ "521-woman-f": {
+  "nome": "521 Woman",
+  "genero": "F",
+  "inspiradoEm": "212 NYC Woman",
+  "marca": "Carolina Herrera",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Suave",
+  "topo": [
+   "Flor de Laranjeira",
+   "Flor de Cáctus",
+   "Bergamota",
+   "Tangerina"
+  ],
+  "coracao": [
+   "Lírio",
+   "Frésia",
+   "Gardênia",
+   "Camélia branca",
+   "Jasmim",
+   "Lírio-do-Vale",
+   "Rosa",
+   "Peônia"
+  ],
+  "fundo": [
+   "Almíscar",
+   "Sândalo"
+  ]
+ },
+ "521-young-for-her-f": {
+  "nome": "521 Young for Her",
+  "genero": "F",
+  "inspiradoEm": "212 Heroes",
+  "marca": "Carolina Herrera",
+  "estilo": "Floral Frutado",
+  "grupo": "Floral",
+  "intensidade": "Moderado",
+  "topo": [
+   "Framboesa",
+   "Tangerina"
+  ],
+  "coracao": [
+   "Jasmim",
+   "Flor de Laranjeira"
+  ],
+  "fundo": [
+   "Cedro",
+   "Sândalo"
+  ]
+ },
+ "aguas-marinhas-f": {
+  "nome": "Águas Marinhas",
+  "genero": "F",
+  "inspiradoEm": "Acqua di Gioia",
+  "marca": "Giorgio Armani",
+  "estilo": "Refrescante",
+  "grupo": "Refrescante",
+  "intensidade": "Suave",
+  "topo": [
+   "Limão de Amalfi",
+   "Hortelã"
+  ],
+  "coracao": [
+   "Jasmim",
+   "Peônia",
+   "Pimenta Rosa"
+  ],
+  "fundo": [
+   "Cedro",
+   "Ládano",
+   "Açúcar mascavo"
+  ]
+ },
+ "al-sabah-f": {
+  "nome": "Al Sabah",
+  "genero": "F",
+  "inspiradoEm": "Sabah Al Ward",
+  "marca": "Al Wataniah",
+  "estilo": "Floral Oriental",
+  "grupo": "Floral",
+  "intensidade": null,
+  "topo": [
+   "Pimenta Rosa",
+   "Mandarina"
+  ],
+  "coracao": [
+   "Flor de Laranjeira",
+   "Semente de Cacau",
+   "Jasmim Sambac"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Fava Tonka"
+  ]
+ },
+ "ak-f": {
+  "nome": "AK",
+  "genero": "F",
+  "inspiradoEm": "CH",
+  "marca": "Carolina Herrera",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Moderado",
+  "topo": [
+   "Fruta tropical",
+   "Bergamota",
+   "Toranja",
+   "Limão de Amalfi",
+   "Notas Aquáticas"
+  ],
+  "coracao": [
+   "Praliné",
+   "Canela",
+   "Flor de Laranjeira",
+   "Jasmim",
+   "Rosa"
+  ],
+  "fundo": [
+   "Patchouli",
+   "Madeira de Cashmere",
+   "Sândalo",
+   "Almíscar",
+   "Âmbar",
+   "Camurça",
+   "Cedro"
+  ]
+ },
+ "alen-f": {
+  "nome": "Alen",
+  "genero": "F",
+  "inspiradoEm": "Alien",
+  "marca": "Thierry Mugler",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Suave",
+  "topo": [
+   "Jasmim"
+  ],
+  "coracao": [
+   "Notas Amadeiradas"
+  ],
+  "fundo": [
+   "Âmbar"
+  ]
+ },
+ "angelina-f": {
+  "nome": "Angelina",
+  "genero": "F",
+  "inspiradoEm": "Angel",
+  "marca": "Thierry Mugler",
+  "estilo": "Adocicado",
+  "grupo": "Adocicado",
+  "intensidade": "Intenso",
+  "topo": [
+   "Algodão-doce",
+   "Coco",
+   "Cassis",
+   "Melão",
+   "Bergamota",
+   "Abacaxi",
+   "Tangerina"
+  ],
+  "coracao": [
+   "Bagas vermelhas",
+   "Amora",
+   "Ameixa",
+   "Damasco",
+   "Pêssego",
+   "Jasmim",
+   "Orquídea"
+  ],
+  "fundo": [
+   "Mel",
+   "Chocolate",
+   "Caramelo",
+   "Baunilha",
+   "Fava Tonka",
+   "Âmbar",
+   "Almíscar"
+  ]
+ },
+ "anjos-f": {
+  "nome": "Anjos",
+  "genero": "F",
+  "inspiradoEm": "Ange ou Démon",
+  "marca": "Givenchy",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Moderado",
+  "topo": [
+   "Açafrão",
+   "Tomilho",
+   "Tangerina"
+  ],
+  "coracao": [
+   "Lírio",
+   "Ylang Ylang",
+   "Orquídea"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Fava Tonka",
+   "Pau-Brasil",
+   "Musgo de Carvalho"
+  ]
+ },
+ "athena-f": {
+  "nome": "Athena",
+  "genero": "F",
+  "inspiradoEm": "Olympéa",
+  "marca": "Paco Rabanne",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Moderado",
+  "topo": [
+   "Jasmim Aquático",
+   "Flor de Gengibre",
+   "Mandarina Verde"
+  ],
+  "coracao": [
+   "Sal",
+   "Baunilha"
+  ],
+  "fundo": [
+   "Âmbar Cinzento",
+   "Madeira de Cashmere",
+   "Sândalo"
+  ]
+ },
+ "attractive-f": {
+  "nome": "Attractive",
+  "genero": "F",
+  "inspiradoEm": "Anaïs Anaïs",
+  "marca": "Cacharel",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Intenso",
+  "topo": [
+   "Lírio branco",
+   "Jacinto",
+   "Madressilva",
+   "Flor de Laranjeira",
+   "Lavanda",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Lírio-do-Vale",
+   "Jasmim",
+   "Cravo",
+   "Tuberosa",
+   "Ylang Ylang",
+   "Íris",
+   "Rosa"
+  ],
+  "fundo": [
+   "Incenso",
+   "Musgo de Carvalho",
+   "Almíscar",
+   "Couro",
+   "Sândalo",
+   "Vetiver",
+   "Âmbar"
+  ]
+ },
+ "be-you-f": {
+  "nome": "Be You",
+  "genero": "F",
+  "inspiradoEm": "Yes I Am",
+  "marca": "Cacharel",
+  "estilo": "Adocicado",
+  "grupo": "Adocicado",
+  "intensidade": "Intenso",
+  "topo": [
+   "Framboesa",
+   "Tangerina",
+   "Limão",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Gardênia",
+   "Flor de Gengibre",
+   "Âmbar",
+   "Jasmim",
+   "Rosa",
+   "Flor de Laranjeira"
+  ],
+  "fundo": [
+   "Leite",
+   "Caramelo",
+   "Baunilha",
+   "Cardamomo",
+   "Alcaçuz",
+   "Benjoim"
+  ]
+ },
+ "bouquet-f": {
+  "nome": "Bouquet",
+  "genero": "F",
+  "inspiradoEm": "Gucci Bloom",
+  "marca": "Gucci",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Moderado",
+  "topo": [
+   "Jasmim"
+  ],
+  "coracao": [
+   "Tuberosa"
+  ],
+  "fundo": [
+   "Rastejador de Rangoon"
+  ]
+ },
+ "change-f": {
+  "nome": "Change",
+  "genero": "F",
+  "inspiradoEm": "Idôle",
+  "marca": "Lancôme",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Moderado",
+  "topo": [
+   "Pera",
+   "Bergamota",
+   "Pimenta Rosa"
+  ],
+  "coracao": [
+   "Rosa",
+   "Jasmim"
+  ],
+  "fundo": [
+   "Almíscar Branco",
+   "Baunilha",
+   "Patchouli",
+   "Cedro"
+  ]
+ },
+ "chic-woman-f": {
+  "nome": "Chic Woman",
+  "genero": "F",
+  "inspiradoEm": "Coco Mademoiselle",
+  "marca": "Chanel",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Moderado",
+  "topo": [
+   "Laranja",
+   "Tangerina",
+   "Bergamota",
+   "Flor de Laranjeira"
+  ],
+  "coracao": [
+   "Rosa Turca",
+   "Jasmim",
+   "Mimosa",
+   "Ylang Ylang"
+  ],
+  "fundo": [
+   "Patchouli",
+   "Almíscar Branco",
+   "Baunilha",
+   "Vetiver",
+   "Fava Tonka"
+  ]
+ },
+ "classic-f": {
+  "nome": "Classic",
+  "genero": "F",
+  "inspiradoEm": "Classique",
+  "marca": "Jean Paul Gaultier",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Intenso",
+  "topo": [
+   "Flor de Laranjeira",
+   "Anis estrelado",
+   "Rosa",
+   "Tangerina",
+   "Pera",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Ylang Ylang",
+   "Gengibre",
+   "Orquídea",
+   "Íris",
+   "Tuberosa",
+   "Ameixa"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Âmbar",
+   "Almíscar",
+   "Canela",
+   "Sândalo"
+  ]
+ },
+ "classica-f": {
+  "nome": "Clássica",
+  "genero": "F",
+  "inspiradoEm": "Amarige",
+  "marca": "Givenchy",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Moderado",
+  "topo": [
+   "Flor de Laranjeira",
+   "Pêssego",
+   "Ameixa",
+   "Néroli",
+   "Tangerina",
+   "Violeta"
+  ],
+  "coracao": [
+   "Mimosa",
+   "Gardênia",
+   "Ylang Ylang",
+   "Jasmim",
+   "Acácia",
+   "Cravo",
+   "Tuberosa",
+   "Rosa",
+   "Orquídea"
+  ],
+  "fundo": [
+   "Sândalo",
+   "Notas Amadeiradas",
+   "Baunilha",
+   "Âmbar",
+   "Fava Tonka",
+   "Almíscar",
+   "Cedro"
+  ]
+ },
+ "clo-f": {
+  "nome": "Clô",
+  "genero": "F",
+  "inspiradoEm": "Chloé",
+  "marca": "Chloé",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Suave",
+  "topo": [
+   "Peônia",
+   "Lichia",
+   "Frésia"
+  ],
+  "coracao": [
+   "Rosa",
+   "Lírio-do-Vale",
+   "Magnólia"
+  ],
+  "fundo": [
+   "Cedro",
+   "Âmbar"
+  ]
+ },
+ "d-by-denise-lemos-f": {
+  "nome": "D by Denise Lemos",
+  "genero": "F",
+  "inspiradoEm": "La Vie Est Belle",
+  "marca": "Lancôme",
+  "estilo": "Adocicado",
+  "grupo": "Adocicado",
+  "intensidade": "Intenso",
+  "topo": [
+   "Cassis",
+   "Pera"
+  ],
+  "coracao": [
+   "Íris",
+   "Jasmim",
+   "Flor de Laranjeira"
+  ],
+  "fundo": [
+   "Praliné",
+   "Baunilha",
+   "Patchouli",
+   "Fava Tonka"
+  ]
+ },
+ "delice-f": {
+  "nome": "Delice",
+  "genero": "F",
+  "inspiradoEm": "Bonbon",
+  "marca": "Viktor & Rolf",
+  "estilo": "Adocicado",
+  "grupo": "Adocicado",
+  "intensidade": "Suave",
+  "topo": [
+   "Pêssego",
+   "Tangerina",
+   "Laranja"
+  ],
+  "coracao": [
+   "Caramelo",
+   "Flor de Laranjeira",
+   "Jasmim"
+  ],
+  "fundo": [
+   "Âmbar",
+   "Sândalo",
+   "Madeira Guaiac",
+   "Cedro"
+  ]
+ },
+ "elegance-f": {
+  "nome": "Elegance",
+  "genero": "F",
+  "inspiradoEm": "Dolce & Gabbana",
+  "marca": "Dolce & Gabbana",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Intenso",
+  "topo": [
+   "Aldeídos",
+   "Manjericão",
+   "Cítricos",
+   "Hera",
+   "Tangerina",
+   "Frésia",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Cravo",
+   "Coentro",
+   "Flor de Laranjeira",
+   "Lírio",
+   "Jasmim",
+   "Rosa Búlgara",
+   "Lírio-do-Vale"
+  ],
+  "fundo": [
+   "Sândalo",
+   "Baunilha",
+   "Almíscar",
+   "Fava Tonka"
+  ]
+ },
+ "elegance-blue-f": {
+  "nome": "Elegance Blue",
+  "genero": "F",
+  "inspiradoEm": "Light Blue",
+  "marca": "Dolce & Gabbana",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Suave",
+  "topo": [
+   "Limão Siciliano",
+   "Maçã",
+   "Cedro",
+   "Campânula"
+  ],
+  "coracao": [
+   "Bambu",
+   "Jasmim",
+   "Rosa Branca"
+  ],
+  "fundo": [
+   "Cedro",
+   "Almíscar",
+   "Âmbar"
+  ]
+ },
+ "emocoes-f": {
+  "nome": "Emoções",
+  "genero": "F",
+  "inspiradoEm": "The One",
+  "marca": "Dolce & Gabbana",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Moderado",
+  "topo": [
+   "Pêssego",
+   "Lichia",
+   "Tangerina",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Lírio",
+   "Ameixa",
+   "Jasmim",
+   "Lírio-do-Vale"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Âmbar",
+   "Almíscar",
+   "Vetiver"
+  ]
+ },
+ "escandalosa-f": {
+  "nome": "Escandalosa",
+  "genero": "F",
+  "inspiradoEm": "Scandal",
+  "marca": "Jean Paul Gaultier",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Intenso",
+  "topo": [
+   "Laranja Sanguínea",
+   "Tangerina"
+  ],
+  "coracao": [
+   "Mel",
+   "Gardênia",
+   "Flor de Laranjeira",
+   "Jasmim",
+   "Pêssego"
+  ],
+  "fundo": [
+   "Cera de Abelha",
+   "Caramelo",
+   "Patchouli",
+   "Alcaçuz"
+  ]
+ },
+ "euphoric-f": {
+  "nome": "Euphoric",
+  "genero": "F",
+  "inspiradoEm": "Euphoria",
+  "marca": "Calvin Klein",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Moderado",
+  "topo": [
+   "Romã",
+   "Framboesa",
+   "Maracujá",
+   "Caqui",
+   "Pêssego",
+   "Notas Verdes"
+  ],
+  "coracao": [
+   "Orquídea",
+   "Lótus",
+   "Champaca"
+  ],
+  "fundo": [
+   "Mogno",
+   "Âmbar",
+   "Almíscar",
+   "Violeta",
+   "Patchouli",
+   "Baunilha"
+  ]
+ },
+ "exclusive-code-f": {
+  "nome": "Exclusive Code",
+  "genero": "F",
+  "inspiradoEm": "Armani Code",
+  "marca": "Giorgio Armani",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Intenso",
+  "topo": [
+   "Laranja Italiana",
+   "Jasmim",
+   "Laranja Amarga"
+  ],
+  "coracao": [
+   "Jasmim",
+   "Flor de Laranjeira",
+   "Gengibre"
+  ],
+  "fundo": [
+   "Mel",
+   "Baunilha",
+   "Sândalo"
+  ]
+ },
+ "famous-for-her-f": {
+  "nome": "Famous for Her",
+  "genero": "F",
+  "inspiradoEm": "Fame",
+  "marca": "Paco Rabanne",
+  "estilo": "Floral Amadeirado",
+  "grupo": "Floral",
+  "intensidade": "Moderado",
+  "topo": [
+   "Manga",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Jasmim",
+   "Notas Metálicas"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Sândalo",
+   "Olíbano"
+  ]
+ },
+ "fantastic-f": {
+  "nome": "Fantastic",
+  "genero": "F",
+  "inspiradoEm": "Fantasy",
+  "marca": "Britney Spears",
+  "estilo": "Adocicado",
+  "grupo": "Adocicado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Kiwi",
+   "Lichia vermelha",
+   "Marmelo"
+  ],
+  "coracao": [
+   "Chocolate branco",
+   "Cupcake",
+   "Orquídea",
+   "Jasmim"
+  ],
+  "fundo": [
+   "Almíscar",
+   "Notas Amadeiradas",
+   "Raiz de Orris"
+  ]
+ },
+ "felina-f": {
+  "nome": "Felina",
+  "genero": "F",
+  "inspiradoEm": "Aura",
+  "marca": "Thierry Mugler",
+  "estilo": "Adocicado",
+  "grupo": "Adocicado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Folhas de Ruibarbo",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Notas Verdes",
+   "Flor de Laranjeira",
+   "Ylang Ylang",
+   "Pera"
+  ],
+  "fundo": [
+   "Baunilha Bourbon",
+   "Notas Amadeiradas",
+   "Madeira de Âmbar",
+   "Sândalo",
+   "Cumarina"
+  ]
+ },
+ "gabriela-f": {
+  "nome": "Gabriela",
+  "genero": "F",
+  "inspiradoEm": "Gabriela Sabatini",
+  "marca": "Gabriela Sabatini",
+  "estilo": "Adocicado",
+  "grupo": "Adocicado",
+  "intensidade": "Intenso",
+  "topo": [
+   "Aldeídos",
+   "Notas Frutadas",
+   "Bergamota",
+   "Tangerina",
+   "Limão"
+  ],
+  "coracao": [
+   "Jasmim",
+   "Madressilva",
+   "Flor de Laranjeira",
+   "Heliotrópio",
+   "Lírio-do-Vale",
+   "Rosa"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Âmbar",
+   "Fava Tonka",
+   "Sândalo",
+   "Almíscar",
+   "Musgo de Carvalho",
+   "Patchouli"
+  ]
+ },
+ "gd-legere-f": {
+  "nome": "GD Légère",
+  "genero": "F",
+  "inspiradoEm": "Good Girl Légère",
+  "marca": "Carolina Herrera",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Moderado",
+  "topo": [
+   "Ylang Ylang",
+   "Mandarina",
+   "Bergamota",
+   "Limão"
+  ],
+  "coracao": [
+   "Tuberosa",
+   "Jasmim",
+   "Flor de Laranjeira",
+   "Rosa Búlgara"
+  ],
+  "fundo": [
+   "Doce de Leite",
+   "Praliné",
+   "Fava Tonka",
+   "Canela",
+   "Madeira de Cashmere",
+   "Sândalo",
+   "Almíscar",
+   "Âmbar"
+  ]
+ },
+ "gd-f": {
+  "nome": "GD",
+  "genero": "F",
+  "inspiradoEm": "Good Girl",
+  "marca": "Carolina Herrera",
+  "estilo": "Adocicado",
+  "grupo": "Adocicado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Amêndoa",
+   "Café",
+   "Bergamota",
+   "Limão"
+  ],
+  "coracao": [
+   "Tuberosa",
+   "Jasmim Sambac",
+   "Flor de Laranjeira",
+   "Raiz de Orris"
+  ],
+  "fundo": [
+   "Cacau",
+   "Baunilha",
+   "Praliné",
+   "Sândalo",
+   "Almíscar",
+   "Âmbar",
+   "Fava Tonka",
+   "Canela"
+  ]
+ },
+ "glamour-sexy-f": {
+  "nome": "Glamour Sexy",
+  "genero": "F",
+  "inspiradoEm": "Poison Girl",
+  "marca": "Dior",
+  "estilo": "Adocicado",
+  "grupo": "Adocicado",
+  "intensidade": "Intenso",
+  "topo": [
+   "Laranja Amarga",
+   "Limão"
+  ],
+  "coracao": [
+   "Rosa Damascena",
+   "Rosa de Grasse",
+   "Flor de Laranjeira"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Amêndoa",
+   "Fava Tonka",
+   "Bálsamo de Tolú",
+   "Sândalo",
+   "Heliotrópio"
+  ]
+ },
+ "green-apple-f": {
+  "nome": "Green Apple",
+  "genero": "F",
+  "inspiradoEm": "DKNY Be Delicious",
+  "marca": "Donna Karan",
+  "estilo": "Frutal",
+  "grupo": "Frutal",
+  "intensidade": "Suave",
+  "topo": [
+   "Pepino",
+   "Toranja",
+   "Magnólia"
+  ],
+  "coracao": [
+   "Maçã Verde",
+   "Lírio-do-Vale",
+   "Tuberosa",
+   "Violeta",
+   "Rosa"
+  ],
+  "fundo": [
+   "Notas Amadeiradas",
+   "Sândalo",
+   "Âmbar"
+  ]
+ },
+ "happiness-f": {
+  "nome": "Happiness",
+  "genero": "F",
+  "inspiradoEm": "Illicit",
+  "marca": "Jimmy Choo",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Moderado",
+  "topo": [
+   "Gengibre",
+   "Laranja Amarga"
+  ],
+  "coracao": [
+   "Jasmim Sambac",
+   "Flor de Laranjeira",
+   "Rosa"
+  ],
+  "fundo": [
+   "Mel",
+   "Âmbar",
+   "Caramelo",
+   "Sândalo",
+   "Baunilha",
+   "Madeira de Cashmere"
+  ]
+ },
+ "hasan-rose-f": {
+  "nome": "Hasan Rose",
+  "genero": "F",
+  "inspiradoEm": "Fakhar Rose",
+  "marca": "Lattafa",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Moderado",
+  "topo": [
+   "Frutas",
+   "Lírio",
+   "Romã",
+   "Aldeídos"
+  ],
+  "coracao": [
+   "Tuberosa",
+   "Jasmim",
+   "Gardênia",
+   "Ylang Ylang",
+   "Madressilva",
+   "Rosa",
+   "Peônia"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Almíscar Branco",
+   "Sândalo",
+   "Ambroxan"
+  ]
+ },
+ "hypnotize-f": {
+  "nome": "Hypnotize",
+  "genero": "F",
+  "inspiradoEm": "Hypnôse",
+  "marca": "Lancôme",
+  "estilo": "Adocicado",
+  "grupo": "Adocicado",
+  "intensidade": "Intenso",
+  "topo": [
+   "Flor de Maracujá"
+  ],
+  "coracao": [
+   "Jasmim",
+   "Gardênia"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Vetiver"
+  ]
+ },
+ "intense-girl-f": {
+  "nome": "Intense Girl",
+  "genero": "F",
+  "inspiradoEm": "Very Good Girl",
+  "marca": "Carolina Herrera",
+  "estilo": "Frutal",
+  "grupo": "Frutal",
+  "intensidade": "Moderado",
+  "topo": [
+   "Lichia",
+   "Groselha vermelha"
+  ],
+  "coracao": [
+   "Rosa"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Vetiver"
+  ]
+ },
+ "je-t-aime-f": {
+  "nome": "Je t'aime",
+  "genero": "F",
+  "inspiradoEm": "J'adore",
+  "marca": "Dior",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Suave",
+  "topo": [
+   "Pera",
+   "Melão",
+   "Magnólia",
+   "Pêssego",
+   "Mandarina",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Jasmim",
+   "Lírio-do-Vale",
+   "Tuberosa",
+   "Frésia",
+   "Rosa",
+   "Orquídea",
+   "Ameixa",
+   "Violeta"
+  ],
+  "fundo": [
+   "Almíscar",
+   "Baunilha",
+   "Amora",
+   "Cedro"
+  ]
+ },
+ "joy-f": {
+  "nome": "Joy",
+  "genero": "F",
+  "inspiradoEm": "J'adore In Joy",
+  "marca": "Dior",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Moderado",
+  "topo": [
+   "Sal Marinho"
+  ],
+  "coracao": [
+   "Jasmim Sambac",
+   "Ylang Ylang",
+   "Néroli",
+   "Tuberosa"
+  ],
+  "fundo": [
+   "Pêssego"
+  ]
+ },
+ "lady-money-f": {
+  "nome": "Lady Money",
+  "genero": "F",
+  "inspiradoEm": "Lady Million",
+  "marca": "Paco Rabanne",
+  "estilo": "Adocicado",
+  "grupo": "Adocicado",
+  "intensidade": "Intenso",
+  "topo": [
+   "Framboesa",
+   "Néroli",
+   "Limão de Amalfi"
+  ],
+  "coracao": [
+   "Jasmim",
+   "Flor de Laranjeira",
+   "Gardênia"
+  ],
+  "fundo": [
+   "Mel branco",
+   "Patchouli",
+   "Âmbar"
+  ]
+ },
+ "l-eternite-f": {
+  "nome": "L'Eternité",
+  "genero": "F",
+  "inspiradoEm": "Eternity",
+  "marca": "Calvin Klein",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Intenso",
+  "topo": [
+   "Notas Verdes",
+   "Frésia",
+   "Sálvia",
+   "Cítricos",
+   "Tangerina"
+  ],
+  "coracao": [
+   "Cravo",
+   "Lírio",
+   "Lírio-do-Vale",
+   "Narciso",
+   "Violeta",
+   "Rosa",
+   "Jasmim"
+  ],
+  "fundo": [
+   "Heliotrópio",
+   "Almíscar",
+   "Sândalo",
+   "Âmbar",
+   "Patchouli"
+  ]
+ },
+ "liberte-f": {
+  "nome": "Liberté",
+  "genero": "F",
+  "inspiradoEm": "Libre",
+  "marca": "Yves Saint Laurent",
+  "estilo": "Fougère Ambarado",
+  "grupo": "Fougère",
+  "intensidade": "Moderado",
+  "topo": [
+   "Lavanda",
+   "Mandarina",
+   "Groselha Preta",
+   "Petitgrain"
+  ],
+  "coracao": [
+   "Lavanda",
+   "Flor de Laranjeira",
+   "Jasmim"
+  ],
+  "fundo": [
+   "Baunilha de Madagascar",
+   "Almíscar",
+   "Cedro",
+   "Âmbar Cinzento"
+  ]
+ },
+ "love-f": {
+  "nome": "Love",
+  "genero": "F",
+  "inspiradoEm": "Amor Amor",
+  "marca": "Cacharel",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Moderado",
+  "topo": [
+   "Cassis",
+   "Laranja",
+   "Tangerina",
+   "Toranja",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Rosa",
+   "Damasco",
+   "Jasmim",
+   "Lírio",
+   "Lírio-do-Vale"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Fava Tonka",
+   "Almíscar",
+   "Âmbar",
+   "Cedro"
+  ]
+ },
+ "luxuria-f": {
+  "nome": "Luxúria",
+  "genero": "F",
+  "inspiradoEm": "La Nuit Trésor",
+  "marca": "Lancôme",
+  "estilo": "Adocicado",
+  "grupo": "Adocicado",
+  "intensidade": "Intenso",
+  "topo": [
+   "Pera",
+   "Mexerica",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Morango",
+   "Orquídea baunilha",
+   "Rosa Negra",
+   "Maracujá"
+  ],
+  "fundo": [
+   "Lichia",
+   "Patchouli",
+   "Baunilha",
+   "Incenso",
+   "Café",
+   "Alcaçuz",
+   "Praliné",
+   "Caramelo"
+  ]
+ },
+ "mystere-f": {
+  "nome": "Mystere",
+  "genero": "F",
+  "inspiradoEm": "L'Interdit",
+  "marca": "Givenchy",
+  "estilo": "Floral Amadeirado",
+  "grupo": "Floral",
+  "intensidade": "Moderado",
+  "topo": [
+   "Pera",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Flor de Laranjeira",
+   "Jasmim",
+   "Sândalo",
+   "Tuberosa"
+  ],
+  "fundo": [
+   "Patchouli",
+   "Baunilha"
+  ]
+ },
+ "n-5-f": {
+  "nome": "Nº 5",
+  "genero": "F",
+  "inspiradoEm": "Chanel Nº 5",
+  "marca": "Chanel",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Intenso",
+  "topo": [
+   "Aldeídos",
+   "Ylang Ylang",
+   "Néroli",
+   "Bergamota",
+   "Pêssego"
+  ],
+  "coracao": [
+   "Íris",
+   "Jasmim",
+   "Rosa",
+   "Lírio-do-Vale"
+  ],
+  "fundo": [
+   "Sândalo",
+   "Baunilha",
+   "Musgo de Carvalho",
+   "Vetiver",
+   "Patchouli"
+  ]
+ },
+ "night-s-lady-f": {
+  "nome": "Night's Lady",
+  "genero": "F",
+  "inspiradoEm": "Black XS",
+  "marca": "Paco Rabanne",
+  "estilo": "Adocicado",
+  "grupo": "Adocicado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Oxicoco",
+   "Pimenta Rosa",
+   "Tamarindo"
+  ],
+  "coracao": [
+   "Cacau",
+   "Rosa",
+   "Violeta negra"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Patchouli",
+   "Madeira de Massoia"
+  ]
+ },
+ "queen-f": {
+  "nome": "Queen",
+  "genero": "F",
+  "inspiradoEm": "Rouge Royal",
+  "marca": "Marina de Bourbon",
+  "estilo": "Frutal",
+  "grupo": "Frutal",
+  "intensidade": "Moderado",
+  "topo": [
+   "Morango",
+   "Cassis",
+   "Lima"
+  ],
+  "coracao": [
+   "Ylang Ylang",
+   "Jasmim",
+   "Lírio-do-Vale"
+  ],
+  "fundo": [
+   "Musgo de Carvalho",
+   "Opoponax"
+  ]
+ },
+ "summer-flowers-f": {
+  "nome": "Summer Flowers",
+  "genero": "F",
+  "inspiradoEm": "Flower by Kenzo",
+  "marca": "Kenzo",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Intenso",
+  "topo": [
+   "Rosa Búlgara",
+   "Espinheiro branco",
+   "Cassis",
+   "Tangerina"
+  ],
+  "coracao": [
+   "Violeta de Parma",
+   "Rosa",
+   "Opoponax",
+   "Jasmim"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Almíscar Branco",
+   "Incenso"
+  ]
+ },
+ "voluptuous-f": {
+  "nome": "Voluptuous",
+  "genero": "F",
+  "inspiradoEm": "Sì",
+  "marca": "Giorgio Armani",
+  "estilo": "Frutal",
+  "grupo": "Frutal",
+  "intensidade": "Moderado",
+  "topo": [
+   "Cassis"
+  ],
+  "coracao": [
+   "Rosa de Maio",
+   "Frésia"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Patchouli",
+   "Ambroxan",
+   "Notas Amadeiradas"
+  ]
+ },
+ "wonderful-girl-f": {
+  "nome": "Wonderful Girl",
+  "genero": "F",
+  "inspiradoEm": "Gucci Bamboo",
+  "marca": "Gucci",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Suave",
+  "topo": [
+   "Bergamota"
+  ],
+  "coracao": [
+   "Lírio Casablanca",
+   "Ylang Ylang",
+   "Flor de Laranjeira"
+  ],
+  "fundo": [
+   "Sândalo",
+   "Baunilha do Taiti",
+   "Âmbar"
+  ]
+ },
+ "world-f": {
+  "nome": "World",
+  "genero": "F",
+  "inspiradoEm": "Kenzo World",
+  "marca": "Kenzo",
+  "estilo": "Floral",
+  "grupo": "Floral",
+  "intensidade": "Suave",
+  "topo": [
+   "Frutas Vermelhas"
+  ],
+  "coracao": [
+   "Peônia",
+   "Notas Florais",
+   "Jasmim Egípcio"
+  ],
+  "fundo": [
+   "Ambroxan"
+  ]
+ },
+ "zaya-f": {
+  "nome": "Zaya",
+  "genero": "F",
+  "inspiradoEm": "Yara",
+  "marca": "Lattafa",
+  "estilo": "Adocicado",
+  "grupo": "Adocicado",
+  "intensidade": "Intenso",
+  "topo": [
+   "Orquídea",
+   "Heliotrópio",
+   "Tangerina"
+  ],
+  "coracao": [
+   "Acorde Gourmand",
+   "Frutas Tropicais"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Almíscar",
+   "Sândalo"
+  ]
+ },
+ "521-vip-black-m": {
+  "nome": "521 Vip Black",
+  "genero": "M",
+  "inspiradoEm": "212 VIP Black",
+  "marca": "Carolina Herrera",
+  "estilo": "Aromático Fougère",
+  "grupo": "Fougère",
+  "intensidade": "Moderado",
+  "topo": [
+   "Anis",
+   "Absinto",
+   "Erva Doce"
+  ],
+  "coracao": [
+   "Lavanda"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Almíscar"
+  ]
+ },
+ "521-men-m": {
+  "nome": "521 Men",
+  "genero": "M",
+  "inspiradoEm": "212 Men NYC",
+  "marca": "Carolina Herrera",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Suave",
+  "topo": [
+   "Notas Verdes",
+   "Toranja",
+   "Especiarias",
+   "Bergamota",
+   "Lavanda",
+   "Petitgrain"
+  ],
+  "coracao": [
+   "Gengibre",
+   "Violeta",
+   "Gardênia",
+   "Sálvia"
+  ],
+  "fundo": [
+   "Almíscar",
+   "Sândalo",
+   "Incenso",
+   "Vetiver",
+   "Madeira Guaiac",
+   "Ládano"
+  ]
+ },
+ "521-vip-men-m": {
+  "nome": "521 Vip Men",
+  "genero": "M",
+  "inspiradoEm": "212 VIP Men",
+  "marca": "Carolina Herrera",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Intenso",
+  "topo": [
+   "Maracujá",
+   "Lima",
+   "Pimenta",
+   "Gengibre"
+  ],
+  "coracao": [
+   "Vodka",
+   "Gin",
+   "Hortelã",
+   "Especiarias"
+  ],
+  "fundo": [
+   "Âmbar",
+   "Couro",
+   "Notas Amadeiradas"
+  ]
+ },
+ "521-sexy-men-m": {
+  "nome": "521 Sexy Men",
+  "genero": "M",
+  "inspiradoEm": "212 Sexy Men",
+  "marca": "Carolina Herrera",
+  "estilo": "Ambarado",
+  "grupo": "Oriental",
+  "intensidade": "Moderado",
+  "topo": [
+   "Cítricos",
+   "Notas Verdes"
+  ],
+  "coracao": [
+   "Pimenta",
+   "Madeira Guaiac",
+   "Cardamomo"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Âmbar",
+   "Sândalo"
+  ]
+ },
+ "521-young-for-him-m": {
+  "nome": "521 Young for Him",
+  "genero": "M",
+  "inspiradoEm": "212 Heroes",
+  "marca": "Carolina Herrera",
+  "estilo": "Fougère",
+  "grupo": "Fougère",
+  "intensidade": "Moderado",
+  "topo": [
+   "Pera",
+   "Gengibre"
+  ],
+  "coracao": [
+   "Gerânio",
+   "Sálvia"
+  ],
+  "fundo": [
+   "Almíscar",
+   "Couro"
+  ]
+ },
+ "acqua-m": {
+  "nome": "Acqua",
+  "genero": "M",
+  "inspiradoEm": "Acqua di Giò",
+  "marca": "Giorgio Armani",
+  "estilo": "Refrescante",
+  "grupo": "Refrescante",
+  "intensidade": "Moderado",
+  "topo": [
+   "Lima",
+   "Limão",
+   "Bergamota",
+   "Jasmim",
+   "Laranja",
+   "Tangerina",
+   "Néroli"
+  ],
+  "coracao": [
+   "Jasmim",
+   "Calone",
+   "Pêssego",
+   "Frésia",
+   "Jacinto",
+   "Alecrim",
+   "Violeta",
+   "Coentro",
+   "Notas Oceânicas",
+   "Noz-moscada",
+   "Rosa"
+  ],
+  "fundo": [
+   "Almíscar Branco",
+   "Cedro",
+   "Musgo de Carvalho",
+   "Patchouli",
+   "Âmbar"
+  ]
+ },
+ "all-sexes-u": {
+  "nome": "All Sexes",
+  "genero": "U",
+  "inspiradoEm": "CK Be",
+  "marca": "Calvin Klein",
+  "estilo": "Refrescante",
+  "grupo": "Refrescante",
+  "intensidade": "Moderado",
+  "topo": [
+   "Lavanda",
+   "Notas Verdes",
+   "Bergamota",
+   "Hortelã",
+   "Zimbro",
+   "Tangerina"
+  ],
+  "coracao": [
+   "Grama verde",
+   "Pêssego",
+   "Jasmim",
+   "Frésia",
+   "Magnólia",
+   "Orquídea"
+  ],
+  "fundo": [
+   "Almíscar",
+   "Sândalo",
+   "Cedro",
+   "Baunilha",
+   "Opoponax",
+   "Âmbar"
+  ]
+ },
+ "allur-m": {
+  "nome": "Allur",
+  "genero": "M",
+  "inspiradoEm": "Allure Sport",
+  "marca": "Chanel",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Laranja",
+   "Notas Oceânicas",
+   "Aldeídos",
+   "Mandarina Sanguínea"
+  ],
+  "coracao": [
+   "Pimenta",
+   "Néroli",
+   "Cedro"
+  ],
+  "fundo": [
+   "Fava Tonka",
+   "Baunilha",
+   "Almíscar Branco",
+   "Âmbar",
+   "Vetiver",
+   "Resina de Elemi"
+  ]
+ },
+ "ak-m": {
+  "nome": "AK",
+  "genero": "M",
+  "inspiradoEm": "CH Men",
+  "marca": "Carolina Herrera",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Grama",
+   "Bergamota",
+   "Toranja"
+  ],
+  "coracao": [
+   "Notas Amadeiradas",
+   "Noz-moscada",
+   "Violeta",
+   "Açafrão",
+   "Jasmim"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Camurça",
+   "Âmbar",
+   "Madeira de Cashmere",
+   "Sândalo",
+   "Açúcar",
+   "Couro",
+   "Musgo de Carvalho",
+   "Vetiver"
+  ]
+ },
+ "amk-m": {
+  "nome": "AMK",
+  "genero": "M",
+  "inspiradoEm": "Sauvage",
+  "marca": "Dior",
+  "estilo": "Refrescante",
+  "grupo": "Refrescante",
+  "intensidade": "Moderado",
+  "topo": [
+   "Bergamota da Calábria",
+   "Pimenta"
+  ],
+  "coracao": [
+   "Pimenta de Szechuan",
+   "Lavanda",
+   "Pimenta Rosa",
+   "Vetiver",
+   "Patchouli",
+   "Gerânio",
+   "Elemi"
+  ],
+  "fundo": [
+   "Ambroxan",
+   "Cedro",
+   "Ládano"
+  ]
+ },
+ "animals-m": {
+  "nome": "Animals",
+  "genero": "M",
+  "inspiradoEm": "Animale for Men",
+  "marca": "Animale",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Limão",
+   "Néroli",
+   "Frésia"
+  ],
+  "coracao": [
+   "Lavanda",
+   "Zimbro",
+   "Gerânio"
+  ],
+  "fundo": [
+   "Musgo de Carvalho",
+   "Couro",
+   "Vetiver"
+  ]
+ },
+ "aphrodisiac-m": {
+  "nome": "Aphrodisiac",
+  "genero": "M",
+  "inspiradoEm": "Guilty",
+  "marca": "Gucci",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Lavanda",
+   "Limão de Amalfi"
+  ],
+  "coracao": [
+   "Flor de Laranjeira Africana"
+  ],
+  "fundo": [
+   "Cedro da Virgínia",
+   "Patchouli",
+   "Baunilha"
+  ]
+ },
+ "apolo-m": {
+  "nome": "Apolo",
+  "genero": "M",
+  "inspiradoEm": "Polo",
+  "marca": "Ralph Lauren",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Intenso",
+  "topo": [
+   "Zimbro",
+   "Artemísia",
+   "Alcarávia",
+   "Manjericão",
+   "Coentro",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Agulhas de Pinheiro",
+   "Couro",
+   "Camomila",
+   "Pimenta",
+   "Cravo",
+   "Gerânio",
+   "Jasmim",
+   "Rosa"
+  ],
+  "fundo": [
+   "Tabaco",
+   "Musgo de Carvalho",
+   "Patchouli",
+   "Cedro",
+   "Vetiver",
+   "Almíscar",
+   "Âmbar"
+  ]
+ },
+ "asadiyy-m": {
+  "nome": "Asadiyy",
+  "genero": "M",
+  "inspiradoEm": "Asad",
+  "marca": "Lattafa",
+  "estilo": "Oriental",
+  "grupo": "Oriental",
+  "intensidade": "Moderado",
+  "topo": [
+   "Pimenta Preta",
+   "Tabaco",
+   "Abacaxi"
+  ],
+  "coracao": [
+   "Patchouli",
+   "Café",
+   "Íris"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Âmbar",
+   "Madeira Seca",
+   "Benjoim",
+   "Ládano"
+  ]
+ },
+ "bad-man-m": {
+  "nome": "Bad Man",
+  "genero": "M",
+  "inspiradoEm": "Bad Boy",
+  "marca": "Carolina Herrera",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Pimenta Branca",
+   "Pimenta Preta",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Sálvia",
+   "Cedro"
+  ],
+  "fundo": [
+   "Fava Tonka",
+   "Cacau",
+   "Madeira de Âmbar"
+  ]
+ },
+ "blue-m": {
+  "nome": "Blue",
+  "genero": "M",
+  "inspiradoEm": "Polo Blue",
+  "marca": "Ralph Lauren",
+  "estilo": "Refrescante",
+  "grupo": "Refrescante",
+  "intensidade": "Moderado",
+  "topo": [
+   "Pepino",
+   "Melão",
+   "Tangerina"
+  ],
+  "coracao": [
+   "Manjericão",
+   "Sálvia",
+   "Gerânio"
+  ],
+  "fundo": [
+   "Camurça",
+   "Notas Amadeiradas",
+   "Almíscar"
+  ]
+ },
+ "bratt-m": {
+  "nome": "Bratt",
+  "genero": "M",
+  "inspiradoEm": "Bleu de Chanel",
+  "marca": "Chanel",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Toranja",
+   "Limão",
+   "Hortelã",
+   "Pimenta Rosa"
+  ],
+  "coracao": [
+   "Gengibre",
+   "Noz-moscada",
+   "Jasmim",
+   "Iso E Super"
+  ],
+  "fundo": [
+   "Vetiver",
+   "Cedro",
+   "Sândalo",
+   "Patchouli",
+   "Ládano",
+   "Almíscar Branco",
+   "Incenso"
+  ]
+ },
+ "brave-m": {
+  "nome": "Brave",
+  "genero": "M",
+  "inspiradoEm": "Stronger With You",
+  "marca": "Giorgio Armani",
+  "estilo": "Refrescante",
+  "grupo": "Refrescante",
+  "intensidade": "Moderado",
+  "topo": [
+   "Cardamomo",
+   "Pimenta Rosa",
+   "Folha de violeta",
+   "Hortelã"
+  ],
+  "coracao": [
+   "Abacaxi",
+   "Sálvia",
+   "Melão",
+   "Canela",
+   "Lavanda"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Castanha",
+   "Cedro",
+   "Madeira de Âmbar",
+   "Madeira Guaiac"
+  ]
+ },
+ "challenge-m": {
+  "nome": "Challenge",
+  "genero": "M",
+  "inspiradoEm": "Luna Rossa",
+  "marca": "Prada",
+  "estilo": "Refrescante",
+  "grupo": "Refrescante",
+  "intensidade": "Moderado",
+  "topo": [
+   "Lavanda",
+   "Laranja Amarga"
+  ],
+  "coracao": [
+   "Hortelã",
+   "Sálvia Esclaréia"
+  ],
+  "fundo": [
+   "Ambreta",
+   "Ambroxan"
+  ]
+ },
+ "exclusive-code-m": {
+  "nome": "Exclusive Code",
+  "genero": "M",
+  "inspiradoEm": "Armani Code",
+  "marca": "Giorgio Armani",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Limão",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Anis estrelado",
+   "Flor de Oliveira",
+   "Madeira Guaiac"
+  ],
+  "fundo": [
+   "Couro",
+   "Fava Tonka",
+   "Tabaco"
+  ]
+ },
+ "famous-for-him-m": {
+  "nome": "Famous for Him",
+  "genero": "M",
+  "inspiradoEm": "Phantom",
+  "marca": "Paco Rabanne",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Lavanda",
+   "Raspas de Limão",
+   "Limão de Amalfi"
+  ],
+  "coracao": [
+   "Notas Metálicas",
+   "Notas Terrosas",
+   "Maçã",
+   "Patchouli"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Vetiver"
+  ]
+ },
+ "fast-car-black-m": {
+  "nome": "Fast Car Black",
+  "genero": "M",
+  "inspiradoEm": "Ferrari Black",
+  "marca": "Ferrari",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Maçã Vermelha",
+   "Ameixa",
+   "Lima",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Canela",
+   "Jasmim",
+   "Cardamomo",
+   "Rosa"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Âmbar",
+   "Cedro",
+   "Almíscar"
+  ]
+ },
+ "fire-men-m": {
+  "nome": "Fire Men",
+  "genero": "M",
+  "inspiradoEm": "Fahrenheit",
+  "marca": "Dior",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Intenso",
+  "topo": [
+   "Flor de Noz-moscada",
+   "Lavanda",
+   "Cedro",
+   "Camomila",
+   "Tangerina",
+   "Espinheiro branco",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Folha de violeta",
+   "Noz-moscada",
+   "Cedro",
+   "Sândalo",
+   "Madressilva",
+   "Cravo",
+   "Jasmim",
+   "Lírio-do-Vale"
+  ],
+  "fundo": [
+   "Couro",
+   "Vetiver",
+   "Almíscar",
+   "Âmbar",
+   "Patchouli",
+   "Fava Tonka"
+  ]
+ },
+ "fortune-m": {
+  "nome": "Fortune",
+  "genero": "M",
+  "inspiradoEm": "1 Million",
+  "marca": "Paco Rabanne",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Mandarina Sanguínea",
+   "Toranja",
+   "Hortelã"
+  ],
+  "coracao": [
+   "Canela",
+   "Rosa",
+   "Notas Especiadas"
+  ],
+  "fundo": [
+   "Âmbar",
+   "Couro",
+   "Notas Amadeiradas",
+   "Patchouli Indiano"
+  ]
+ },
+ "fortune-lucky-m": {
+  "nome": "Fortune Lucky",
+  "genero": "M",
+  "inspiradoEm": "1 Million Lucky",
+  "marca": "Paco Rabanne",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Ameixa",
+   "Notas Ozônicas",
+   "Toranja",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Avelã",
+   "Mel",
+   "Cedro",
+   "Madeira de Cashmere",
+   "Flor de Laranjeira",
+   "Jasmim"
+  ],
+  "fundo": [
+   "Madeira de Âmbar",
+   "Patchouli",
+   "Musgo de Carvalho",
+   "Vetiver"
+  ]
+ },
+ "hasan-black-m": {
+  "nome": "Hasan Black",
+  "genero": "M",
+  "inspiradoEm": "Fakhar Black",
+  "marca": "Lattafa",
+  "estilo": "Oriental",
+  "grupo": "Oriental",
+  "intensidade": null,
+  "topo": [
+   "Maçã",
+   "Bergamota",
+   "Gengibre"
+  ],
+  "coracao": [
+   "Lavanda",
+   "Sálvia",
+   "Bagas de Zimbro",
+   "Gerânio"
+  ],
+  "fundo": [
+   "Fava Tonka",
+   "Cedro",
+   "Madeira de Âmbar",
+   "Vetiver"
+  ]
+ },
+ "imortal-m": {
+  "nome": "Imortal",
+  "genero": "M",
+  "inspiradoEm": "Invictus",
+  "marca": "Paco Rabanne",
+  "estilo": "Refrescante",
+  "grupo": "Refrescante",
+  "intensidade": "Moderado",
+  "topo": [
+   "Notas Oceânicas",
+   "Toranja",
+   "Tangerina"
+  ],
+  "coracao": [
+   "Folha de Louro",
+   "Jasmim"
+  ],
+  "fundo": [
+   "Âmbar Cinzento",
+   "Madeira Guaiac",
+   "Musgo de Carvalho",
+   "Patchouli"
+  ]
+ },
+ "insigne-m": {
+  "nome": "Insigne",
+  "genero": "M",
+  "inspiradoEm": "Emblem",
+  "marca": "Montblanc",
+  "estilo": "Refrescante",
+  "grupo": "Refrescante",
+  "intensidade": "Moderado",
+  "topo": [
+   "Sálvia Esclaréia",
+   "Toranja",
+   "Cardamomo"
+  ],
+  "coracao": [
+   "Folha de violeta",
+   "Canela"
+  ],
+  "fundo": [
+   "Fava Tonka",
+   "Notas Amadeiradas"
+  ]
+ },
+ "intense-m": {
+  "nome": "Intense",
+  "genero": "M",
+  "inspiradoEm": "CH Men Privé",
+  "marca": "Carolina Herrera",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Whiskey",
+   "Toranja",
+   "Pomelo"
+  ],
+  "coracao": [
+   "Cardamomo",
+   "Lavanda",
+   "Sálvia",
+   "Tomilho vermelho"
+  ],
+  "fundo": [
+   "Couro",
+   "Fava Tonka",
+   "Notas Amadeiradas",
+   "Benjoim"
+  ]
+ },
+ "jump-life-m": {
+  "nome": "Jump Life",
+  "genero": "M",
+  "inspiradoEm": "Joop! Homme",
+  "marca": "Joop!",
+  "estilo": "Adocicado",
+  "grupo": "Adocicado",
+  "intensidade": "Intenso",
+  "topo": [
+   "Flor de Laranjeira",
+   "Tangerina",
+   "Bergamota",
+   "Limão de Amalfi"
+  ],
+  "coracao": [
+   "Canela",
+   "Heliotrópio",
+   "Jasmim",
+   "Cardamomo",
+   "Lírio-do-Vale"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Fava Tonka",
+   "Sândalo",
+   "Patchouli",
+   "Mel",
+   "Tabaco",
+   "Vetiver"
+  ]
+ },
+ "korus-m": {
+  "nome": "Korus",
+  "genero": "M",
+  "inspiradoEm": "Kouros",
+  "marca": "Yves Saint Laurent",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Intenso",
+  "topo": [
+   "Aldeídos",
+   "Coentro",
+   "Artemísia",
+   "Sálvia Esclaréia",
+   "Bergamota"
+  ],
+  "coracao": [
+   "Patchouli",
+   "Cravo",
+   "Vetiver",
+   "Canela",
+   "Gerânio",
+   "Jasmim",
+   "Raiz de Orris"
+  ],
+  "fundo": [
+   "Civeta",
+   "Mel",
+   "Couro",
+   "Almíscar",
+   "Musgo de Carvalho",
+   "Âmbar",
+   "Fava Tonka",
+   "Baunilha"
+  ]
+ },
+ "l-eternite-m": {
+  "nome": "L'Éternite",
+  "genero": "M",
+  "inspiradoEm": "Eternity for Men",
+  "marca": "Calvin Klein",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Intenso",
+  "topo": [
+   "Lavanda",
+   "Limão",
+   "Bergamota",
+   "Tangerina"
+  ],
+  "coracao": [
+   "Sálvia",
+   "Gerânio",
+   "Coentro",
+   "Manjericão",
+   "Jasmim",
+   "Flor de Laranjeira",
+   "Zimbro",
+   "Lírio",
+   "Lírio-do-Vale"
+  ],
+  "fundo": [
+   "Sândalo",
+   "Vetiver",
+   "Almíscar",
+   "Pau-Brasil",
+   "Âmbar"
+  ]
+ },
+ "malik-nuit-m": {
+  "nome": "Malik Nuit",
+  "genero": "M",
+  "inspiradoEm": "Club de Nuit",
+  "marca": "Armaf",
+  "estilo": "Aromático Frutado",
+  "grupo": "Frutal",
+  "intensidade": "Moderado",
+  "topo": [
+   "Limão",
+   "Abacaxi",
+   "Bergamota",
+   "Groselha Preta",
+   "Maçã"
+  ],
+  "coracao": [
+   "Vidoeiro",
+   "Jasmim",
+   "Rosa"
+  ],
+  "fundo": [
+   "Âmbar Cinzento",
+   "Almíscar",
+   "Patchouli",
+   "Baunilha"
+  ]
+ },
+ "man-m": {
+  "nome": "Man",
+  "genero": "M",
+  "inspiradoEm": "Armani",
+  "marca": "Giorgio Armani",
+  "estilo": "Refrescante",
+  "grupo": "Refrescante",
+  "intensidade": "Intenso",
+  "topo": [
+   "Limão",
+   "Bergamota",
+   "Tangerina",
+   "Laranja Verde",
+   "Manjericão"
+  ],
+  "coracao": [
+   "Noz-moscada",
+   "Lavanda",
+   "Cravo",
+   "Jasmim",
+   "Lírio",
+   "Rosa",
+   "Canela"
+  ],
+  "fundo": [
+   "Musgo de Carvalho",
+   "Vetiver",
+   "Sândalo",
+   "Cedro",
+   "Almíscar",
+   "Patchouli"
+  ]
+ },
+ "radical-sports-m": {
+  "nome": "Radical Sports",
+  "genero": "M",
+  "inspiradoEm": "Boss",
+  "marca": "Hugo Boss",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Suave",
+  "topo": [
+   "Maçã",
+   "Ameixa",
+   "Bergamota",
+   "Limão",
+   "Musgo de Carvalho",
+   "Gerânio"
+  ],
+  "coracao": [
+   "Canela",
+   "Mogno",
+   "Cravo"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Sândalo",
+   "Cedro",
+   "Vetiver",
+   "Oliveira"
+  ]
+ },
+ "red-man-m": {
+  "nome": "Red Man",
+  "genero": "M",
+  "inspiradoEm": "Polo Red",
+  "marca": "Ralph Lauren",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Intenso",
+  "topo": [
+   "Oxicoco",
+   "Toranja",
+   "Limão Italiano"
+  ],
+  "coracao": [
+   "Açafrão",
+   "Sálvia"
+  ],
+  "fundo": [
+   "Âmbar",
+   "Café",
+   "Notas Amadeiradas"
+  ]
+ },
+ "rock-m": {
+  "nome": "Rock",
+  "genero": "M",
+  "inspiradoEm": "Le Male",
+  "marca": "Jean Paul Gaultier",
+  "estilo": "Refrescante",
+  "grupo": "Refrescante",
+  "intensidade": "Intenso",
+  "topo": [
+   "Lavanda",
+   "Hortelã",
+   "Cardamomo",
+   "Bergamota",
+   "Artemísia"
+  ],
+  "coracao": [
+   "Canela",
+   "Flor de Laranjeira",
+   "Alcarávia"
+  ],
+  "fundo": [
+   "Baunilha",
+   "Fava Tonka",
+   "Âmbar",
+   "Sândalo",
+   "Cedro"
+  ]
+ },
+ "satisfaction-m": {
+  "nome": "Satisfaction",
+  "genero": "M",
+  "inspiradoEm": "Euphoria Men",
+  "marca": "Calvin Klein",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Gengibre",
+   "Pimenta"
+  ],
+  "coracao": [
+   "Manjericão",
+   "Sálvia",
+   "Cedro"
+  ],
+  "fundo": [
+   "Âmbar",
+   "Camurça",
+   "Sequoia",
+   "Patchouli"
+  ]
+ },
+ "silver-m": {
+  "nome": "Silver",
+  "genero": "M",
+  "inspiradoEm": "Silver Scent",
+  "marca": "Jacques Bogart",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Flor de Laranjeira",
+   "Limão"
+  ],
+  "coracao": [
+   "Lavanda",
+   "Noz-moscada",
+   "Cardamomo",
+   "Coentro",
+   "Gerânio",
+   "Alecrim"
+  ],
+  "fundo": [
+   "Lichia",
+   "Fava Tonka",
+   "Madeira de Teca",
+   "Vetiver"
+  ]
+ },
+ "smell-for-men-m": {
+  "nome": "Smell for Men",
+  "genero": "M",
+  "inspiradoEm": "Black XS",
+  "marca": "Paco Rabanne",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Moderado",
+  "topo": [
+   "Cítricos",
+   "Limão",
+   "Tagetes",
+   "Sálvia"
+  ],
+  "coracao": [
+   "Praliné",
+   "Canela",
+   "Bálsamo de Tolú",
+   "Cardamomo"
+  ],
+  "fundo": [
+   "Patchouli",
+   "Âmbar Negro",
+   "Ébano",
+   "Jacarandá"
+  ]
+ },
+ "strong-m": {
+  "nome": "Strong",
+  "genero": "M",
+  "inspiradoEm": "Azzaro Pour Homme",
+  "marca": "Azzaro",
+  "estilo": "Refrescante",
+  "grupo": "Refrescante",
+  "intensidade": "Intenso",
+  "topo": [
+   "Lavanda",
+   "Anis",
+   "Limão",
+   "Alcarávia",
+   "Manjericão",
+   "Bergamota",
+   "Sálvia Esclaréia",
+   "Íris"
+  ],
+  "coracao": [
+   "Vetiver",
+   "Sândalo",
+   "Patchouli",
+   "Cedro",
+   "Zimbro",
+   "Cardamomo"
+  ],
+  "fundo": [
+   "Musgo de Carvalho",
+   "Couro",
+   "Âmbar",
+   "Almíscar",
+   "Fava Tonka"
+  ]
+ },
+ "tedd-m": {
+  "nome": "Tedd",
+  "genero": "M",
+  "inspiradoEm": "Azzaro Wanted",
+  "marca": "Azzaro",
+  "estilo": "Refrescante",
+  "grupo": "Refrescante",
+  "intensidade": "Moderado",
+  "topo": [
+   "Limão",
+   "Gengibre",
+   "Lavanda",
+   "Hortelã"
+  ],
+  "coracao": [
+   "Maçã",
+   "Zimbro",
+   "Cardamomo",
+   "Gerânio"
+  ],
+  "fundo": [
+   "Fava Tonka",
+   "Madeira de Âmbar",
+   "Vetiver"
+  ]
+ },
+ "mister-tom-m": {
+  "nome": "Mister Tom",
+  "genero": "M",
+  "inspiradoEm": "Oud Wood",
+  "marca": "Tom Ford",
+  "estilo": "Amadeirado",
+  "grupo": "Amadeirado",
+  "intensidade": "Intenso",
+  "topo": [
+   "Pau-Brasil",
+   "Cardamomo",
+   "Pimenta de Szechuan"
+  ],
+  "coracao": [
+   "Oud",
+   "Sândalo",
+   "Vetiver"
+  ],
+  "fundo": [
+   "Fava Tonka",
+   "Baunilha",
+   "Âmbar"
+  ]
+ },
+ "trust-m": {
+  "nome": "Trust",
+  "genero": "M",
+  "inspiradoEm": "Aventus",
+  "marca": "Creed",
+  "estilo": "Refrescante",
+  "grupo": "Refrescante",
+  "intensidade": "Moderado",
+  "topo": [
+   "Abacaxi",
+   "Bergamota",
+   "Groselha Preta",
+   "Maçã"
+  ],
+  "coracao": [
+   "Vidoeiro",
+   "Patchouli",
+   "Jasmim",
+   "Rosa"
+  ],
+  "fundo": [
+   "Almíscar",
+   "Musgo de Carvalho",
+   "Âmbar Cinzento",
+   "Baunilha"
+  ]
+ }
+}

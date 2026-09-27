@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Layon Alves | Perfumes Amakha Paris em Brasília</title>
+<meta name="description" content="Perfumes e kits Amakha Paris com entrega em mãos em Brasília e Entorno. Seja consultor e venda com a equipe do Layon.">
+<meta property="og:title" content="Layon Alves | Perfumes Amakha Paris em Brasília">
+<meta property="og:description" content="Kits prontos para presentear, entrega em mãos e equipe de consultores.">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 fill=%22%23000%22/%3E%3Ctext x=%2232%22 y=%2244%22 font-family=%22Georgia,serif%22 font-size=%2236%22 fill=%22%23fff%22 text-anchor=%22middle%22%3EL%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1A1A1A;--muted:#6B6B6B;--cream:#FAF9F6;--line:#E5E5E5;--gold:#FFD700;--serif:'Playfair Display',Georgia,serif;--sans:Inter,system-ui,sans-serif;--pad:80px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:81px}
+body{margin:0;background:#fff;color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0}
+.eyebrow{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:14px}
+.eyebrow.line::before{content:"";width:40px;height:1px;background:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 32px;font-size:12px;font-weight:500;letter-spacing:1.2px;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s;text-align:center}
+.btn-primary{background:#000;color:#fff;border-radius:12px}
+.btn-primary:hover{background:#2A2A2A}
+.btn-outline{border:1px solid #000;color:#000}
+.btn-outline:hover{background:#000;color:#fff}
+.glass{background:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.3);box-shadow:0 8px 32px rgba(0,0,0,.08);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.ph{display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#6E6457}
+.ph img{width:100%;height:100%;object-fit:cover}
+.prod{background:#fff}
+.prod img{object-fit:contain;padding:8%}
+.hero-bg.has-img{background:#fff}
+.hero-bg.has-img img{left:auto;right:4%;width:52%;object-fit:contain}
+/* catálogo */
+.cat-tools{width:100%;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;margin-bottom:40px}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{min-height:44px;padding:0 18px;border:1px solid var(--line);background:#fff;font-family:var(--sans);font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--ink);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.pill:hover{border-color:#000}
+.pill[aria-pressed="true"]{background:#000;color:#fff;border-color:#000}
+.search{min-height:44px;min-width:260px;padding:0 16px;border:1px solid var(--line);font-family:var(--sans);font-size:14px;background:#fff}
+.search:focus{outline:2px solid #000;outline-offset:0}
+.cat-grid{width:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;text-align:left}
+.pcard{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);transition:border-color .2s}
+.pcard:hover{border-color:#bdbdbd}
+.pcard .pimg{aspect-ratio:1/1;background:#fff}
+.pcard .pimg img{width:100%;height:100%;object-fit:contain;padding:10px}
+.pcard .pbody{display:flex;flex-direction:column;gap:6px;padding:16px 16px 18px;border-top:1px solid var(--line);flex:1}
+.pcard .pfam{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);min-height:12px}
+.pcard h3{font-size:16px;font-weight:500;line-height:1.3}
+.pcard .pprice{font-size:13px;color:var(--muted)}
+.pcard a{margin-top:auto;padding-top:12px;font-size:12px;font-weight:500;letter-spacing:1.2px;text-transform:uppercase;text-decoration:none;display:inline-flex;align-items:center;min-height:44px;border-bottom:0}
+.pcard a span{border-bottom:1px solid #000;padding-bottom:3px}
+.cat-count{font-size:13px;color:var(--muted);margin:0 0 24px;width:100%;text-align:left}
+.cat-empty{grid-column:1/-1;padding:48px 0;color:var(--muted);text-align:center}
+/* olfativo */
+.cat-sub{width:100%;display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:-24px 0 32px;text-align:left}
+.sel{min-height:44px;padding:0 40px 0 16px;border:1px solid var(--line);background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%231A1A1A' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 14px center;appearance:none;-webkit-appearance:none;font-family:var(--sans);font-size:13px;color:var(--ink);cursor:pointer;border-radius:0}
+.sel:focus{outline:2px solid #000;outline-offset:0}
+.cat-hint{margin-left:auto;font-size:13px;color:var(--muted)}
+.cat-hint a{color:var(--ink);font-weight:500}
+.pcard .pinsp{font-size:13px;color:var(--muted);line-height:1.4}
+.pcard .pinsp b{font-weight:500;color:var(--ink)}
+.pcard .pimg{cursor:pointer;position:relative}
+.pcard .pimg .tag{position:absolute;left:10px;top:10px;font-size:10px;letter-spacing:1.2px;text-transform:uppercase;background:rgba(255,255,255,.85);border:1px solid var(--line);padding:5px 8px}
+.pactions{margin-top:auto;display:flex;flex-wrap:wrap;gap:4px 16px;align-items:center}
+.pcard .pactions a,.pcard .pactions button{margin-top:0}
+.pnotes{background:none;border:0;padding:12px 0 0;min-height:44px;font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);cursor:pointer}
+.pnotes:hover{color:var(--ink)}
+.cat-legal{width:100%;margin-top:32px;font-size:12px;color:var(--muted);text-align:left;line-height:1.6}
+.ficha{border:0;padding:0;width:min(920px,calc(100% - 32px));max-height:calc(100% - 32px);background:#fff;color:var(--ink)}
+.ficha::backdrop{background:rgba(0,0,0,.45);backdrop-filter:blur(4px)}
+.ficha-in{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
+.ficha-img{background:var(--cream);display:flex;align-items:center;justify-content:center;padding:32px;position:relative}
+.ficha-img img{width:100%;max-width:340px;aspect-ratio:1/1;object-fit:contain;mix-blend-mode:multiply}
+.ficha-body{padding:40px;display:flex;flex-direction:column;gap:18px}
+.ficha-x{position:absolute;right:8px;top:8px;width:44px;height:44px;background:#fff;border:1px solid var(--line);cursor:pointer;font-size:22px;line-height:1;z-index:2}
+.ficha h3{font-size:32px;line-height:1.15}
+.ficha .insp{font-size:15px;color:var(--muted)}
+.ficha .insp b{color:var(--ink);font-weight:500}
+.ficha .meta{display:flex;flex-wrap:wrap;gap:24px;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted)}
+.ficha .meta strong{display:block;color:var(--ink);font-weight:500;letter-spacing:.5px;text-transform:none;font-size:15px;margin-top:4px}
+.bars{display:inline-flex;gap:3px;margin-top:8px}
+.bars i{width:22px;height:5px;background:var(--line)}
+.bars i.on{background:#000}
+.pyr{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.pyr div{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.5}
+.pyr span{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding-top:2px}
+.alike{display:flex;flex-direction:column;gap:10px}
+.alike-t{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)}
+.alike-l{display:flex;flex-wrap:wrap;gap:8px}
+.alike-l button{min-height:40px;padding:0 14px;border:1px solid var(--line);background:#fff;font-family:var(--sans);font-size:13px;cursor:pointer}
+.alike-l button:hover{border-color:#000}
+.ficha .btn{align-self:flex-start;cursor:pointer}
+/* teste */
+.quiz{width:100%;max-width:880px;text-align:left}
+.q{border:0;padding:0;margin:0 0 36px}
+.q legend{font-family:var(--serif);font-size:24px;margin-bottom:16px;padding:0}
+.q legend small{font-family:var(--sans);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:6px}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt label{display:flex;flex-direction:column;gap:2px;min-height:52px;justify-content:center;padding:10px 20px;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:15px;transition:border-color .2s,background .2s,color .2s}
+.opt label small{font-size:12px;color:var(--muted)}
+.opt label:hover{border-color:#000}
+.opt input:checked+label{background:#000;color:#fff;border-color:#000}
+.opt input:checked+label small{color:rgba(255,255,255,.7)}
+.opt input:focus-visible+label{outline:2px solid #000;outline-offset:3px}
+.quiz-or{display:flex;align-items:center;gap:16px;margin:8px 0 28px;color:var(--muted);font-size:12px;letter-spacing:2px;text-transform:uppercase}
+.quiz-or::before,.quiz-or::after{content:"";flex:1;height:1px;background:var(--line)}
+.ref-row{display:flex;gap:10px;flex-wrap:wrap}
+.ref-row .search{flex:1;min-width:0}
+.quiz-res{margin-top:40px}
+.quiz-res h3{font-size:28px;margin-bottom:6px}
+.quiz-res p{color:var(--muted);margin:0 0 24px}
+.res-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.res-grid .pcard{background:#fff}
+@media (max-width:760px){
+.ficha-in{grid-template-columns:1fr}
+.ficha-img{padding:24px}
+.ficha-img img{max-width:200px}
+.ficha-body{padding:24px}
+.ficha h3{font-size:26px}
+.pyr div{grid-template-columns:1fr;gap:4px}
+.cat-sub{margin:-24px 0 24px}
+.cat-sub .sel{flex:1;min-width:0}
+.cat-hint{margin-left:0;width:100%}
+.res-grid{grid-template-columns:1fr}
+.q legend{font-size:20px}
+.opt{flex:1 1 calc(50% - 10px)}
+.opt label{height:100%}
+}
+.mono{font-family:var(--serif);font-size:56px;letter-spacing:0;text-transform:none;color:rgba(255,255,255,.75)}
+.menu{display:none;position:relative}
+.menu summary{list-style:none;cursor:pointer;display:flex;padding:4px}
+.menu summary::-webkit-details-marker{display:none}
+.menu-panel{position:absolute;right:-8px;top:44px;width:230px;background:#fff;border:1px solid var(--line);box-shadow:0 20px 40px -20px rgba(0,0,0,.25);display:flex;flex-direction:column;padding:8px 0}
+.menu-panel a{padding:14px 20px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;color:var(--ink)}
+.menu-panel a:hover{background:var(--cream)}
+.wa-float{position:fixed;right:16px;bottom:16px;z-index:60;width:56px;height:56px;border-radius:50%;background:#000;color:#fff;display:none;align-items:center;justify-content:center;box-shadow:0 12px 30px -10px rgba(0,0,0,.5)}
+
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;height:81px;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.8);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--serif);font-size:24px;letter-spacing:3px;text-decoration:none}
+.nav-links{display:flex;gap:40px}
+.nav-links a{font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--ink)}
+.nav-icons{display:flex;gap:22px;align-items:center}
+.nav-icons a{display:flex;position:relative}
+.badge-dot{position:absolute;top:-6px;right:-8px;width:16px;height:16px;border-radius:50%;background:var(--gold);color:#000;font-size:10px;font-weight:600;display:flex;align-items:center;justify-content:center}
+
+/* hero */
+.hero{position:relative;min-height:100vh;padding-top:81px;display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;background:#CFC6BA;display:flex;align-items:flex-end;justify-content:flex-end;padding:0 var(--pad) 40px}
+.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-fade{position:absolute;inset:0;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.92) 30%,rgba(255,255,255,.55) 55%,rgba(255,255,255,0) 80%)}
+.hero-content{position:relative;padding:64px var(--pad) 64px max(var(--pad),calc((100vw - 1440px) / 2 + 236px));max-width:1000px}
+.hero h1{font-size:72px;line-height:1.15;margin:24px 0}
+.hero p{margin:0 0 40px;max-width:460px;font-size:16px;line-height:1.7;color:var(--muted)}
+.actions{display:flex;gap:16px;flex-wrap:wrap}
+.stats{display:flex;gap:48px;margin-top:72px}
+.stat-n{font-family:var(--serif);font-size:32px}
+.stat-l{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:4px}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.fu{opacity:0;animation:fadeUp .9s ease forwards}
+.f1{animation-delay:.1s}.f2{animation-delay:.25s}.f3{animation-delay:.4s}.f4{animation-delay:.55s}.f5{animation-delay:.7s}
+
+/* sections */
+.section{padding:96px var(--pad)}
+.cream{background:var(--cream)}
+.center{display:flex;flex-direction:column;align-items:center;text-align:center}
+.h2{font-size:48px;line-height:1.15;margin:16px 0}
+.lead{max-width:560px;font-size:15px;line-height:1.7;color:var(--muted);margin:0 0 56px}
+.grid4{width:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;text-align:left}
+.grid3{width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;text-align:left}
+
+/* product card */
+.card-img{position:relative;aspect-ratio:3/4;overflow:hidden;margin-bottom:16px}
+.card-img .ph{position:absolute;inset:0;transition:transform .7s ease;padding:0}
+.card-img .ph span{padding:24px}
+.card:hover .card-img .ph{transform:scale(1.05)}
+.tag{position:absolute;top:16px;left:16px;padding:6px 12px;font-size:10px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase}
+.tag.dark{background:#000;color:#fff}.tag.light{background:#fff;color:#000}
+.qv{position:absolute;left:0;right:0;bottom:0;transform:translateY(100%);transition:transform .3s ease}
+.card:hover .qv,.card:focus-within .qv{transform:none}
+.qv a{display:flex;align-items:center;justify-content:center;height:48px;background:#fff;color:#000;font-size:12px;font-weight:500;letter-spacing:1.2px;text-transform:uppercase;text-decoration:none}
+.qv a:hover{background:#F5F0E8}
+.card h3{font-size:16px;font-weight:500;margin-bottom:4px}
+.price{font-size:14px;color:var(--muted)}
+
+/* split sections */
+.split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:96px;align-items:center}
+.photo-wrap{position:relative}
+.photo{aspect-ratio:4/5}
+.float-card{position:absolute;padding:32px;min-width:240px}
+.float-card .big{font-family:var(--serif);font-size:40px;line-height:1}
+.float-card .small{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.body p{margin:0 0 20px;font-size:16px;line-height:1.75;color:var(--muted);max-width:540px}
+.hr{height:1px;background:var(--line);margin:20px 0 40px}
+.features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-bottom:48px}
+.feat{display:flex;flex-direction:column;gap:10px}
+.feat-ic{width:44px;height:44px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center}
+.feat-t{font-family:var(--serif);font-size:15px}
+.feat-d{font-size:12px;color:var(--muted)}
+
+/* collections */
+.coll{position:relative;display:block;aspect-ratio:4/3;overflow:hidden;text-decoration:none}
+.coll .ph{position:absolute;inset:0;align-items:flex-start;justify-content:flex-end;padding:20px;transition:transform .7s ease}
+.coll:hover .ph{transform:scale(1.06)}
+.coll-shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.62) 0%,rgba(0,0,0,.1) 60%,rgba(0,0,0,0) 100%)}
+.coll-txt{position:absolute;left:32px;bottom:32px;right:32px;color:#fff}
+.coll-txt h3{font-size:24px;margin-bottom:6px}
+.coll-txt div{font-size:14px;color:#E8E8E8;margin-bottom:16px}
+.coll-txt span{font-size:11px;letter-spacing:2px;text-transform:uppercase;border-bottom:1px solid #fff;padding-bottom:4px}
+
+/* perks */
+.perks{list-style:none;margin:0 0 40px;padding:0;border-top:1px solid var(--line);max-width:540px}
+.perks li{display:flex;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line);font-size:15px}
+.perks svg{flex-shrink:0}
+.note{margin:24px 0 0;font-size:12px;line-height:1.6;color:var(--muted)}
+
+/* footer */
+.footer{padding:80px var(--pad) 48px;background:var(--cream)}
+.news{padding-bottom:64px;border-bottom:1px solid var(--line)}
+.news h3{font-size:24px;margin-bottom:16px}
+.news p{margin:0 0 28px;font-size:14px;color:var(--muted)}
+.fcols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:40px;padding:64px 0}
+.fcol{display:flex;flex-direction:column;gap:12px}
+.fcol .ttl{font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:500}
+.fcol a,.fcol span{font-size:14px;color:var(--muted);text-decoration:none;transition:color .2s}
+.fcol a:hover{color:var(--ink)}
+.fbottom{display:flex;justify-content:space-between;gap:16px;padding-top:32px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+
+/* tablet */
+@media (max-width:1100px){
+:root{--pad:40px}
+.hero-content{padding-left:var(--pad)}
+.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}
+.split{gap:56px}
+.fcols{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cat-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.fcols .fcol:first-child{grid-column:1/-1}
+}
+/* mobile */
+@media (max-width:760px){
+:root{--pad:20px}
+.nav{height:64px}
+html{scroll-padding-top:64px}
+.nav-links{display:none}
+.menu{display:block}
+.wa-float{display:flex}
+.nav-icons > a[href="#kits"]{display:none}
+.hero{padding-top:64px;min-height:auto}
+.hero-fade{background:linear-gradient(180deg,rgba(255,255,255,.35) 0%,rgba(255,255,255,.9) 45%,#fff 70%)}
+.hero-content{padding:180px var(--pad) 48px}
+.hero h1{font-size:44px}
+.hero-bg{padding:0 20px 20px;align-items:flex-start;padding-top:90px}
+.actions .btn{width:100%}
+.stats{gap:24px;margin-top:48px}
+.stat-n{font-size:24px}
+.section{padding:64px var(--pad)}
+.h2{font-size:34px}
+.lead{margin-bottom:36px}
+.grid4{gap:16px}
+.qv{transform:none}
+.qv a{height:42px;font-size:11px}
+.grid3{grid-template-columns:1fr}
+.cat-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.search{min-width:0;width:100%}
+.pills{flex-wrap:nowrap;overflow-x:auto;width:100%;padding-bottom:4px}
+.pill{flex-shrink:0}
+.pcard h3{font-size:14px}
+.pcard .pbody{padding:12px}
+.hero-bg.has-img img{width:80%;right:10%;height:170px;top:78px}
+.split{grid-template-columns:1fr;gap:56px}
+.consultor .photo-wrap{order:-1}
+.float-card{padding:20px 24px;min-width:0}
+.float-card .big{font-size:28px}
+#historia .float-card{right:12px!important;bottom:-24px!important}
+.consultor .photo-wrap{padding-left:0!important}
+.features{grid-template-columns:1fr;gap:20px}
+.feat{flex-direction:row;align-items:center;gap:14px}
+.feat-d{margin-left:auto;text-align:right}
+.fcols{grid-template-columns:1fr 1fr}
+.fbottom{flex-direction:column}
+}
+@media (prefers-reduced-motion:reduce){.fu{opacity:1;animation:none}.card-img .ph,.coll .ph,.qv{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Principal">
+<a class="logo" href="#inicio">LAYON</a>
+<div class="nav-links">
+<a href="#kits">Kits</a>
+<a href="#catalogo">Catálogo</a>
+<a href="#descubra">Descubra</a>
+<a href="#linhas">Linhas</a>
+<a href="#historia">Nossa história</a>
+<a href="#consultor">Seja consultor</a>
+</div>
+<div class="nav-icons">
+<a href="https://wa.me/556195177575" aria-label="Falar no WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.5A8.5 8.5 0 1 1 21 11.5z"/></svg></a>
+<a href="mailto:layonnew29@gmail.com" aria-label="Enviar e-mail"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></svg></a>
+<details class="menu"><summary aria-label="Abrir menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
+<div class="menu-panel"><a href="#kits">Kits</a><a href="#catalogo">Catálogo</a><a href="#descubra">Descubra seu perfume</a><a href="#linhas">Linhas</a><a href="#historia">Nossa história</a><a href="#consultor">Seja consultor</a></div></details>
+<a href="#kits" aria-label="Ver os kits"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></a>
+</div>
+</nav>
+
+<main>
+<section id="inicio" class="hero">
+<div class="hero-bg ph has-img"><img src="https://amakha.vteximg.com.br/arquivos/ids/161862-900-900/p.jpg" alt="Kit Premium 521 Vip Rosé Amakha Paris" fetchpriority="high"><!-- troque por: <img src="img/hero.jpg" alt="Perfumes Amakha Paris"> --></div>
+<div class="hero-fade"></div>
+<div class="hero-content">
+<div class="eyebrow line fu f1">Coleção 2026</div>
+<h1 class="fu f2">Perfumes que<br><em>Deixam</em><br>Memória</h1>
+<p class="fu f3">Sabe quando alguém passa e você pergunta "que perfume é esse?". É isso que eu vendo. Fragrâncias Amakha Paris de boa fixação, kits prontos para presentear e entrega em mãos em Brasília e Entorno.</p>
+<div class="actions fu f4">
+<a class="btn btn-primary" href="#kits">Ver os kits</a>
+<a class="btn btn-outline" href="#consultor">Quero ser consultor</a>
+</div>
+<div class="stats fu f5">
+<div><div class="stat-n">4</div><div class="stat-l">Kits completos</div></div>
+<div><div class="stat-n">15–100</div><div class="stat-l">Mililitros</div></div>
+<div><div class="stat-n">DF</div><div class="stat-l">Brasília e Entorno</div></div>
+</div>
+</div>
+</section>
+
+<section id="kits" class="section cream center">
+<div class="eyebrow">O presente certo</div>
+<h2 class="h2">Kits em Destaque</h2>
+<p class="lead">Perfume 100ml, perfume 15ml, body splash e hidratante da mesma fragrância, numa caixa só. Você não precisa montar nada: é só entregar e ver a reação.</p>
+<div class="grid4">
+<article class="card">
+<div class="card-img"><div class="ph prod"><img src="https://amakha.vteximg.com.br/arquivos/ids/161374-600-600/p.jpg" alt="Kit Premium Imortal Amakha Paris" loading="lazy"></div><span class="tag dark">Kit completo</span>
+<div class="qv"><a href="https://wa.me/556195177575?text=Ol%C3%A1%2C%20Layon!%20X">Quero este kit</a></div></div>
+<h3>Kit Premium Imortal</h3><div class="price">Consulte o valor</div>
+</article>
+<article class="card">
+<div class="card-img"><div class="ph prod"><img src="https://amakha.vteximg.com.br/arquivos/ids/161862-600-600/p.jpg" alt="Kit Premium 521 Vip Rosé Amakha Paris" loading="lazy"></div><span class="tag light">Presente</span>
+<div class="qv"><a href="https://wa.me/556195177575?text=Ol%C3%A1%2C%20Layon!%20X">Quero este kit</a></div></div>
+<h3>Kit Premium 521 Vip Rosé</h3><div class="price">Consulte o valor</div>
+</article>
+<article class="card">
+<div class="card-img"><div class="ph prod"><img src="https://amakha.vteximg.com.br/arquivos/ids/162167-600-600/p.jpg" alt="Kit Premium GD Amakha Paris" loading="lazy"></div><span class="tag dark">Kit completo</span>
+<div class="qv"><a href="https://wa.me/556195177575?text=Ol%C3%A1%2C%20Layon!%20X">Quero este kit</a></div></div>
+<h3>Kit Premium GD</h3><div class="price">Consulte o valor</div>
+</article>
+<article class="card">
+<div class="card-img"><div class="ph prod"><img src="https://amakha.vteximg.com.br/arquivos/ids/161869-600-600/p.jpg" alt="Kit Premium D by Denise Lemos Amakha Paris" loading="lazy"></div><span class="tag light">Presente</span>
+<div class="qv"><a href="https://wa.me/556195177575?text=Ol%C3%A1%2C%20Layon!%20X">Quero este kit</a></div></div>
+<h3>Kit Premium D by Denise Lemos</h3><div class="price">Consulte o valor</div>
+</article>
+</div>
+<a class="btn btn-outline" style="margin-top:64px" href="#catalogo">Ver o catálogo completo</a>
+</section>
+
+<section id="catalogo" class="section center">
+<div class="eyebrow">Catálogo</div>
+<h2 class="h2">Encontre o Seu Perfume</h2>
+<p class="lead">Mais de 200 produtos Amakha Paris. Escolha o que gostou e me chame no WhatsApp: eu confirmo o estoque e o valor na hora.</p>
+<div class="cat-tools">
+<div class="pills" role="group" aria-label="Filtrar catálogo">
+<button type="button" class="pill" data-f="all" aria-pressed="true">Todos</button>
+<button type="button" class="pill" data-f="F" aria-pressed="false">Femininos</button>
+<button type="button" class="pill" data-f="M" aria-pressed="false">Masculinos</button>
+<button type="button" class="pill" data-f="K" aria-pressed="false">Kits</button>
+<button type="button" class="pill" data-f="B" aria-pressed="false">Body splash</button>
+<button type="button" class="pill" data-f="C" aria-pressed="false">Corpo e cabelo</button>
+</div>
+<label style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)" for="busca">Buscar produto</label>
+<input id="busca" class="search" type="search" placeholder="Nome, nota ou perfume famoso: ex. Sauvage" autocomplete="off">
+</div>
+<div class="cat-sub">
+<label style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)" for="f-estilo">Estilo</label>
+<select id="f-estilo" class="sel"><option value="">Todos os estilos</option><option>Floral</option><option>Adocicado</option><option>Frutal</option><option>Refrescante</option><option>Amadeirado</option><option>Oriental</option><option>Fougère</option></select>
+<label style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)" for="f-int">Intensidade</label>
+<select id="f-int" class="sel"><option value="">Qualquer intensidade</option><option>Suave</option><option>Moderado</option><option>Intenso</option></select>
+<span class="cat-hint">Na dúvida? <a href="#descubra">Faça o teste do perfume</a></span>
+</div>
+<p class="cat-count" id="cat-count" aria-live="polite"></p>
+<div class="cat-grid" id="cat-grid"></div>
+<button type="button" class="btn btn-outline" id="cat-more" style="margin-top:48px;background:#fff;cursor:pointer">Mostrar mais produtos</button>
+<p class="cat-legal">As referências "inspirado em" indicam apenas a família de cheiro, para você comparar com perfumes que já conhece. Os produtos são Amakha Paris, sem ligação com as marcas citadas.</p>
+</section>
+
+<section id="descubra" class="section cream center">
+<div class="eyebrow">Teste rápido</div>
+<h2 class="h2">Descubra o Seu Perfume</h2>
+<p class="lead">Três perguntas e eu te mostro os perfumes que mais combinam com você. Leva 20 segundos.</p>
+<form class="quiz" id="quiz" onsubmit="return false">
+<fieldset class="q"><legend><small>1 de 3</small>É para quem?</legend><div class="opts">
+<div class="opt"><input type="radio" name="qg" id="qg-f" value="F"><label for="qg-f">Para ela</label></div>
+<div class="opt"><input type="radio" name="qg" id="qg-m" value="M"><label for="qg-m">Para ele</label></div>
+</div></fieldset>
+<fieldset class="q"><legend><small>2 de 3</small>Que tipo de cheiro te conquista?</legend><div class="opts">
+<div class="opt"><input type="radio" name="qe" id="qe-d" value="Adocicado"><label for="qe-d">Doce<small>baunilha, caramelo</small></label></div>
+<div class="opt"><input type="radio" name="qe" id="qe-fl" value="Floral"><label for="qe-fl">Floral<small>jasmim, rosa</small></label></div>
+<div class="opt"><input type="radio" name="qe" id="qe-fr" value="Frutal"><label for="qe-fr">Frutado<small>frutas vermelhas, pera</small></label></div>
+<div class="opt"><input type="radio" name="qe" id="qe-r" value="Refrescante"><label for="qe-r">Fresco<small>cítrico, marinho</small></label></div>
+<div class="opt"><input type="radio" name="qe" id="qe-a" value="Amadeirado"><label for="qe-a">Marcante<small>madeiras, couro</small></label></div>
+</div></fieldset>
+<fieldset class="q"><legend><small>3 de 3</small>Quanto você quer que ele apareça?</legend><div class="opts">
+<div class="opt"><input type="radio" name="qi" id="qi-s" value="Suave"><label for="qi-s">Discreto<small>trabalho, dia a dia</small></label></div>
+<div class="opt"><input type="radio" name="qi" id="qi-m" value="Moderado"><label for="qi-m">Na medida<small>vai bem em tudo</small></label></div>
+<div class="opt"><input type="radio" name="qi" id="qi-i" value="Intenso"><label for="qi-i">Que todo mundo sinta<small>noite, festa</small></label></div>
+</div></fieldset>
+<div class="quiz-or">ou</div>
+<fieldset class="q" style="margin-bottom:0"><legend>Já tem um perfume famoso que você ama?</legend>
+<div class="ref-row"><label style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)" for="q-ref">Perfume famoso</label><input id="q-ref" class="search" type="search" placeholder="Ex.: La Vie Est Belle, Invictus, 212 VIP" autocomplete="off" list="refs"><datalist id="refs"></datalist></div>
+</fieldset>
+<div class="quiz-res" id="quiz-res" aria-live="polite"></div>
+</form>
+</section>
+
+<dialog class="ficha" id="ficha" aria-labelledby="ficha-t"></dialog>
+
+<section id="historia" class="section split">
+<div class="photo-wrap">
+<div class="photo ph" style="background:#D8CFC4"><!-- FOTO: Layon em atendimento --><span class="mono">L</span></div>
+<div class="float-card glass" style="right:-32px;bottom:-32px"><div class="big">Premium</div><div class="small">Consultor executivo</div></div>
+</div>
+<div class="body">
+<div class="eyebrow">Nossa história</div>
+<h2 class="h2" style="margin-bottom:32px">Não vendo frasco.<br><em>Vendo presença.</em></h2>
+<p>Eu sou o Layon, consultor executivo Amakha Paris aqui em Brasília. Você me chama no WhatsApp, me conta para quem é e do que a pessoa gosta, e eu separo as opções que combinam. Confirmo o estoque, combino o pagamento e entrego em mãos.</p>
+<p>Muita gente que ama perfume nunca pensou em vender. Se esse é o seu caso, tem espaço na minha equipe.</p>
+<div class="hr"></div>
+<div class="features">
+<div class="feat"><div class="feat-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg></div><div class="feat-t">Originais</div><div class="feat-d">Produtos oficiais Amakha Paris</div></div>
+<div class="feat"><div class="feat-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></div><div class="feat-t">Direto comigo</div><div class="feat-d">Atendimento pelo WhatsApp</div></div>
+<div class="feat"><div class="feat-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div class="feat-t">Em mãos</div><div class="feat-d">Entrega em Brasília e Entorno</div></div>
+</div>
+<a class="btn btn-outline" href="https://wa.me/556195177575?text=Ol%C3%A1%2C%20Layon!%20Vim%20pelo%20site%20e%20quero%20escolher%20um%20perfume.">Escolher meu perfume</a>
+</div>
+</section>
+
+<section id="linhas" class="section cream center">
+<div class="eyebrow">Explore</div>
+<h2 class="h2" style="margin-bottom:64px">Nossas Linhas</h2>
+<div class="grid3">
+<a class="coll" href="#catalogo" data-go="F15"><div class="ph prod"><img src="https://amakha.vteximg.com.br/arquivos/ids/163231-600-600/p.jpg" alt="" loading="lazy"></div><div class="coll-shade"></div><div class="coll-txt"><h3>Perfumes 15ml</h3><div>Cabe na bolsa e vai com você o dia todo</div><span>Explorar</span></div></a>
+<a class="coll" href="#catalogo" data-go="F100"><div class="ph prod"><img src="https://amakha.vteximg.com.br/arquivos/ids/163212-600-600/p.jpg" alt="" loading="lazy"></div><div class="coll-shade"></div><div class="coll-txt"><h3>Perfumes 100ml</h3><div>Para quem quer ser lembrado</div><span>Explorar</span></div></a>
+<a class="coll" href="#catalogo" data-go="B"><div class="ph prod"><img src="https://amakha.vteximg.com.br/arquivos/ids/162527-600-600/p.jpg" alt="" loading="lazy"></div><div class="coll-shade"></div><div class="coll-txt"><h3>Corpo e Cabelo</h3><div>Body splash e capilar para o ritual pós-banho</div><span>Explorar</span></div></a>
+</div>
+</section>
+
+<section id="consultor" class="section split consultor">
+<div class="body">
+<div class="eyebrow line">Seja consultor Amakha Paris</div>
+<h2 class="h2" style="margin-bottom:24px">Você já indica perfume.<br><em>Que tal vender?</em></h2>
+<p>Toda vez que um amigo pergunta qual perfume você está usando, você está a um passo de vender. Faça o cadastro oficial na Amakha Paris, entre para a minha equipe e comece com um produto que as pessoas já querem.</p>
+<p style="margin-bottom:32px">Você não começa sozinho. Eu mostro o caminho que eu uso todo dia:</p>
+<ul class="perks">
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg>O passo a passo do cadastro ao primeiro pedido</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg>Acompanhamento direto comigo nas primeiras vendas</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg>Como apresentar os produtos e atender pelo WhatsApp</li>
+<li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg>Ajuda para montar o seu Instagram de vendas</li>
+</ul>
+<div class="actions">
+<a class="btn btn-primary" href="https://escritorio.amakhaparis.com.br/join/2176396">Quero entrar para a equipe</a>
+<a class="btn btn-outline" href="https://wa.me/556195177575?text=Ol%C3%A1%2C%20Layon!%20Tenho%20interesse%20em%20ser%20consultor%20e%20quero%20tirar%20d%C3%BAvidas.">Tirar minhas dúvidas</a>
+</div>
+<p class="note">Os resultados variam conforme dedicação e estratégia. Não existe garantia de ganhos.</p>
+</div>
+<div class="photo-wrap" style="padding-left:40px">
+<div class="photo ph" style="background:#E4DDD3"><!-- FOTO: Layon com a equipe ou com o kit de consultor --><span class="mono">L</span></div>
+<div class="float-card glass" style="left:0;bottom:48px"><div class="big">Equipe Layon</div><div class="small">Brasília e Entorno</div></div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<div class="news center">
+<h3>Seja o Primeiro a Saber</h3>
+<p>Lançamentos e reposições chegam primeiro para quem está na lista. Poucas mensagens, só o que vale a pena.</p>
+<a class="btn btn-primary" href="https://wa.me/556195177575?text=Ol%C3%A1%2C%20Layon!%20Quero%20entrar%20na%20lista%20de%20novidades.">Entrar na lista</a>
+</div>
+<div class="fcols">
+<div class="fcol"><div class="logo">LAYON</div><span style="line-height:1.7;max-width:300px">Perfumaria com atendimento pessoal. Consultor independente Amakha Paris em Brasília e Entorno.</span></div>
+<div class="fcol"><div class="ttl">Comprar</div><a href="#kits">Kits completos</a><a href="#linhas">Perfumes 15ml</a><a href="#linhas">Perfumes 100ml</a><a href="#linhas">Body splash</a></div>
+<div class="fcol"><div class="ttl">Presentes</div><a href="#kits">Kits em caixa</a><a href="https://wa.me/556195177575?text=Ol%C3%A1%2C%20Layon!%20Quero%20ajuda%20para%20escolher%20um%20presente.">Ajuda para escolher</a></div>
+<div class="fcol"><div class="ttl">Seja consultor</div><a href="https://escritorio.amakhaparis.com.br/join/2176396">Cadastro oficial</a><a href="#consultor">Entrar para a equipe</a><a href="https://wa.me/556195177575?text=Ol%C3%A1%2C%20Layon!%20Quero%20tirar%20d%C3%BAvidas%20sobre%20ser%20consultor.">Tirar dúvidas</a></div>
+<div class="fcol"><div class="ttl">Contato</div><a href="https://wa.me/556195177575">WhatsApp</a><a href="mailto:layonnew29@gmail.com">E-mail</a><span>Entrega em Brasília e Entorno</span></div>
+</div>
+<div class="fbottom">
+<div>© 2026 Layon Alves. Consultor independente Amakha Paris.</div>
+<div>Revenda: resultados variam, sem garantia de ganhos.</div>
+</div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/556195177575?text=Ol%C3%A1%2C%20Layon!%20Vim%20pelo%20site." aria-label="Falar com o Layon no WhatsApp"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.5A8.5 8.5 0 1 1 21 11.5z"/></svg></a>
+<script>
+// Catálogo extraído de amakhaparis.com.br em 26/09/2026 (só itens disponíveis).
+// [nome, grupo, família olfativa, id da imagem, extensão]
+// grupos: F feminino, M masculino, U unissex, K kits, B body splash, C corpo e cabelo
+const CATALOGO = [
+["Mystere 15ml","F","Floral",162718,"jpg"],["Euphoric 15ml","F","Floral",163344,"jpg"],["521 Vip Rosé 15ml","F","Floral",163231,"jpg"],["Elegance Blue 15ml","F","Floral",162319,"jpg"],["Chic Woman 15ml","F","Floral",162272,"jpg"],["Alen 15ml","F","Ambarado",163278,"jpg"],["D by Denise Lemos 15ml","F","Floral",162295,"jpg"],["GD 15ml","F","Floral",162355,"jpg"],["Athena 15ml","F","Floral",162249,"jpg"],["Liberté 15ml","F","Fougère",162676,"jpg"],["Elegance 15ml","F","Floral",163334,"jpg"],["Clô 15ml","F","Floral",163829,"jpg"],["Angelina 15ml","F","Ambarado",163293,"jpg"],["521 Woman 15ml","F","Floral",162863,"jpg"],["Zaya 15ml","F","Ambarado",163483,"jpg"],["Al Sabah 15ml","F","Floral",162214,"jpg"],["Hasan Rose 15ml","F","Floral",163383,"jpg"],["Escandalosa 15ml","F","Chipre",162328,"jpg"],["Athena 100ml","F","Floral",163143,"jpg"],["Nº 5 15ml","F","Floral",163450,"jpg"],["Je t'aime 15ml","F","Floral",163404,"jpg"],["Chic Woman 100ml","F","Floral",163312,"jpg"],["Change 15ml","F","Chipre",163307,"jpg"],["521 Sexy 15ml","F","Floral",163240,"jpg"],["Elegance Blue 100ml","F","Floral",163168,"jpg"],["Summer Flowers 15ml","F","Floral",163474,"jpg"],["Happiness 15ml","F","Floral",163088,"jpg"],["Lady Money 15ml","F","Floral",162666,"jpg"],["Hypnotize 15ml","F","Ambarado",163389,"jpg"],["Famous for Her 15ml","F","Floral",163021,"jpg"],["Joy 15ml","F","Floral",162621,"jpg"],["Intense Girl 15ml","F","Floral",162566,"jpg"],["Green Apple 15ml","F","Floral",163082,"jpg"],["Clássica 15ml","F","Floral",163317,"jpg"],["Anjos 15ml","F","Floral",162223,"jpg"],["Águas Marinhas 15ml","F","Floral",163273,"jpg"],["Love 15ml","F","Floral",162681,"jpg"],["Fantastic 15ml","F","Floral",163037,"jpg"],["Wonderful Girl 15ml","F","Floral",162800,"jpg"],["Voluptuous 15ml","F","Chipre",162794,"jpg"],["521 Vip 15ml","F","Floral",156836,"png"],["521 Vip Rosé 100ml","F","Floral",163123,"jpg"],["GD Légère 15ml","F","Ambarado",163063,"jpg"],["Night's Lady 15ml","F","Floral",162724,"jpg"],["Luxúria 15ml","F","Ambarado",163437,"jpg"],["L'Eternité 15ml","F","Floral",163428,"jpg"],["Gabriela 15ml","F","Floral",162347,"jpg"],["Glamour Sexy 15ml","F","Ambarado",159683,"jpg"],["Escandalosa 100ml","F","Chipre",163178,"jpg"],["Delice 15ml","F","Floral",162990,"jpg"],["Bouquet 15ml","F","Floral",159734,"jpg"],["Be You 15ml","F","Floral",162965,"jpg"],["AK 15ml","F","Floral",162919,"jpg"],["521 Young for Her 15ml","F","Floral",162874,"jpg"],["D by Denise Lemos 100ml","F","Floral",163160,"jpg"],["Queen 15ml","F","Floral",162744,"jpg"],["GD 100ml","F","Floral",163209,"jpg"],["Felina 15ml","F","Floral",163047,"jpg"],["Exclusive Code Feminino 15ml","F","Floral",163014,"jpg"],["Classic 15ml","F","Floral",162984,"jpg"],["Emoções 15ml","F","Floral",162995,"jpg"],["World 15ml","F","Floral",162806,"jpg"],["Intense Girl 100ml","F","Floral",163217,"jpg"],["Attractive 15ml","F","Floral",156979,"png"],
+["All Sexes 15ml","U","Floral",162928,"jpg"],
+["Bratt 15ml","M","Amadeirado",162261,"png"],["Fire Men 15ml","M","Fougère",162121,"jpg"],["Fortune 15ml","M","Amadeirado",162337,"jpg"],["AMK 15ml","M","Fougère",163285,"jpg"],["521 Sexy Men 15ml","M","Ambarado",162825,"jpg"],["521 Vip Black 15ml","M","Fougère",163249,"jpg"],["Animals 15ml","M","Ambarado",162601,"jpg"],["Imortal 15ml","M","Amadeirado",162369,"jpg"],["Malik Nuit 15ml","M","Amadeirado",162378,"jpg"],["Asadiyy 15ml","M","Ambarado",162236,"jpg"],["521 Vip Men 15ml","M","Amadeirado",162850,"jpg"],["Exclusive Code Masculino 15ml","M","Fougère",163009,"jpg"],["Famous for Him 15ml","M","Amadeirado",163355,"jpg"],["Fast Car Black 15ml","M","Fougère",163042,"jpg"],["Radical Sports 15ml","M","Amadeirado",162189,"jpg"],["Rock 15ml","M","Fougère",163455,"jpg"],["Strong 15ml","M","Fougère",163487,"jpg"],["521 Men 15ml","M","Amadeirado",162817,"jpg"],["Provoque 15ml","M","Amadeirado",162383,"jpg"],["Hasan Black 15ml","M","Amadeirado",162362,"jpg"],["521 Vip Black 100ml","M","Fougère",163413,"jpg"],["Acqua 15ml","M","Cítrico",163258,"jpg"],["Allur 15ml","M","Amadeirado",163282,"jpg"],["Animals 100ml","M","Ambarado",163300,"jpg"],["Apolo 15ml","M","Chipre",162937,"jpg"],["Blue 15ml","M","Fougère",162976,"jpg"],["Fortune 100ml","M","Amadeirado",163364,"jpg"],["Man 15ml","M","Cítrico",163443,"jpg"],["Satisfaction 15ml","M","Amadeirado",162760,"jpg"],["Silver 15ml","M","Ambarado",163459,"jpg"],["Trust 15ml","M","Chipre",162789,"jpg"],["AMK 100ml","M","Fougère",163133,"jpg"],["521 Young for Him 15ml","M","Fougère",162880,"jpg"],["AK Masculino 15ml","M","Ambarado",162914,"jpg"],["Bad Man 15ml","M","Ambarado",162954,"jpg"],["Imortal 100ml","M","Amadeirado",163212,"jpg"],["Korus 15ml","M","Fougère",162636,"jpg"],["Mister Tom 100ml","M","Ambarado",161103,"jpg"],["Mister Tom 15ml","M","Ambarado",161128,"jpg"],["Red Man 15ml","M","Amadeirado",162750,"jpg"],["Tedd 15ml","M","Amadeirado",162395,"jpg"],["Fortune Lucky 15ml","M","Ambarado",163057,"jpg"],["L'Éternite Masculino 15ml","M","Fougère",163419,"jpg"],["Challenge 15ml","M","Fougère",162811,"jpg"],["Brave 15ml","M","Fougère",162980,"jpg"],["Aphrodisiac 15ml","M","Ambarado",162610,"jpg"],["Fast Car Black 100ml","M","Fougère",163184,"jpg"],["Insigne 15ml","M","Amadeirado",163108,"jpg"],["Intense Masculino 15ml","M","Ambarado",162588,"jpg"],["Jump Life 15ml","M","Fougère",162626,"jpg"],["Smell for Men 15ml","M","Ambarado",161164,"png"],["Bad Man 100ml","M","Ambarado",163147,"jpg"],
+["Kit Premium 521 Vip Rosé","K","Floral",161862,"jpg"],["Kit Premium GD","K","Floral",162167,"jpg"],["Kit Premium D by Denise Lemos","K","Floral",161869,"jpg"],["Kit Premium Imortal","K","Amadeirado",161374,"jpg"],["Kit Premium Athena","K","Floral",161867,"jpg"],["Kit Premium Escandalosa","K","Chipre",161593,"png"],["Kit Perfumada Elegance Blue","K","Floral",164048,"jpg"],["Kit Perfumada Chic Woman","K","Floral",164004,"jpg"],["Kit Perfumada Athena","K","Floral",164007,"jpg"],["Kit Perfumada 521 Vip Rosé","K","Floral",164097,"png"],["Kit Perfumada GD","K","Floral",164040,"png"],["Kit Perfumada Escandalosa","K","Chipre",164032,"png"],["Kit Perfumada D by Denise Lemos","K","Floral",164021,"jpg"],["Kit Perfumado 521 Vip Black","K","Fougère",163992,"png"],["Kit Perfumado Animals","K","Fougère",163967,"jpg"],["Kit Perfumado Fortune","K","Amadeirado",164068,"jpg"],["Kit Perfumado Imortal","K","Amadeirado",163983,"jpg"],["Kit Perfumado Fast Car Black","K","Fougère",164058,"png"],["Kit com 4 Best Sellers Feminino","K","",163589,"jpg"],["Kit com 4 Best Sellers Masculino","K","",163592,"jpg"],["Kit Best Sellers Body Splash","K","",163509,"jpg"],["Kit Escandalosa com Nécessaire","K","Chipre",162550,"jpg"],["Kit D com Nécessaire","K","Floral",162544,"jpg"],["Kit GD com Nécessaire","K","Floral",162556,"jpg"],["Duo Fragrâncias GD","K","Floral",163873,"jpg"],["Duo Fragrâncias Zaya","K","Ambarado",164087,"jpg"],["Duo Fragrâncias Imortal","K","Amadeirado",163889,"jpg"],["Duo Fragrâncias Al Sabah","K","Floral",163849,"png"],["Duo Fragrâncias Hasan Rosé","K","Floral",163881,"png"],["Duo Fragrâncias 521 Vip Rosé","K","Floral",163839,"jpg"],["Duo Fragrâncias Escandalosa","K","Chipre",163866,"jpg"],["Duo Fragrâncias D by Denise Lemos","K","Floral",163862,"jpg"],["Duo Layering Hasan Rose e Asadiyy","K","",163634,"jpg"],["Duo Layering Al Sabah e Malik Nuit","K","",163621,"jpg"],["Duo Layering Escandalosa e Je t'aime","K","",163648,"jpg"],["Duo Layering Apolo e L'Eternité","K","",163659,"jpg"],["Duo Layering D e Famous for Her","K","",163677,"jpg"],["Duo Layering Joy e D","K","",163667,"jpg"],["Duo Layering Gabriela e Lady Money","K","",163600,"jpg"],["Coleção 6 Perfumes Árabes","K","",162175,"jpg"],["Coleção 10 Perfumes Best Sellers","K","",161123,"jpg"],["Coleção 10 Perfumes Linha 521","K","",161424,"jpg"],["Coleção Denise Lemos","K","Floral",161513,"jpg"],["Estojo Premium Fragrance","K","Amadeirado",160430,"png"],
+["Body Splash D by Denise Lemos 100ml","B","Floral",162445,"jpg"],["Body Splash 521 Vip Rosé 100ml","B","Floral",162527,"jpg"],["Body Splash GD 100ml","B","Floral",163373,"jpg"],["Body Splash Escandalosa 100ml","B","Chipre",161558,"jpg"],["Body Splash Zaya 100ml","B","Ambarado",162519,"jpg"],["Body Splash Al Sabah 100ml","B","Floral",162511,"jpg"],["Body Splash Hasan Rose 100ml","B","Floral",162535,"jpg"],["Body Splash Imortal 100ml","B","Amadeirado",163396,"jpg"],["Trio Árabe Body Splash","B","",163529,"jpg"],["Trio Body Splash","B","Floral",161504,"jpg"],["Coleção Body Splash","B","Floral",161616,"jpg"],
+["Creme Hidratante Athena 80ml","C","",156632,"png"],["Creme Hidratante 521 Vip Rosé 80ml","C","",156625,"png"],["Creme Hidratante GD 80ml","C","",160959,"png"],["Creme Hidratante D by Denise Lemos 80ml","C","",160953,"png"],["Creme Hidratante Escandalosa 80ml","C","",156631,"png"],["Creme Hidratante Fantastic 80ml","C","",156630,"png"],["Creme Hidratante 521 Sexy 80ml","C","",161246,"png"],["Creme Hidratante Masculino Imortal 80ml","C","",156641,"png"],["Shampoo Masculino Shower Gel Imortal 3x1 300ml","C","",163785,"jpg"],["Shampoo Mel Capilar 300ml","C","",163717,"jpg"],["Condicionador Mel Capilar 300ml","C","",163805,"jpg"],["Máscara Mel Capilar 300g","C","",163713,"jpg"],["Kit Hidratação Profunda Mel Capilar","C","",163705,"jpg"],["Kit Shampoo e Condicionador Mel Capilar","C","",161849,"png"],["Shampoo Magic Repair 300ml","C","",163771,"jpg"],["Condicionador Magic Repair 300ml","C","",163818,"jpg"],["Máscara Hidratante Magic Repair 280g","C","",163809,"jpg"],["Máscara Líquida Magic Repair 60ml","C","",163731,"png"],["Creme para Pentear 10 em 1 Magic Repair","C","",163801,"jpg"],["Duo Shampoo e Condicionador Magic Repair","C","",163779,"png"],["Duo com Máscara Efeito Teia Magic Repair","C","",163747,"png"],["Duo com Máscara Líquida Magic Repair","C","",163699,"png"],["Óleo Capilar Elixir Blend Supreme 60ml","C","",163742,"jpg"],["Finalizador e Protetor Térmico 10x1 300ml","C","",163782,"jpg"],["Shampoo Control Detox 300ml","C","",163793,"jpg"],["Máscara Matizadora Efeito Perolado 300g","C","",163797,"jpg"],["Máscara Matizadora Acinzentado 300g","C","",160161,"png"],["Máscara Matizadora Platinado 300g","C","",160159,"png"]
+];
+
+// Enciclopédia olfativa Amakha 2025: [referência, marca, estilo, grupo, intensidade, gênero, topo, coração, base]
+const FICHAS=[["L'Interdit","Givenchy","Floral Amadeirado","Floral","Moderado","F","Pera, Bergamota","Flor de Laranjeira, Jasmim, Sândalo, Tuberosa","Patchouli, Baunilha"],["Euphoria","Calvin Klein","Floral","Floral","Moderado","F","Romã, Framboesa, Maracujá, Caqui, Pêssego, Notas Verdes","Orquídea, Lótus, Champaca","Mogno, Âmbar, Almíscar, Violeta, Patchouli, Baunilha"],["212 VIP Rosé","Carolina Herrera","Floral","Floral","Moderado","F","Champanhe, Notas Frutadas","Flor de Pêssego","Almíscar Branco, Notas Amadeiradas, Âmbar"],["Light Blue","Dolce & Gabbana","Floral","Floral","Suave","F","Limão Siciliano, Maçã, Cedro, Campânula","Bambu, Jasmim, Rosa Branca","Cedro, Almíscar, Âmbar"],["Coco Mademoiselle","Chanel","Floral","Floral","Moderado","F","Laranja, Tangerina, Bergamota, Flor de Laranjeira","Rosa Turca, Jasmim, Mimosa, Ylang Ylang","Patchouli, Almíscar Branco, Baunilha, Vetiver, Fava Tonka"],["Alien","Thierry Mugler","Amadeirado","Amadeirado","Suave","F","Jasmim","Notas Amadeiradas","Âmbar"],["La Vie Est Belle","Lancôme","Adocicado","Adocicado","Intenso","F","Cassis, Pera","Íris, Jasmim, Flor de Laranjeira","Praliné, Baunilha, Patchouli, Fava Tonka"],["Good Girl","Carolina Herrera","Adocicado","Adocicado","Moderado","F","Amêndoa, Café, Bergamota, Limão","Tuberosa, Jasmim Sambac, Flor de Laranjeira, Raiz de Orris","Cacau, Baunilha, Praliné, Sândalo, Almíscar, Âmbar, Fava Tonka, Canela"],["Olympéa","Paco Rabanne","Floral","Floral","Moderado","F","Jasmim Aquático, Flor de Gengibre, Mandarina Verde","Sal, Baunilha","Âmbar Cinzento, Madeira de Cashmere, Sândalo"],["Libre","Yves Saint Laurent","Fougère Ambarado","Fougère","Moderado","F","Lavanda, Mandarina, Groselha Preta, Petitgrain","Lavanda, Flor de Laranjeira, Jasmim","Baunilha de Madagascar, Almíscar, Cedro, Âmbar Cinzento"],["Dolce & Gabbana","Dolce & Gabbana","Floral","Floral","Intenso","F","Aldeídos, Manjericão, Cítricos, Hera, Tangerina, Frésia, Bergamota","Cravo, Coentro, Flor de Laranjeira, Lírio, Jasmim, Rosa Búlgara, Lírio-do-Vale","Sândalo, Baunilha, Almíscar, Fava Tonka"],["Chloé","Chloé","Floral","Floral","Suave","F","Peônia, Lichia, Frésia","Rosa, Lírio-do-Vale, Magnólia","Cedro, Âmbar"],["Angel","Thierry Mugler","Adocicado","Adocicado","Intenso","F","Algodão-doce, Coco, Cassis, Melão, Bergamota, Abacaxi, Tangerina","Bagas vermelhas, Amora, Ameixa, Damasco, Pêssego, Jasmim, Orquídea","Mel, Chocolate, Caramelo, Baunilha, Fava Tonka, Âmbar, Almíscar"],["212 NYC Woman","Carolina Herrera","Floral","Floral","Suave","F","Flor de Laranjeira, Flor de Cáctus, Bergamota, Tangerina","Lírio, Frésia, Gardênia, Camélia branca, Jasmim, Lírio-do-Vale, Rosa, Peônia","Almíscar, Sândalo"],["Yara","Lattafa","Adocicado","Adocicado","Intenso","F","Orquídea, Heliotrópio, Tangerina","Acorde Gourmand, Frutas Tropicais","Baunilha, Almíscar, Sândalo"],["Sabah Al Ward","Al Wataniah","Floral Oriental","Floral","","F","Pimenta Rosa, Mandarina","Flor de Laranjeira, Semente de Cacau, Jasmim Sambac","Baunilha, Fava Tonka"],["Fakhar Rose","Lattafa","Floral","Floral","Moderado","F","Frutas, Lírio, Romã, Aldeídos","Tuberosa, Jasmim, Gardênia, Ylang Ylang, Madressilva, Rosa, Peônia","Baunilha, Almíscar Branco, Sândalo, Ambroxan"],["Scandal","Jean Paul Gaultier","Floral","Floral","Intenso","F","Laranja Sanguínea, Tangerina","Mel, Gardênia, Flor de Laranjeira, Jasmim, Pêssego","Cera de Abelha, Caramelo, Patchouli, Alcaçuz"],["Chanel Nº 5","Chanel","Floral","Floral","Intenso","F","Aldeídos, Ylang Ylang, Néroli, Bergamota, Pêssego","Íris, Jasmim, Rosa, Lírio-do-Vale","Sândalo, Baunilha, Musgo de Carvalho, Vetiver, Patchouli"],["J'adore","Dior","Floral","Floral","Suave","F","Pera, Melão, Magnólia, Pêssego, Mandarina, Bergamota","Jasmim, Lírio-do-Vale, Tuberosa, Frésia, Rosa, Orquídea, Ameixa, Violeta","Almíscar, Baunilha, Amora, Cedro"],["Idôle","Lancôme","Floral","Floral","Moderado","F","Pera, Bergamota, Pimenta Rosa","Rosa, Jasmim","Almíscar Branco, Baunilha, Patchouli, Cedro"],["212 Sexy","Carolina Herrera","Floral","Floral","Intenso","F","Pimenta Rosa, Tangerina, Bergamota","Algodão-doce, Gardênia, Pelargonium, Rosa","Baunilha, Almíscar, Sândalo, Caramelo, Patchouli, Violeta"],["Flower by Kenzo","Kenzo","Floral","Floral","Intenso","F","Rosa Búlgara, Espinheiro branco, Cassis, Tangerina","Violeta de Parma, Rosa, Opoponax, Jasmim","Baunilha, Almíscar Branco, Incenso"],["Illicit","Jimmy Choo","Floral","Floral","Moderado","F","Gengibre, Laranja Amarga","Jasmim Sambac, Flor de Laranjeira, Rosa","Mel, Âmbar, Caramelo, Sândalo, Baunilha, Madeira de Cashmere"],["Lady Million","Paco Rabanne","Adocicado","Adocicado","Intenso","F","Framboesa, Néroli, Limão de Amalfi","Jasmim, Flor de Laranjeira, Gardênia","Mel branco, Patchouli, Âmbar"],["Hypnôse","Lancôme","Adocicado","Adocicado","Intenso","F","Flor de Maracujá","Jasmim, Gardênia","Baunilha, Vetiver"],["Fame","Paco Rabanne","Floral Amadeirado","Floral","Moderado","F","Manga, Bergamota","Jasmim, Notas Metálicas","Baunilha, Sândalo, Olíbano"],["J'adore In Joy","Dior","Floral","Floral","Moderado","F","Sal Marinho","Jasmim Sambac, Ylang Ylang, Néroli, Tuberosa","Pêssego"],["Very Good Girl","Carolina Herrera","Frutal","Frutal","Moderado","F","Lichia, Groselha vermelha","Rosa","Baunilha, Vetiver"],["DKNY Be Delicious","Donna Karan","Frutal","Frutal","Suave","F","Pepino, Toranja, Magnólia","Maçã Verde, Lírio-do-Vale, Tuberosa, Violeta, Rosa","Notas Amadeiradas, Sândalo, Âmbar"],["Amarige","Givenchy","Floral","Floral","Moderado","F","Flor de Laranjeira, Pêssego, Ameixa, Néroli, Tangerina, Violeta","Mimosa, Gardênia, Ylang Ylang, Jasmim, Acácia, Cravo, Tuberosa, Rosa, Orquídea","Sândalo, Notas Amadeiradas, Baunilha, Âmbar, Fava Tonka, Almíscar, Cedro"],["Ange ou Démon","Givenchy","Floral","Floral","Moderado","F","Açafrão, Tomilho, Tangerina","Lírio, Ylang Ylang, Orquídea","Baunilha, Fava Tonka, Pau-Brasil, Musgo de Carvalho"],["Acqua di Gioia","Giorgio Armani","Refrescante","Refrescante","Suave","F","Limão de Amalfi, Hortelã","Jasmim, Peônia, Pimenta Rosa","Cedro, Ládano, Açúcar mascavo"],["Amor Amor","Cacharel","Floral","Floral","Moderado","F","Cassis, Laranja, Tangerina, Toranja, Bergamota","Rosa, Damasco, Jasmim, Lírio, Lírio-do-Vale","Baunilha, Fava Tonka, Almíscar, Âmbar, Cedro"],["Fantasy","Britney Spears","Adocicado","Adocicado","Moderado","F","Kiwi, Lichia vermelha, Marmelo","Chocolate branco, Cupcake, Orquídea, Jasmim","Almíscar, Notas Amadeiradas, Raiz de Orris"],["Gucci Bamboo","Gucci","Floral","Floral","Suave","F","Bergamota","Lírio Casablanca, Ylang Ylang, Flor de Laranjeira","Sândalo, Baunilha do Taiti, Âmbar"],["Sì","Giorgio Armani","Frutal","Frutal","Moderado","F","Cassis","Rosa de Maio, Frésia","Baunilha, Patchouli, Ambroxan, Notas Amadeiradas"],["212 VIP","Carolina Herrera","Adocicado","Adocicado","Moderado","F","Rum, Maracujá","Gardênia, Almíscar","Baunilha, Fava Tonka"],["Good Girl Légère","Carolina Herrera","Floral","Floral","Moderado","F","Ylang Ylang, Mandarina, Bergamota, Limão","Tuberosa, Jasmim, Flor de Laranjeira, Rosa Búlgara","Doce de Leite, Praliné, Fava Tonka, Canela, Madeira de Cashmere, Sândalo, Almíscar, Âmbar"],["Black XS","Paco Rabanne","Adocicado","Adocicado","Moderado","F","Oxicoco, Pimenta Rosa, Tamarindo","Cacau, Rosa, Violeta negra","Baunilha, Patchouli, Madeira de Massoia"],["La Nuit Trésor","Lancôme","Adocicado","Adocicado","Intenso","F","Pera, Mexerica, Bergamota","Morango, Orquídea baunilha, Rosa Negra, Maracujá","Lichia, Patchouli, Baunilha, Incenso, Café, Alcaçuz, Praliné, Caramelo"],["Eternity","Calvin Klein","Floral","Floral","Intenso","F","Notas Verdes, Frésia, Sálvia, Cítricos, Tangerina","Cravo, Lírio, Lírio-do-Vale, Narciso, Violeta, Rosa, Jasmim","Heliotrópio, Almíscar, Sândalo, Âmbar, Patchouli"],["Gabriela Sabatini","Gabriela Sabatini","Adocicado","Adocicado","Intenso","F","Aldeídos, Notas Frutadas, Bergamota, Tangerina, Limão","Jasmim, Madressilva, Flor de Laranjeira, Heliotrópio, Lírio-do-Vale, Rosa","Baunilha, Âmbar, Fava Tonka, Sândalo, Almíscar, Musgo de Carvalho, Patchouli"],["Poison Girl","Dior","Adocicado","Adocicado","Intenso","F","Laranja Amarga, Limão","Rosa Damascena, Rosa de Grasse, Flor de Laranjeira","Baunilha, Amêndoa, Fava Tonka, Bálsamo de Tolú, Sândalo, Heliotrópio"],["Bonbon","Viktor & Rolf","Adocicado","Adocicado","Suave","F","Pêssego, Tangerina, Laranja","Caramelo, Flor de Laranjeira, Jasmim","Âmbar, Sândalo, Madeira Guaiac, Cedro"],["Gucci Bloom","Gucci","Floral","Floral","Moderado","F","Jasmim","Tuberosa","Rastejador de Rangoon"],["Yes I Am","Cacharel","Adocicado","Adocicado","Intenso","F","Framboesa, Tangerina, Limão, Bergamota","Gardênia, Flor de Gengibre, Âmbar, Jasmim, Rosa, Flor de Laranjeira","Leite, Caramelo, Baunilha, Cardamomo, Alcaçuz, Benjoim"],["CH","Carolina Herrera","Floral","Floral","Moderado","F","Fruta tropical, Bergamota, Toranja, Limão de Amalfi, Notas Aquáticas","Praliné, Canela, Flor de Laranjeira, Jasmim, Rosa","Patchouli, Madeira de Cashmere, Sândalo, Almíscar, Âmbar, Camurça, Cedro"],["212 Heroes","Carolina Herrera","Floral Frutado","Floral","Moderado","F","Framboesa, Tangerina","Jasmim, Flor de Laranjeira","Cedro, Sândalo"],["Rouge Royal","Marina de Bourbon","Frutal","Frutal","Moderado","F","Morango, Cassis, Lima","Ylang Ylang, Jasmim, Lírio-do-Vale","Musgo de Carvalho, Opoponax"],["Aura","Thierry Mugler","Adocicado","Adocicado","Moderado","F","Folhas de Ruibarbo, Bergamota","Notas Verdes, Flor de Laranjeira, Ylang Ylang, Pera","Baunilha Bourbon, Notas Amadeiradas, Madeira de Âmbar, Sândalo, Cumarina"],["Armani Code","Giorgio Armani","Floral","Floral","Intenso","F","Laranja Italiana, Jasmim, Laranja Amarga","Jasmim, Flor de Laranjeira, Gengibre","Mel, Baunilha, Sândalo"],["Classique","Jean Paul Gaultier","Floral","Floral","Intenso","F","Flor de Laranjeira, Anis estrelado, Rosa, Tangerina, Pera, Bergamota","Ylang Ylang, Gengibre, Orquídea, Íris, Tuberosa, Ameixa","Baunilha, Âmbar, Almíscar, Canela, Sândalo"],["The One","Dolce & Gabbana","Floral","Floral","Moderado","F","Pêssego, Lichia, Tangerina, Bergamota","Lírio, Ameixa, Jasmim, Lírio-do-Vale","Baunilha, Âmbar, Almíscar, Vetiver"],["Kenzo World","Kenzo","Floral","Floral","Suave","F","Frutas Vermelhas","Peônia, Notas Florais, Jasmim Egípcio","Ambroxan"],["Anaïs Anaïs","Cacharel","Floral","Floral","Intenso","F","Lírio branco, Jacinto, Madressilva, Flor de Laranjeira, Lavanda, Bergamota","Lírio-do-Vale, Jasmim, Cravo, Tuberosa, Ylang Ylang, Íris, Rosa","Incenso, Musgo de Carvalho, Almíscar, Couro, Sândalo, Vetiver, Âmbar"],["CK Be","Calvin Klein","Refrescante","Refrescante","Moderado","U","Lavanda, Notas Verdes, Bergamota, Hortelã, Zimbro, Tangerina","Grama verde, Pêssego, Jasmim, Frésia, Magnólia, Orquídea","Almíscar, Sândalo, Cedro, Baunilha, Opoponax, Âmbar"],["Bleu de Chanel","Chanel","Amadeirado","Amadeirado","Moderado","M","Toranja, Limão, Hortelã, Pimenta Rosa","Gengibre, Noz-moscada, Jasmim, Iso E Super","Vetiver, Cedro, Sândalo, Patchouli, Ládano, Almíscar Branco, Incenso"],["Fahrenheit","Dior","Amadeirado","Amadeirado","Intenso","M","Flor de Noz-moscada, Lavanda, Cedro, Camomila, Tangerina, Espinheiro branco, Bergamota","Folha de violeta, Noz-moscada, Cedro, Sândalo, Madressilva, Cravo, Jasmim, Lírio-do-Vale","Couro, Vetiver, Almíscar, Âmbar, Patchouli, Fava Tonka"],["1 Million","Paco Rabanne","Amadeirado","Amadeirado","Moderado","M","Mandarina Sanguínea, Toranja, Hortelã","Canela, Rosa, Notas Especiadas","Âmbar, Couro, Notas Amadeiradas, Patchouli Indiano"],["Sauvage","Dior","Refrescante","Refrescante","Moderado","M","Bergamota da Calábria, Pimenta","Pimenta de Szechuan, Lavanda, Pimenta Rosa, Vetiver, Patchouli, Gerânio, Elemi","Ambroxan, Cedro, Ládano"],["212 Sexy Men","Carolina Herrera","Ambarado","Oriental","Moderado","M","Cítricos, Notas Verdes","Pimenta, Madeira Guaiac, Cardamomo","Baunilha, Âmbar, Sândalo"],["212 VIP Black","Carolina Herrera","Aromático Fougère","Fougère","Moderado","M","Anis, Absinto, Erva Doce","Lavanda","Baunilha, Almíscar"],["Animale for Men","Animale","Amadeirado","Amadeirado","Moderado","M","Limão, Néroli, Frésia","Lavanda, Zimbro, Gerânio","Musgo de Carvalho, Couro, Vetiver"],["Invictus","Paco Rabanne","Refrescante","Refrescante","Moderado","M","Notas Oceânicas, Toranja, Tangerina","Folha de Louro, Jasmim","Âmbar Cinzento, Madeira Guaiac, Musgo de Carvalho, Patchouli"],["Club de Nuit","Armaf","Aromático Frutado","Frutal","Moderado","M","Limão, Abacaxi, Bergamota, Groselha Preta, Maçã","Vidoeiro, Jasmim, Rosa","Âmbar Cinzento, Almíscar, Patchouli, Baunilha"],["Asad","Lattafa","Oriental","Oriental","Moderado","M","Pimenta Preta, Tabaco, Abacaxi","Patchouli, Café, Íris","Baunilha, Âmbar, Madeira Seca, Benjoim, Ládano"],["212 VIP Men","Carolina Herrera","Amadeirado","Amadeirado","Intenso","M","Maracujá, Lima, Pimenta, Gengibre","Vodka, Gin, Hortelã, Especiarias","Âmbar, Couro, Notas Amadeiradas"],["Armani Code","Giorgio Armani","Amadeirado","Amadeirado","Moderado","M","Limão, Bergamota","Anis estrelado, Flor de Oliveira, Madeira Guaiac","Couro, Fava Tonka, Tabaco"],["Phantom","Paco Rabanne","Amadeirado","Amadeirado","Moderado","M","Lavanda, Raspas de Limão, Limão de Amalfi","Notas Metálicas, Notas Terrosas, Maçã, Patchouli","Baunilha, Vetiver"],["Ferrari Black","Ferrari","Amadeirado","Amadeirado","Moderado","M","Maçã Vermelha, Ameixa, Lima, Bergamota","Canela, Jasmim, Cardamomo, Rosa","Baunilha, Âmbar, Cedro, Almíscar"],["Boss","Hugo Boss","Amadeirado","Amadeirado","Suave","M","Maçã, Ameixa, Bergamota, Limão, Musgo de Carvalho, Gerânio","Canela, Mogno, Cravo","Baunilha, Sândalo, Cedro, Vetiver, Oliveira"],["Le Male","Jean Paul Gaultier","Refrescante","Refrescante","Intenso","M","Lavanda, Hortelã, Cardamomo, Bergamota, Artemísia","Canela, Flor de Laranjeira, Alcarávia","Baunilha, Fava Tonka, Âmbar, Sândalo, Cedro"],["Azzaro Pour Homme","Azzaro","Refrescante","Refrescante","Intenso","M","Lavanda, Anis, Limão, Alcarávia, Manjericão, Bergamota, Sálvia Esclaréia, Íris","Vetiver, Sândalo, Patchouli, Cedro, Zimbro, Cardamomo","Musgo de Carvalho, Couro, Âmbar, Almíscar, Fava Tonka"],["212 Men NYC","Carolina Herrera","Amadeirado","Amadeirado","Suave","M","Notas Verdes, Toranja, Especiarias, Bergamota, Lavanda, Petitgrain","Gengibre, Violeta, Gardênia, Sálvia","Almíscar, Sândalo, Incenso, Vetiver, Madeira Guaiac, Ládano"],["Fakhar Black","Lattafa","Oriental","Oriental","","M","Maçã, Bergamota, Gengibre","Lavanda, Sálvia, Bagas de Zimbro, Gerânio","Fava Tonka, Cedro, Madeira de Âmbar, Vetiver"],["Acqua di Giò","Giorgio Armani","Refrescante","Refrescante","Moderado","M","Lima, Limão, Bergamota, Jasmim, Laranja, Tangerina, Néroli","Jasmim, Calone, Pêssego, Frésia, Jacinto, Alecrim, Violeta, Coentro, Notas Oceânicas, Noz-moscada, Rosa","Almíscar Branco, Cedro, Musgo de Carvalho, Patchouli, Âmbar"],["Allure Sport","Chanel","Amadeirado","Amadeirado","Moderado","M","Laranja, Notas Oceânicas, Aldeídos, Mandarina Sanguínea","Pimenta, Néroli, Cedro","Fava Tonka, Baunilha, Almíscar Branco, Âmbar, Vetiver, Resina de Elemi"],["Polo","Ralph Lauren","Amadeirado","Amadeirado","Intenso","M","Zimbro, Artemísia, Alcarávia, Manjericão, Coentro, Bergamota","Agulhas de Pinheiro, Couro, Camomila, Pimenta, Cravo, Gerânio, Jasmim, Rosa","Tabaco, Musgo de Carvalho, Patchouli, Cedro, Vetiver, Almíscar, Âmbar"],["Polo Blue","Ralph Lauren","Refrescante","Refrescante","Moderado","M","Pepino, Melão, Tangerina","Manjericão, Sálvia, Gerânio","Camurça, Notas Amadeiradas, Almíscar"],["Armani","Giorgio Armani","Refrescante","Refrescante","Intenso","M","Limão, Bergamota, Tangerina, Laranja Verde, Manjericão","Noz-moscada, Lavanda, Cravo, Jasmim, Lírio, Rosa, Canela","Musgo de Carvalho, Vetiver, Sândalo, Cedro, Almíscar, Patchouli"],["Euphoria Men","Calvin Klein","Amadeirado","Amadeirado","Moderado","M","Gengibre, Pimenta","Manjericão, Sálvia, Cedro","Âmbar, Camurça, Sequoia, Patchouli"],["Silver Scent","Jacques Bogart","Amadeirado","Amadeirado","Moderado","M","Flor de Laranjeira, Limão","Lavanda, Noz-moscada, Cardamomo, Coentro, Gerânio, Alecrim","Lichia, Fava Tonka, Madeira de Teca, Vetiver"],["Aventus","Creed","Refrescante","Refrescante","Moderado","M","Abacaxi, Bergamota, Groselha Preta, Maçã","Vidoeiro, Patchouli, Jasmim, Rosa","Almíscar, Musgo de Carvalho, Âmbar Cinzento, Baunilha"],["212 Heroes","Carolina Herrera","Fougère","Fougère","Moderado","M","Pera, Gengibre","Gerânio, Sálvia","Almíscar, Couro"],["CH Men","Carolina Herrera","Amadeirado","Amadeirado","Moderado","M","Grama, Bergamota, Toranja","Notas Amadeiradas, Noz-moscada, Violeta, Açafrão, Jasmim","Baunilha, Camurça, Âmbar, Madeira de Cashmere, Sândalo, Açúcar, Couro, Musgo de Carvalho, Vetiver"],["Bad Boy","Carolina Herrera","Amadeirado","Amadeirado","Moderado","M","Pimenta Branca, Pimenta Preta, Bergamota","Sálvia, Cedro","Fava Tonka, Cacau, Madeira de Âmbar"],["Kouros","Yves Saint Laurent","Amadeirado","Amadeirado","Intenso","M","Aldeídos, Coentro, Artemísia, Sálvia Esclaréia, Bergamota","Patchouli, Cravo, Vetiver, Canela, Gerânio, Jasmim, Raiz de Orris","Civeta, Mel, Couro, Almíscar, Musgo de Carvalho, Âmbar, Fava Tonka, Baunilha"],["Oud Wood","Tom Ford","Amadeirado","Amadeirado","Intenso","M","Pau-Brasil, Cardamomo, Pimenta de Szechuan","Oud, Sândalo, Vetiver","Fava Tonka, Baunilha, Âmbar"],["Polo Red","Ralph Lauren","Amadeirado","Amadeirado","Intenso","M","Oxicoco, Toranja, Limão Italiano","Açafrão, Sálvia","Âmbar, Café, Notas Amadeiradas"],["Azzaro Wanted","Azzaro","Refrescante","Refrescante","Moderado","M","Limão, Gengibre, Lavanda, Hortelã","Maçã, Zimbro, Cardamomo, Gerânio","Fava Tonka, Madeira de Âmbar, Vetiver"],["1 Million Lucky","Paco Rabanne","Amadeirado","Amadeirado","Moderado","M","Ameixa, Notas Ozônicas, Toranja, Bergamota","Avelã, Mel, Cedro, Madeira de Cashmere, Flor de Laranjeira, Jasmim","Madeira de Âmbar, Patchouli, Musgo de Carvalho, Vetiver"],["Eternity for Men","Calvin Klein","Amadeirado","Amadeirado","Intenso","M","Lavanda, Limão, Bergamota, Tangerina","Sálvia, Gerânio, Coentro, Manjericão, Jasmim, Flor de Laranjeira, Zimbro, Lírio, Lírio-do-Vale","Sândalo, Vetiver, Almíscar, Pau-Brasil, Âmbar"],["Luna Rossa","Prada","Refrescante","Refrescante","Moderado","M","Lavanda, Laranja Amarga","Hortelã, Sálvia Esclaréia","Ambreta, Ambroxan"],["Stronger With You","Giorgio Armani","Refrescante","Refrescante","Moderado","M","Cardamomo, Pimenta Rosa, Folha de violeta, Hortelã","Abacaxi, Sálvia, Melão, Canela, Lavanda","Baunilha, Castanha, Cedro, Madeira de Âmbar, Madeira Guaiac"],["Guilty","Gucci","Amadeirado","Amadeirado","Moderado","M","Lavanda, Limão de Amalfi","Flor de Laranjeira Africana","Cedro da Virgínia, Patchouli, Baunilha"],["Emblem","Montblanc","Refrescante","Refrescante","Moderado","M","Sálvia Esclaréia, Toranja, Cardamomo","Folha de violeta, Canela","Fava Tonka, Notas Amadeiradas"],["CH Men Privé","Carolina Herrera","Amadeirado","Amadeirado","Moderado","M","Whiskey, Toranja, Pomelo","Cardamomo, Lavanda, Sálvia, Tomilho vermelho","Couro, Fava Tonka, Notas Amadeiradas, Benjoim"],["Joop! Homme","Joop!","Adocicado","Adocicado","Intenso","M","Flor de Laranjeira, Tangerina, Bergamota, Limão de Amalfi","Canela, Heliotrópio, Jasmim, Cardamomo, Lírio-do-Vale","Baunilha, Fava Tonka, Sândalo, Patchouli, Mel, Tabaco, Vetiver"],["Black XS","Paco Rabanne","Amadeirado","Amadeirado","Moderado","M","Cítricos, Limão, Tagetes, Sálvia","Praliné, Canela, Bálsamo de Tolú, Cardamomo","Patchouli, Âmbar Negro, Ébano, Jacarandá"]];
+const FICHA_DE={"Mystere 15ml":0,"Euphoric 15ml":1,"521 Vip Rosé 15ml":2,"Elegance Blue 15ml":3,"Chic Woman 15ml":4,"Alen 15ml":5,"D by Denise Lemos 15ml":6,"GD 15ml":7,"Athena 15ml":8,"Liberté 15ml":9,"Elegance 15ml":10,"Clô 15ml":11,"Angelina 15ml":12,"521 Woman 15ml":13,"Zaya 15ml":14,"Al Sabah 15ml":15,"Hasan Rose 15ml":16,"Escandalosa 15ml":17,"Athena 100ml":8,"Nº 5 15ml":18,"Je t'aime 15ml":19,"Chic Woman 100ml":4,"Change 15ml":20,"521 Sexy 15ml":21,"Elegance Blue 100ml":3,"Summer Flowers 15ml":22,"Happiness 15ml":23,"Lady Money 15ml":24,"Hypnotize 15ml":25,"Famous for Her 15ml":26,"Joy 15ml":27,"Intense Girl 15ml":28,"Green Apple 15ml":29,"Clássica 15ml":30,"Anjos 15ml":31,"Águas Marinhas 15ml":32,"Love 15ml":33,"Fantastic 15ml":34,"Wonderful Girl 15ml":35,"Voluptuous 15ml":36,"521 Vip 15ml":37,"521 Vip Rosé 100ml":2,"GD Légère 15ml":38,"Night's Lady 15ml":39,"Luxúria 15ml":40,"L'Eternité 15ml":41,"Gabriela 15ml":42,"Glamour Sexy 15ml":43,"Escandalosa 100ml":17,"Delice 15ml":44,"Bouquet 15ml":45,"Be You 15ml":46,"AK 15ml":47,"521 Young for Her 15ml":48,"D by Denise Lemos 100ml":6,"Queen 15ml":49,"GD 100ml":7,"Felina 15ml":50,"Exclusive Code Feminino 15ml":51,"Classic 15ml":52,"Emoções 15ml":53,"World 15ml":54,"Intense Girl 100ml":28,"Attractive 15ml":55,"All Sexes 15ml":56,"Bratt 15ml":57,"Fire Men 15ml":58,"Fortune 15ml":59,"AMK 15ml":60,"521 Sexy Men 15ml":61,"521 Vip Black 15ml":62,"Animals 15ml":63,"Imortal 15ml":64,"Malik Nuit 15ml":65,"Asadiyy 15ml":66,"521 Vip Men 15ml":67,"Exclusive Code Masculino 15ml":68,"Famous for Him 15ml":69,"Fast Car Black 15ml":70,"Radical Sports 15ml":71,"Rock 15ml":72,"Strong 15ml":73,"521 Men 15ml":74,"Hasan Black 15ml":75,"521 Vip Black 100ml":62,"Acqua 15ml":76,"Allur 15ml":77,"Animals 100ml":63,"Apolo 15ml":78,"Blue 15ml":79,"Fortune 100ml":59,"Man 15ml":80,"Satisfaction 15ml":81,"Silver 15ml":82,"Trust 15ml":83,"AMK 100ml":60,"521 Young for Him 15ml":84,"AK Masculino 15ml":85,"Bad Man 15ml":86,"Imortal 100ml":64,"Korus 15ml":87,"Mister Tom 100ml":88,"Mister Tom 15ml":88,"Red Man 15ml":89,"Tedd 15ml":90,"Fortune Lucky 15ml":91,"L'Éternite Masculino 15ml":92,"Challenge 15ml":93,"Brave 15ml":94,"Aphrodisiac 15ml":95,"Fast Car Black 100ml":70,"Insigne 15ml":96,"Intense Masculino 15ml":97,"Jump Life 15ml":98,"Smell for Men 15ml":99,"Bad Man 100ml":86,"Body Splash D by Denise Lemos 100ml":6,"Body Splash 521 Vip Rosé 100ml":2,"Body Splash GD 100ml":7,"Body Splash Escandalosa 100ml":17,"Body Splash Zaya 100ml":14,"Body Splash Al Sabah 100ml":15,"Body Splash Hasan Rose 100ml":16,"Body Splash Imortal 100ml":64};
+(function(){
+const WA='https://wa.me/556195177575?text=';
+const grid=document.getElementById('cat-grid'),count=document.getElementById('cat-count'),more=document.getElementById('cat-more'),busca=document.getElementById('busca');
+const fEst=document.getElementById('f-estilo'),fInt=document.getElementById('f-int'),dlg=document.getElementById('ficha');
+const pills=[...document.querySelectorAll('.pill')];
+let filtro='all',termo='',sub='',limite=24;
+const norm=t=>t.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+const url=(id,ext,s=400)=>`https://amakha.vteximg.com.br/arquivos/ids/${id}-${s}-${s}/p.${ext}`;
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fichaDe=n=>{const i=FICHA_DE[n];return i===undefined?null:FICHAS[i];};
+const texto=p=>{const f=fichaDe(p[0]);return norm(p[0]+' '+(f?f.slice(0,3).concat(f.slice(6)).join(' '):''));};
+const IDX=CATALOGO.map(texto);
+const waLink=n=>WA+encodeURIComponent('Olá, Layon! Tenho interesse no '+n+'. Tem disponível?');
+function lista(){const e=fEst.value,it=fInt.value;return CATALOGO.filter((p,i)=>{const[n,g]=p;
+ if(filtro!=='all'){ if(filtro==='F'&&!(g==='F'||g==='U'))return false; if(filtro==='M'&&!(g==='M'||g==='U'))return false; if(!['F','M'].includes(filtro)&&g!==filtro)return false; }
+ if(sub==='15'&&!/15ml/i.test(n))return false; if(sub==='100'&&!/100ml/i.test(n))return false;
+ if(e||it){const f=fichaDe(n);if(!f)return false;if(e&&f[3]!==e)return false;if(it&&f[4]!==it)return false;}
+ return !termo||termo.split(/\s+/).every(w=>IDX[i].includes(w));});}
+function card(p){
+ const[n,g,fam,id,ext]=p,f=fichaDe(n);
+ const el=document.createElement('article');el.className='pcard';
+ const tag=f&&f[4]?`<span class="tag">${f[4]}</span>`:'';
+ const insp=f?`<div class="pinsp">Inspirado em <b>${esc(f[0])}</b> · ${esc(f[1])}</div>`:'';
+ el.innerHTML=`<div class="pimg"${f?' role="button" tabindex="0" aria-label="Ver notas de '+esc(n)+'"':''}><img src="${url(id,ext)}" alt="${esc(n)} Amakha Paris" loading="lazy" width="400" height="400">${tag}</div><div class="pbody"><div class="pfam">${esc(f?f[2]:(fam||''))}</div><h3>${esc(n)}</h3>${insp}<div class="pprice">Consulte o valor</div><div class="pactions">${f?'<button type="button" class="pnotes">Ver notas</button>':''}<a href="${waLink(n)}" target="_blank" rel="noopener"><span>Pedir no WhatsApp</span></a></div></div>`;
+ if(f){const open=()=>abrir(p);el.querySelector('.pnotes').addEventListener('click',open);const im=el.querySelector('.pimg');im.addEventListener('click',open);im.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});}
+ return el;}
+function render(){
+ const l=lista();
+ grid.innerHTML='';
+ if(!l.length){grid.innerHTML='<p class="cat-empty">Nenhum produto encontrado. Tente outro nome ou me chame no WhatsApp.</p>';}
+ l.slice(0,limite).forEach(p=>grid.appendChild(card(p)));
+ count.textContent=l.length+(l.length===1?' produto':' produtos');
+ more.style.display=l.length>limite?'inline-flex':'none';
+}
+// um produto por ficha (prefere 15ml, depois 100ml)
+function porFicha(){const m=new Map();CATALOGO.forEach(p=>{const i=FICHA_DE[p[0]];if(i===undefined||p[1]==='B')return;const cur=m.get(i);if(!cur||(/15ml/i.test(p[0])&&!/15ml/i.test(cur[0])))m.set(i,p);});return m;}
+const REP=porFicha();
+function parecidos(p){const f=fichaDe(p[0]),me=FICHA_DE[p[0]];const r=[];
+ REP.forEach((q,i)=>{if(i===me)return;const g=FICHAS[i];if(g[5]!==f[5]||g[3]!==f[3])return;r.push([(g[4]===f[4]?0:1)+(g[2]===f[2]?0:.5),q]);});
+ return r.sort((a,b)=>a[0]-b[0]).slice(0,4).map(x=>x[1]);}
+function abrir(p){
+ const[n,g,fam,id,ext]=p,f=fichaDe(n);if(!f)return;
+ const lv={Suave:1,Moderado:2,Intenso:3}[f[4]]||0;
+ const alike=parecidos(p);
+ dlg.innerHTML=`<div class="ficha-in"><div class="ficha-img"><img src="${url(id,ext,600)}" alt="${esc(n)} Amakha Paris" width="600" height="600"></div><div class="ficha-body"><button type="button" class="ficha-x" aria-label="Fechar">×</button><div class="eyebrow">Amakha Paris</div><h3 id="ficha-t">${esc(n)}</h3><div class="insp">Inspirado em <b>${esc(f[0])}</b> · ${esc(f[1])}</div><div class="meta"><div>Estilo<strong>${esc(f[2])}</strong></div>${lv?`<div>Intensidade<strong>${f[4]}</strong><span class="bars" aria-hidden="true">${[1,2,3].map(i=>`<i class="${i<=lv?'on':''}"></i>`).join('')}</span></div>`:''}</div><div class="pyr"><div><span>Topo</span>${esc(f[6])}</div><div><span>Coração</span>${esc(f[7])}</div><div><span>Fundo</span>${esc(f[8])}</div></div>${alike.length?`<div class="alike"><div class="alike-t">Se gostou, experimente também</div><div class="alike-l">${alike.map((q,i)=>`<button type="button" data-i="${i}">${esc(q[0].replace(/\s*15ml$/i,''))}</button>`).join('')}</div></div>`:''}<a class="btn btn-primary" href="${waLink(n)}" target="_blank" rel="noopener">Pedir no WhatsApp</a></div></div>`;
+ dlg.querySelector('.ficha-x').addEventListener('click',()=>dlg.close());
+ dlg.querySelectorAll('.alike-l button').forEach(b=>b.addEventListener('click',()=>abrir(alike[+b.dataset.i])));
+ if(!dlg.open)dlg.showModal();dlg.scrollTop=0;
+}
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close();});
+function setFiltro(f,s){filtro=f;sub=s||'';limite=24;pills.forEach(p=>p.setAttribute('aria-pressed',p.dataset.f===f?'true':'false'));render();}
+pills.forEach(p=>p.addEventListener('click',()=>setFiltro(p.dataset.f)));
+busca.addEventListener('input',()=>{termo=norm(busca.value.trim());limite=24;render();});
+[fEst,fInt].forEach(s=>s.addEventListener('change',()=>{limite=24;render();}));
+more.addEventListener('click',()=>{limite+=24;render();});
+document.querySelectorAll('[data-go]').forEach(a=>a.addEventListener('click',()=>{const g=a.dataset.go;fEst.value='';fInt.value='';if(g==='F15')setFiltro('all','15');else if(g==='F100')setFiltro('all','100');else setFiltro(g);}));
+render();
+
+// teste "Descubra seu perfume"
+const quiz=document.getElementById('quiz'),res=document.getElementById('quiz-res'),qref=document.getElementById('q-ref');
+const refs=[...new Set(FICHAS.map(f=>f[0]))].sort((a,b)=>a.localeCompare(b));
+document.getElementById('refs').innerHTML=refs.map(r=>`<option value="${esc(r)}">`).join('');
+function mostra(titulo,texto,lista){
+ res.innerHTML=`<h3>${titulo}</h3><p>${texto}</p><div class="res-grid"></div>`;
+ const g=res.querySelector('.res-grid');lista.forEach(p=>g.appendChild(card(p)));
+}
+function doTeste(){
+ const v=n=>{const x=quiz.querySelector(`input[name="${n}"]:checked`);return x?x.value:'';};
+ const G=v('qg'),E=v('qe'),I=v('qi');
+ if(!G||!E||!I)return;
+ qref.value='';
+ const fam={Adocicado:['Adocicado','Oriental'],Floral:['Floral'],Frutal:['Frutal','Floral'],Refrescante:['Refrescante','Fougère'],Amadeirado:['Amadeirado','Oriental','Fougère']}[E];
+ const ord={Suave:1,Moderado:2,Intenso:3};const r=[];
+ REP.forEach((p,i)=>{const f=FICHAS[i];if(f[5]!==G&&f[5]!=='U')return;let s=0;const k=fam.indexOf(f[3]);if(k<0)return;s+=k*2;s+=Math.abs((ord[f[4]]||2)-ord[I])*1.5;r.push([s,p]);});
+ r.sort((a,b)=>a[0]-b[0]);
+ const top=r.slice(0,3).map(x=>x[1]);
+ mostra('Seus 3 perfumes','Clique na foto para ver as notas. Quer sentir antes? Me chama que eu te ajudo a escolher.',top);
+}
+quiz.addEventListener('change',e=>{if(e.target.type==='radio')doTeste();});
+qref.addEventListener('input',()=>{
+ const t=norm(qref.value.trim());if(t.length<3){if(!quiz.querySelector('input:checked'))res.innerHTML='';return;}
+ const achados=[];REP.forEach((p,i)=>{const f=FICHAS[i];if(norm(f[0]).includes(t)||norm(f[1]).includes(t))achados.push(p);});
+ if(achados.length)mostra('Achei '+(achados.length===1?'o seu':'estes'),'Perfumes Amakha Paris na mesma linha de cheiro de "'+esc(qref.value.trim())+'".',achados.slice(0,6));
+ else res.innerHTML='<p style="color:var(--muted)">Não achei esse na lista. Me chama no WhatsApp que eu te indico o mais parecido.</p>';
+});
+})();
+</script>
+<script>document.querySelectorAll('.menu-panel a').forEach(a=>a.addEventListener('click',()=>a.closest('details').removeAttribute('open')))</script>
+
+</body>
+</html>
