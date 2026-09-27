@@ -291,3 +291,22 @@ html{scroll-padding-top:64px}
 .bloco-head h2,.preco-grande{font-size:28px}
 .preco-grande small{text-align:left}
 }
+/* /15ml: escolha entre feminino e masculino */
+.escolha-grid{width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;text-align:left}
+.escolha{display:flex;flex-direction:column;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:#fff;transition:border-color .2s}
+.escolha:hover{border-color:#000}
+.escolha-fotos{background:var(--cream);aspect-ratio:16/10;display:flex;align-items:flex-end;justify-content:center;padding:32px 24px 0;overflow:hidden}
+.escolha-fotos img{width:34%;aspect-ratio:1/1;object-fit:contain;mix-blend-mode:multiply;margin:0 -3%;transition:transform .5s ease}
+.escolha-fotos img:nth-child(2){width:40%;position:relative;z-index:1}
+.escolha:hover .escolha-fotos img{transform:translateY(-6px)}
+.escolha-txt{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;padding:28px 32px 32px}
+.escolha-txt h2{font-size:32px;line-height:1.15}
+.escolha-txt p{margin:6px 0 0;color:var(--muted);font-size:14px}
+.escolha-txt .preco-grande small{text-align:right}
+.escolha-cta{width:100%;font-size:12px;font-weight:500;letter-spacing:1.2px;text-transform:uppercase;padding-top:20px;border-top:1px solid var(--line)}
+.escolha-cta span{border-bottom:1px solid #000;padding-bottom:3px}
+@media (max-width:760px){
+.escolha-grid{grid-template-columns:1fr}
+.escolha-txt{padding:20px}
+.escolha-txt h2{font-size:26px}
+}

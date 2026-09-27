@@ -15,3 +15,6 @@ const tamanho = (ml: string) => (p: Produto) => new RegExp(`\\s${ml}ml$`, "i").t
 export const PERFUMES_15 = PRODUTOS.filter(tamanho("15"));
 /** Na página de 100ml só entram os que têm preço (os que o Layon trabalha). */
 export const PERFUMES_100 = PRODUTOS.filter((p) => tamanho("100")(p) && p.preco != null);
+
+/** Perfumes 15ml de um gênero (os unissex aparecem nos dois). */
+export const perfumes15De = (g: "F" | "M") => PERFUMES_15.filter((p) => p.grupo === g || p.grupo === "U");

@@ -4,15 +4,15 @@ import Nav from "./Nav";
 import Rodape from "./Rodape";
 import Loja from "./Loja";
 
-type Props = { sobretitulo: string; titulo: ReactNode; texto: string; children: ReactNode };
+type Props = { sobretitulo: string; titulo: ReactNode; texto: string; voltar?: { href: string; txt: string }; children: ReactNode };
 
-export default function Pagina({ sobretitulo, titulo, texto, children }: Props) {
+export default function Pagina({ sobretitulo, titulo, texto, voltar = { href: "/", txt: "Início" }, children }: Props) {
   return (
     <>
       <Nav />
       <main>
         <section className="section center page-head">
-          <a className="crumb" href="/">← Início</a>
+          <a className="crumb" href={voltar.href}>← {voltar.txt}</a>
           <div className="eyebrow">{sobretitulo}</div>
           <h1 className="h2">{titulo}</h1>
           <p className="lead">{texto}</p>

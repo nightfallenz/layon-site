@@ -14,7 +14,9 @@ src/
   app/
     page.tsx          página inicial (ordem das seções)
     kits/page.tsx     página /kits (3 em 1, 2 em 1, Premium)
-    15ml/page.tsx     página /15ml
+    15ml/page.tsx     página /15ml (escolha: feminino ou masculino)
+    15ml/feminino/    página /15ml/feminino
+    15ml/masculino/   página /15ml/masculino
     100ml/page.tsx    página /100ml (só os que têm preço)
     layout.tsx        título, descrição e fontes
     globals.css       todo o visual (cores, tamanhos, celular)
