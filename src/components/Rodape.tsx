@@ -15,9 +15,9 @@ export default function Rodape() {
             <div className="logo">LAYON</div>
             <span style={{ lineHeight: 1.7, maxWidth: 300 }}>Perfumaria com atendimento pessoal. Consultor independente Amakha Paris em Brasília e Entorno.</span>
           </div>
-          <div className="fcol"><div className="ttl">Comprar</div><a href="#kits">Kits completos</a><a href="#linhas">Perfumes 15ml</a><a href="#linhas">Perfumes 100ml</a><a href="#linhas">Body splash</a></div>
-          <div className="fcol"><div className="ttl">Presentes</div><a href="#kits">Kits em caixa</a><a href={linkWhats("Olá, Layon! Quero ajuda para escolher um presente.")}>Ajuda para escolher</a></div>
-          <div className="fcol"><div className="ttl">Seja consultor</div><a href={CADASTRO_CONSULTOR}>Cadastro oficial</a><a href="#consultor">Entrar para a equipe</a><a href={linkWhats("Olá, Layon! Quero tirar dúvidas sobre ser consultor.")}>Tirar dúvidas</a></div>
+          <div className="fcol"><div className="ttl">Comprar</div><a href="/kits">Kits completos</a><a href="/15ml">Perfumes 15ml</a><a href="/100ml">Perfumes 100ml</a><a href="/#catalogo">Catálogo completo</a></div>
+          <div className="fcol"><div className="ttl">Presentes</div><a href="/kits">Kits em caixa</a><a href={linkWhats("Olá, Layon! Quero ajuda para escolher um presente.")}>Ajuda para escolher</a></div>
+          <div className="fcol"><div className="ttl">Seja consultor</div><a href={CADASTRO_CONSULTOR}>Cadastro oficial</a><a href="/#consultor">Entrar para a equipe</a><a href={linkWhats("Olá, Layon! Quero tirar dúvidas sobre ser consultor.")}>Tirar dúvidas</a></div>
           <div className="fcol"><div className="ttl">Contato</div><a href={linkWhats()}>WhatsApp</a><a href={`mailto:${EMAIL}`}>E-mail</a><span>Entrega em Brasília e Entorno</span></div>
         </div>
         <div className="fbottom">

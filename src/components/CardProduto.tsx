@@ -2,6 +2,7 @@
 import { linkWhats, mensagemPedido } from "@/data/contato";
 import { fichaDe, imagem, precoTexto, type Produto } from "@/lib/catalogo";
 import { useLoja } from "./Loja";
+import { GENERO } from "@/lib/produtos";
 
 
 
@@ -27,7 +28,7 @@ export default function CardProduto({ produto }: { produto: Produto }) {
         {f?.intensidade && <span className="tag">{f.intensidade}</span>}
       </div>
       <div className="pbody">
-        <div className="pfam">{f ? f.estilo : produto.familia ?? ""}</div>
+        <div className="pfam">{[GENERO[produto.grupo], f ? f.estilo : produto.familia].filter(Boolean).join(" · ")}</div>
         <h3>{produto.nome}</h3>
         {f && <div className="pinsp">Inspirado em <b>{f.inspiradoEm}</b> · {f.marca}</div>}
         <div className="pprice">{precoTexto(produto.preco)}</div>

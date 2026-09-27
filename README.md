@@ -12,7 +12,10 @@ No ar: https://layon-site.vercel.app
 ```
 src/
   app/
-    page.tsx          ordem das seções da página
+    page.tsx          página inicial (ordem das seções)
+    kits/page.tsx     página /kits (3 em 1, 2 em 1, Premium)
+    15ml/page.tsx     página /15ml
+    100ml/page.tsx    página /100ml (só os que têm preço)
     layout.tsx        título, descrição e fontes
     globals.css       todo o visual (cores, tamanhos, celular)
     icon.svg          ícone da aba
@@ -32,7 +35,7 @@ src/
     Icones.tsx            ícones
   data/               o conteúdo, separado do visual
     contato.ts            WhatsApp, e-mail, link de cadastro
-    kits.ts               os 4 kits em destaque
+    kits.ts               quais kits aparecem em /kits e na vitrine
     produtos.json         os ~200 produtos do catálogo
     fichas.json           notas olfativas e "inspirado em" (enciclopédia 2025)
   lib/
@@ -53,7 +56,11 @@ por um número, com ponto no lugar da vírgula:
 ```
 
 O site mostra "R$ 89,90". Com `null`, mostra "Consulte o valor".
-Para os kits em destaque, o mesmo vale em `src/data/kits.ts`.
+Isso vale para kits também: o preço fica sempre em `produtos.json`.
+Em `src/data/kits.ts` fica só quais kits aparecem em cada grupo da página /kits.
+
+**Colocar um perfume de 100ml na página /100ml** — basta dar preço a ele em
+`produtos.json`. A página mostra só os de 100ml que têm preço.
 
 **Trocar o número do WhatsApp ou o link de cadastro** — só em `src/data/contato.ts`.
 

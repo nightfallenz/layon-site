@@ -25,9 +25,9 @@ export default function Catalogo() {
   return (
     <section id="catalogo" className="section center">
       <div className="eyebrow">Catálogo</div>
-      <h2 className="h2">Encontre o Seu Perfume</h2>
+      <h2 className="h2">Escolha Aqui o Seu Perfume</h2>
       <p className="lead">
-        Mais de 200 produtos Amakha Paris. Escolha o que gostou e me chame no WhatsApp: eu confirmo o estoque e o valor na hora.
+        Veja com qual importado cada perfume é parecido, clique na foto para conhecer as notas e faça seu pedido direto no WhatsApp.
       </p>
       <div className="cat-tools">
         <div className="pills" role="group" aria-label="Filtrar catálogo">
