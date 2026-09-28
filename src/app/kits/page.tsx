@@ -22,15 +22,16 @@ export default function PaginaKits() {
     <Pagina
       sobretitulo="Kits completos"
       titulo={<>A Fragrância <em>Completa</em></>}
+      atalhos={[KITS_PREMIUM, KITS_3EM1, KITS_2EM1].map((g) => ({ href: `#${g.id}`, txt: g.titulo }))}
       texto="Cada kit reúne uma mesma fragrância em diferentes formas, para uma perfumação que dura do banho à noite. É para presente? Basta marcar na sacola."
     >
-      <Bloco titulo={KITS_PREMIUM.titulo} texto={KITS_PREMIUM.oQueVem} preco={precoDoGrupo(KITS_PREMIUM.produtos)} rotuloPreco="Cada kit">
+      <Bloco id={KITS_PREMIUM.id} titulo={KITS_PREMIUM.titulo} texto={KITS_PREMIUM.oQueVem} preco={precoDoGrupo(KITS_PREMIUM.produtos)} rotuloPreco="Cada kit">
         <div className="kp-grade">
           {pegar(KITS_PREMIUM.produtos).map((k) => <CardKitPremium key={k.nome} kit={k} />)}
         </div>
       </Bloco>
       {[KITS_3EM1, KITS_2EM1].map((g) => (
-        <Bloco key={g.id} titulo={g.titulo} texto={g.oQueVem} preco={precoDoGrupo(g.produtos)} rotuloPreco="Cada kit">
+        <Bloco key={g.id} id={g.id} titulo={g.titulo} texto={g.oQueVem} preco={precoDoGrupo(g.produtos)} rotuloPreco="Cada kit">
           <Grade produtos={pegar(g.produtos)} />
         </Bloco>
       ))}

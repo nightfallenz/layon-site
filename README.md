@@ -22,7 +22,10 @@ src/
     Nav.tsx               menu do topo (links, sacola e botão do menu em tela cheia)
     MenuTela.tsx          menu em tela cheia com faixa de frascos
     Logo.tsx              logo "layon." cursiva, com efeito de escrita
-    Campanha.tsx Nevoa.tsx  abertura da página inicial (foto do casal animada)
+    Abertura.tsx          slides do topo (troca a cada 8s): Campanha.tsx (casal) e ConviteConsultor.tsx
+    Campanha.tsx Nevoa.tsx  slide 1: foto do casal animada, com os botões catálogo e descubra
+    ConviteConsultor.tsx  slide 2: convite para consultor(a), foto em public/consultor.jpg
+    CardKitPremium.tsx    cartão dos Kits Premium (o que vem, preço, conta dos avulsos)
     Faixa.tsx             faixa preta deslizante
     Kits.tsx  Catalogo.tsx  TesteDoPerfume.tsx  Historia.tsx  Linhas.tsx  Consultor.tsx
     CardProduto.tsx       cartão de produto (foto e nome levam à página do produto)

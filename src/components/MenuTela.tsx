@@ -2,7 +2,7 @@
 // Menu em tela cheia: lista grande à esquerda; ao passar o mouse num item,
 // a faixa de frascos embaixo troca para os produtos daquela linha e desliza.
 import { useEffect, useMemo, useState } from "react";
-import { fotoDe, PRODUTOS } from "@/lib/catalogo";
+import { fotoDe, precoTexto, PRODUTOS } from "@/lib/catalogo";
 import { PERFUMES_100, perfumes15De, pegar } from "@/lib/produtos";
 import { ARABES } from "@/data/arabes";
 import { KITS_2EM1, KITS_3EM1, KITS_PREMIUM } from "@/data/kits";
@@ -16,7 +16,9 @@ export default function MenuTela({ aberto, fechar }: { aberto: boolean; fechar: 
       { nome: "Femininos", href: "/15ml/feminino", produtos: perfumes15De("F") },
       { nome: "Masculinos", href: "/15ml/masculino", produtos: perfumes15De("M") },
       { nome: "Perfumes 100ml", href: "/100ml", produtos: PERFUMES_100 },
-      { nome: "Kits completos", href: "/kits", produtos: pegar([...KITS_3EM1.produtos, ...KITS_2EM1.produtos, ...KITS_PREMIUM.produtos]) },
+      { nome: "Kits Premium", href: "/kits#premium", produtos: pegar(KITS_PREMIUM.produtos) },
+      { nome: "Kits 3 em 1", href: "/kits#3em1", produtos: pegar(KITS_3EM1.produtos) },
+      { nome: "Kits 2 em 1", href: "/kits#2em1", produtos: pegar(KITS_2EM1.produtos) },
       { nome: "Linha Árabe", href: "/arabes", produtos: pegar([...ARABES.originais, ...ARABES.perfumes, ...ARABES.kits]) },
       { nome: "Catálogo", href: "/#catalogo", produtos: PRODUTOS.filter((p) => p.preco != null) },
       { nome: "Descubra seu perfume", href: "/#descubra", produtos: PERFUMES_100 },
@@ -34,7 +36,9 @@ export default function MenuTela({ aberto, fechar }: { aberto: boolean; fechar: 
     return () => { document.removeEventListener("keydown", esc); document.documentElement.style.overflow = ""; };
   }, [aberto, fechar]);
 
-  const faixa = itens[ativo].produtos.slice(0, 14);
+  // a faixa precisa de pelo menos 12 frascos para deslizar sem buraco; linhas curtas (kits) se repetem
+  const base = itens[ativo].produtos.slice(0, 14);
+  const faixa = base.length ? Array.from({ length: Math.max(base.length, 12) }, (_, i) => base[i % base.length]) : [];
 
   return (
     <div className={`menu-tela${aberto ? " aberto" : ""}`} aria-hidden={!aberto} role="dialog" aria-label="Menu">
@@ -62,7 +66,9 @@ export default function MenuTela({ aberto, fechar }: { aberto: boolean; fechar: 
         <div className="mt-trilho">
           {[...faixa, ...faixa].map((p, i) => (
             <a key={i} href={linkDe(p)} tabIndex={-1} onClick={fechar} title={nomeVitrine(p)}>
-              <img src={fotoDe(p, 300)} alt="" loading="lazy" />
+              <span className="mt-foto"><img src={fotoDe(p, 300)} alt="" loading="lazy" /></span>
+              <span className="mt-nome">{nomeVitrine(p)}</span>
+              {p.preco != null && <span className="mt-preco">{precoTexto(p.preco)}</span>}
             </a>
           ))}
         </div>

@@ -47,3 +47,40 @@ export function descricaoDe(p: Produto, f: Ficha): string {
   const abre = p.original ? "Perfume original" : "Fragrância";
   return `${abre} ${f.estilo.toLowerCase()} ${intens}. Abre com ${lista(f.topo, 2)}, revela ${lista(f.coracao, 2)} no coração e assenta em ${lista(f.fundo, 2)}.`;
 }
+
+// ---- kits: a fragrância que vem dentro e o conteúdo da caixa ----
+const TIPOS_DE_KIT: { re: RegExp; tipo: string; itens: [string, string][] }[] = [
+  { re: /^Kit Premium (.+)$/, tipo: "Kit Premium", itens: [["Perfume", "100ml"], ["Perfume de bolsa", "15ml"], ["Body splash", "100ml"], ["Hidratante corporal", "80ml"]] },
+  { re: /^Kit (.+) com Nécessaire$/, tipo: "Kit 3 em 1", itens: [["Perfume de bolsa", "15ml"], ["Body splash", "100ml"], ["Hidratante corporal", "80ml"], ["Nécessaire", ""]] },
+  { re: /^Duo Fragrâncias (.+)$/, tipo: "Kit 2 em 1", itens: [["Perfume de bolsa", "15ml"], ["Body splash", "100ml"]] },
+  { re: /^Kit Perfumad[oa] (.+)$/, tipo: "Kit Perfumado", itens: [] },
+];
+
+function tipoDoKit(p: Produto) {
+  for (const t of TIPOS_DE_KIT) {
+    const m = p.nome.match(t.re);
+    if (m) return { ...t, base: m[1] === "D" ? "D by Denise Lemos" : m[1] };
+  }
+  return null;
+}
+
+/** Perfume que dá a fragrância do kit ("Kit Premium GD" → "GD 15ml"), para mostrar as notas. */
+export function fragranciaDoKit(p: Produto): Produto | null {
+  if (p.grupo !== "K") return null;
+  const t = tipoDoKit(p);
+  if (!t) return null;
+  const base = normalizar(t.base);
+  const achados = PRODUTOS.filter((q) => q.ficha && "FMU".includes(q.grupo) && !q.original && new RegExp(`^${base.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")} (15|100)ml$`).test(normalizar(q.nome)));
+  return achados.find((q) => ml(q) === 15) ?? achados[0] ?? null;
+}
+
+/** O que vem na caixa do kit (vazio quando não sabemos ao certo). */
+export const conteudoDoKit = (p: Produto): [string, string][] => tipoDoKit(p)?.itens ?? [];
+
+/** Ficha olfativa do produto; no kit, a do perfume que vem dentro. */
+export const fichaCompleta = (p: Produto): Ficha | null => {
+  const f = fichaDe(p);
+  if (f) return f;
+  const q = fragranciaDoKit(p);
+  return q ? fichaDe(q) : null;
+};

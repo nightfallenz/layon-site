@@ -6,10 +6,10 @@ import Rodape from "@/components/Rodape";
 import Loja from "@/components/Loja";
 import CardProduto from "@/components/CardProduto";
 import BotaoComprar from "@/components/BotaoComprar";
-import { PRODUTOS, fichaDe, fotoDe, parecidos, precoTexto } from "@/lib/catalogo";
+import { PRODUTOS, fotoDe, parecidos, precoTexto } from "@/lib/catalogo";
 import { GENERO } from "@/lib/produtos";
 import { nomeVitrine } from "@/lib/nomes";
-import { descricaoDe, familiaDaNota, linkDe, ml, produtoPorSlug, slugDe, tamanhosDe } from "@/lib/perfume";
+import { conteudoDoKit, descricaoDe, fichaCompleta, fragranciaDoKit, familiaDaNota, linkDe, ml, produtoPorSlug, slugDe, tamanhosDe } from "@/lib/perfume";
 
 type P = { params: Promise<{ slug: string }> };
 
@@ -20,7 +20,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: P): Promise<Metadata> {
   const p = produtoPorSlug((await params).slug);
   if (!p) return {};
-  const f = fichaDe(p);
+  const f = fichaCompleta(p);
   const titulo = `${nomeVitrine(p)} | Layon Alves Amakha Paris`;
   const desc = f ? descricaoDe(p, f) : `${nomeVitrine(p)} Amakha Paris, com entrega em mãos em Brasília e Entorno.`;
   return { title: titulo, description: desc, openGraph: { title: titulo, description: desc, images: [fotoDe(p, 800)], locale: "pt_BR", type: "website" } };
@@ -35,11 +35,13 @@ const NIVEL = { Suave: 1, Moderado: 2, Intenso: 3 } as const;
 export default async function PaginaPerfume({ params }: P) {
   const p = produtoPorSlug((await params).slug);
   if (!p) notFound();
-  const f = fichaDe(p);
+  const f = fichaCompleta(p);
+  const fragrancia = fragranciaDoKit(p);
+  const conteudo = conteudoDoKit(p);
   const nome = nomeVitrine(p);
   const tamanhos = tamanhosDe(p);
   const [cat, catHref] = CATEGORIA[p.grupo] ?? ["Catálogo", "/#catalogo"];
-  const outros = parecidos(p, 4);
+  const outros = parecidos(fragrancia ?? p, 4);
   const nivel = f?.intensidade ? NIVEL[f.intensidade] : 0;
   const notas = f ? [...f.topo, ...f.coracao, ...f.fundo] : [];
   const familias = notas.filter((n, i) => notas.findIndex((m) => familiaDaNota(m).id === familiaDaNota(n).id) === i).slice(0, 5);
@@ -78,6 +80,15 @@ export default async function PaginaPerfume({ params }: P) {
               {f && (
                 <>
                   <p className="pp-desc pp-anim" style={{ ["--d" as string]: "200ms" }}>{descricaoDe(p, f)}</p>
+                  {conteudo.length > 0 && (
+                    <div className="pp-kit pp-anim" style={{ ["--d" as string]: "220ms" }}>
+                      <span className="pp-kit-tit">O que vem no kit</span>
+                      <ul>
+                        {conteudo.map(([item, qtd]) => <li key={item}><span>{item}</span>{qtd && <span className="pp-kit-ml">{qtd}</span>}</li>)}
+                      </ul>
+                      <small>Todos na mesma fragrância, para a perfumação durar do banho à noite.</small>
+                    </div>
+                  )}
                   <div className="meta pp-anim" style={{ ["--d" as string]: "240ms" }}>
                     <div>Estilo<strong>{f.estilo}</strong></div>
                     {nivel > 0 && (
@@ -110,6 +121,9 @@ export default async function PaginaPerfume({ params }: P) {
                   </div>
                 )}
                 <BotaoComprar produto={p} grande />
+                {fragrancia && (
+                  <a className="pp-sozinho" href={linkDe(fragrancia)}>Prefere só o perfume? Ver {nomeVitrine(fragrancia).replace(/ 15ml$/, "")} →</a>
+                )}
               </div>
               {f && !p.original && (
                 <p className="pp-legal">A referência indica apenas a família olfativa. Produto Amakha Paris, sem vínculo com a marca citada.</p>
@@ -119,7 +133,7 @@ export default async function PaginaPerfume({ params }: P) {
 
           {outros.length > 0 && (
             <section className="section center pp-similares">
-              <div className="eyebrow">{p.original ? "Versão Amakha e afins" : "Da mesma família olfativa"}</div>
+              <div className="eyebrow">{p.original ? "Versão Amakha e afins" : fragrancia ? "Se você gosta desta fragrância" : "Da mesma família olfativa"}</div>
               <h2 className="h2">Você Também <em>Vai Gostar</em></h2>
               <div className="cat-grid" style={{ marginTop: 40 }}>
                 {outros.map((q) => <CardProduto key={q.nome} produto={q} />)}

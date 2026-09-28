@@ -4,9 +4,9 @@ import Nav from "./Nav";
 import Rodape from "./Rodape";
 import Loja from "./Loja";
 
-type Props = { sobretitulo: string; titulo: ReactNode; texto: string; voltar?: { href: string; txt: string }; children: ReactNode };
+type Props = { sobretitulo: string; titulo: ReactNode; texto: string; voltar?: { href: string; txt: string }; atalhos?: { href: string; txt: string }[]; children: ReactNode };
 
-export default function Pagina({ sobretitulo, titulo, texto, voltar = { href: "/", txt: "Início" }, children }: Props) {
+export default function Pagina({ sobretitulo, titulo, texto, voltar = { href: "/", txt: "Início" }, atalhos, children }: Props) {
   return (
     <>
       <Nav />
@@ -16,6 +16,11 @@ export default function Pagina({ sobretitulo, titulo, texto, voltar = { href: "/
           <div className="eyebrow">{sobretitulo}</div>
           <h1 className="h2">{titulo}</h1>
           <p className="lead">{texto}</p>
+          {atalhos && (
+            <nav className="atalhos" aria-label="Ir para">
+              {atalhos.map((a) => <a key={a.href} href={a.href}>{a.txt}</a>)}
+            </nav>
+          )}
         </section>
         <Loja>{children}</Loja>
       </main>
@@ -24,9 +29,9 @@ export default function Pagina({ sobretitulo, titulo, texto, voltar = { href: "/
   );
 }
 
-export function Bloco({ titulo, texto, preco, rotuloPreco, children }: { titulo: string; texto?: string; preco?: string; rotuloPreco?: string; children: ReactNode }) {
+export function Bloco({ id, titulo, texto, preco, rotuloPreco, children }: { id?: string; titulo: string; texto?: string; preco?: string; rotuloPreco?: string; children: ReactNode }) {
   return (
-    <section className="section center bloco">
+    <section className="section center bloco" id={id}>
       <div className="bloco-head">
         <div>
           <h2>{titulo}</h2>

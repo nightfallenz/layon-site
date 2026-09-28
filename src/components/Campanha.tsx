@@ -1,5 +1,5 @@
 "use client";
-// Abertura da página inicial: foto em tela cheia com chamada para o catálogo.
+// Slide 1 da abertura (ver Abertura.tsx): foto em tela cheia com chamada para o catálogo.
 // Animações: a foto entra com um zoom lento, um feixe de luz atravessa a imagem,
 // partículas douradas sobem e o texto aparece linha a linha.
 // Para trocar a foto, substitua public/campanha.jpg (e a versão menor campanha-1200.jpg).
@@ -7,7 +7,7 @@ import Nevoa from "./Nevoa";
 
 export default function Campanha() {
   return (
-    <section className="campanha abertura" id="inicio" aria-label="Apresentação">
+    <div className="campanha abertura">
       <div className="campanha-foto">
         <img
           src="/campanha.jpg"
@@ -37,6 +37,6 @@ export default function Campanha() {
         </div>
       </div>
       <a className="ab-rolar" href="#kits" aria-label="Rolar para baixo"><span /></a>
-    </section>
+    </div>
   );
 }
