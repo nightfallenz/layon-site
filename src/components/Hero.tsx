@@ -1,15 +1,11 @@
-import { imagem } from "@/lib/catalogo";
 import Nevoa from "./Nevoa";
+import Vitrine from "./Vitrine";
 
 export default function Hero() {
   return (
     <section id="inicio" className="hero">
-      <div className="hero-bg ph has-img">
-        {/* Para usar uma foto própria: coloque em public/hero.jpg e troque o src por "/hero.jpg" */}
-        <img src={imagem(161862, "jpg", 900)} alt="Kit Premium 521 Vip Rosé Amakha Paris" fetchPriority="high" />
-      </div>
-      <div className="hero-fade"></div>
       <Nevoa />
+      <Vitrine />
       <div className="hero-content">
         <div className="eyebrow line fu f1">Perfumaria · Brasília</div>
         <h1 className="fu f2">Perfumes que<br /><em>Deixam</em><br />Memória</h1>
@@ -19,7 +15,7 @@ export default function Hero() {
         </p>
         <div className="actions fu f4">
           <a className="btn btn-primary" href="#catalogo">Conhecer a coleção</a>
-          <a className="btn btn-outline" href="/kits">Presentes</a>
+          <a className="btn btn-outline" href="/kits">Kits completos</a>
         </div>
         <div className="stats fu f5">
           <div><div className="stat-n">100+</div><div className="stat-l">Fragrâncias</div></div>

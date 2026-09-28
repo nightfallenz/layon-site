@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import BotaoComprar from "./BotaoComprar";
 import { nomeVitrine } from "@/lib/nomes";
+import { linkDe } from "@/lib/perfume";
 import { fichaDe, fotoDe, parecidos, type Produto } from "@/lib/catalogo";
 
 const NIVEL = { Suave: 1, Moderado: 2, Intenso: 3 } as const;
@@ -71,6 +72,7 @@ export default function FichaPerfume({ produto, onTrocar, onFechar }: Props) {
               </div>
             )}
             <BotaoComprar produto={produto} grande />
+            <a className="ficha-pagina" href={linkDe(produto)}>Ver página completa do perfume →</a>
           </div>
         </div>
       )}

@@ -1,5 +1,6 @@
 import { CADASTRO_CONSULTOR, EMAIL, linkWhats } from "@/data/contato";
 import { IconeWhats } from "./Icones";
+import Logo from "./Logo";
 
 export default function Rodape() {
   return (
@@ -12,11 +13,10 @@ export default function Rodape() {
         </div>
         <div className="fcols">
           <div className="fcol">
-            <div className="logo">LAYON</div>
+            <Logo comoTexto />
             <span style={{ lineHeight: 1.7, maxWidth: 300 }}>Perfumaria com atendimento pessoal. Consultor independente Amakha Paris em Brasília e Entorno.</span>
           </div>
-          <div className="fcol"><div className="ttl">Comprar</div><a href="/kits">Presentes</a><a href="/15ml">Perfumes 15ml</a><a href="/100ml">Perfumes 100ml</a><a href="/arabes">Linha Árabe</a><a href="/#catalogo">Catálogo completo</a></div>
-          <div className="fcol"><div className="ttl">Presentes</div><a href="/kits">Kits de presente</a><a href={linkWhats("Olá, Layon. Gostaria de ajuda para escolher um presente.")}>Orientação para presentear</a></div>
+          <div className="fcol"><div className="ttl">Comprar</div><a href="/kits">Kits completos</a><a href="/15ml">Perfumes 15ml</a><a href="/100ml">Perfumes 100ml</a><a href="/arabes">Linha Árabe</a><a href="/#catalogo">Catálogo completo</a></div>
           <div className="fcol"><div className="ttl">Seja consultor</div><a href={CADASTRO_CONSULTOR}>Cadastro oficial</a><a href="/#consultor">Entrar para a equipe</a><a href={linkWhats("Olá, Layon. Gostaria de saber mais sobre a equipe de consultores.")}>Conversar</a></div>
           <div className="fcol"><div className="ttl">Contato</div><a href={linkWhats()}>WhatsApp</a><a href={`mailto:${EMAIL}`}>E-mail</a><span>Entrega em Brasília e Entorno</span></div>
         </div>

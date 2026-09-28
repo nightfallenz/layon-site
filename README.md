@@ -12,52 +12,31 @@ No ar: https://layon-site.vercel.app
 ```
 src/
   app/
-    page.tsx          página inicial (ordem das seções)
-    kits/page.tsx     página /kits (3 em 1, 2 em 1, Premium)
-    15ml/page.tsx     página /15ml (escolha: feminino ou masculino)
-    15ml/feminino/    página /15ml/feminino
-    15ml/masculino/   página /15ml/masculino
-    100ml/page.tsx    página /100ml (só os que têm preço)
-    arabes/page.tsx   página /arabes (Linha Árabe)
-    */opengraph-image.tsx   imagem de prévia de cada página (WhatsApp, Instagram)
-    layout.tsx        título, descrição e fontes
-    globals.css       todo o visual (cores, tamanhos, celular)
-    icon.svg          ícone da aba
-  components/         uma seção por arquivo
-    Nav.tsx               menu do topo
-    Hero.tsx              primeira dobra ("Perfumes que Deixam Memória")
-    Kits.tsx              Kits em Destaque
-    Catalogo.tsx          catálogo com busca e filtros
-    CardProduto.tsx       o cartão de cada produto
-    FichaPerfume.tsx      janela com as notas do perfume
-    TesteDoPerfume.tsx    "Descubra o Seu Perfume"
-    Historia.tsx          Nossa história
-    Linhas.tsx            Nossas Linhas
-    Consultor.tsx         Seja consultor
-    Rodape.tsx            rodapé e botão flutuante do WhatsApp
-    Loja.tsx              liga catálogo, ficha e teste entre si
-    Carrinho.tsx          carrinho do site todo + envio do pedido pelo WhatsApp
-    BotaoComprar.tsx      "Adicionar ao carrinho" ou "Consultar no WhatsApp"
-    Animacoes.tsx         efeitos ao rolar, barra de progresso, parallax do topo
-    Nevoa.tsx             partículas douradas no topo da página inicial
-    Faixa.tsx             faixa preta deslizante abaixo do topo (frases editáveis)
-    Icones.tsx            ícones
-  data/               o conteúdo, separado do visual
-    contato.ts            WhatsApp, e-mail, link de cadastro
-    kits.ts               quais kits aparecem em /kits e na vitrine
-    arabes.ts             quais produtos aparecem em /arabes
-    produtos.json         os ~200 produtos do catálogo
-    fichas.json           notas olfativas e "inspirado em" (enciclopédia 2025)
+    page.tsx              página inicial (ordem das seções)
+    perfume/[slug]/       página de cada produto (/perfume/imortal-15ml), gerada para todos
+    kits/  15ml/  100ml/  arabes/   demais páginas
+    */opengraph-image.tsx imagem de prévia de cada página (WhatsApp, Instagram)
+    layout.tsx            fontes (Playfair, Inter e a cursiva da logo) e título
+    globals.css           todo o visual
+  components/
+    Nav.tsx               menu do topo (links, sacola e botão do menu em tela cheia)
+    MenuTela.tsx          menu em tela cheia com faixa de frascos
+    Logo.tsx              logo "layon." cursiva, com efeito de escrita
+    Hero.tsx  Vitrine.tsx Nevoa.tsx  topo da página inicial (arco com frascos)
+    Faixa.tsx             faixa preta deslizante
+    Kits.tsx  Catalogo.tsx  TesteDoPerfume.tsx  Historia.tsx  Linhas.tsx  Consultor.tsx
+    CardProduto.tsx       cartão de produto (foto e nome levam à página do produto)
+    FichaPerfume.tsx      ficha rápida ("Ver notas")
+    Carrinho.tsx  BotaoComprar.tsx  Loja.tsx  Grade.tsx  Pagina.tsx  Lista15.tsx
+    Rodape.tsx  Animacoes.tsx  Icones.tsx
+  data/
+    contato.ts  kits.ts  arabes.ts  produtos.json  fichas.json
   lib/
-    catalogo.ts       regras: busca, filtros, parecidos, teste do perfume
-    carrinho.ts       regras do carrinho e texto da mensagem do pedido
-    nomes.ts          nome de vitrine ("Duo Fragrâncias GD" vira "Kit 2 em 1 · GD")
-    cartaz.tsx        desenho da imagem de prévia dos links
-  fontes/             Playfair Display e Inter servidas pelo próprio site (licença OFL)
+    catalogo.ts  carrinho.ts  nomes.ts  produtos.ts  cartaz.tsx
+    perfume.ts            endereço de cada produto, tamanhos, famílias de notas e descrição
+  fontes/                 Playfair Display, Inter, Cedarville Cursive (logo) e licenças
 scripts/
   atualizar_catalogo.py   confere o catálogo com a loja oficial da Amakha
-_antigo/
-  index.html          versão de antes (só backup, não vai para o ar)
 ```
 
 ## Tarefas do dia a dia

@@ -8,7 +8,7 @@ import { imagem } from "./catalogo";
 export const TAMANHO = { width: 1200, height: 630 };
 
 type Opcoes = {
-  sobre: string;          // linha pequena em cima (ex.: "Kits de presente")
+  sobre: string;          // linha pequena em cima (ex.: "Kits completos")
   titulo: string;         // parte normal do título
   destaque?: string;      // parte em itálico dourado
   texto: string;

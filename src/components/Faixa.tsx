@@ -2,7 +2,7 @@
 const FRASES = [
   "Entrega em mãos · Brasília e Entorno",
   "Curadoria pessoal",
-  "Presentes com embalagem e cartão",
+  "Kits completos da mesma fragrância",
   "Pirâmide olfativa de cada fragrância",
   "Atendimento reservado",
   "Linha Árabe e originais importados",

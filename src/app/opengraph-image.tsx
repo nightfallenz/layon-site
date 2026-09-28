@@ -9,7 +9,7 @@ export default function Imagem() {
     sobre: "Perfumaria em Brasília",
     titulo: "Perfumes que",
     destaque: "Deixam Memória",
-    texto: "Curadoria pessoal de fragrâncias, presentes de assinatura e entrega em mãos.",
-    fotos: [161862],
+    texto: "Curadoria pessoal de fragrâncias, kits completos e entrega em mãos.",
+    fotos: [163123, 163209, 163212],
   });
 }

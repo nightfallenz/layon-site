@@ -8,11 +8,11 @@ import { nomeVitrine } from "@/lib/nomes";
 export default function Kits() {
   return (
     <section id="kits" className="section cream center">
-      <div className="eyebrow">A arte de presentear</div>
-      <h2 className="h2">Presentes de <em>Assinatura</em></h2>
+      <div className="eyebrow">Kits completos</div>
+      <h2 className="h2">A Fragrância <em>Completa</em></h2>
       <p className="lead">
-        Uma mesma fragrância em todas as suas formas, do perfume ao hidratante, reunida numa caixa pronta para ser entregue. O
-        gesto já chega completo.
+        Uma mesma fragrância em todas as suas formas, do perfume ao hidratante, reunida num só kit. O ritual de perfumação
+        completo, do banho à noite, com a mesma assinatura.
       </p>
       <div className="grid4">
         {pegar(KITS_PREMIUM.produtos).map((k) => {
@@ -30,7 +30,7 @@ export default function Kits() {
           );
         })}
       </div>
-      <a className="btn btn-outline" style={{ marginTop: 64 }} href="/kits">Todos os presentes</a>
+      <a className="btn btn-outline" style={{ marginTop: 64 }} href="/kits">Ver todos os kits</a>
     </section>
   );
 }

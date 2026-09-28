@@ -1,12 +1,14 @@
 "use client";
-import { useRef } from "react";
+import { useState } from "react";
 import { EMAIL, linkWhats } from "@/data/contato";
 import { IconeEmail, IconeMenu, IconeSacola, IconeWhats } from "./Icones";
 import { useCarrinho } from "./Carrinho";
+import Logo from "./Logo";
+import MenuTela from "./MenuTela";
 
-// [endereço, nome no menu do computador, nome no menu do celular]
+// Links do topo (no computador). No celular e no botão de menu, abre o menu em tela cheia.
 const LINKS = [
-  ["/kits", "Kits", "Kits de presente"],
+  ["/kits", "Kits", "Kits completos"],
   ["/15ml", "15ml", "Perfumes 15ml"],
   ["/100ml", "100ml", "Perfumes 100ml"],
   ["/arabes", "Árabes", "Linha Árabe"],
@@ -16,31 +18,26 @@ const LINKS = [
 ] as const;
 
 export default function Nav() {
-  const menu = useRef<HTMLDetailsElement>(null);
+  const [menu, setMenu] = useState(false);
   const { quantidade, abrir } = useCarrinho();
-  const fechar = () => menu.current?.removeAttribute("open");
   return (
+    <>
     <nav className="nav" aria-label="Principal">
-      <a className="logo" href="/">LAYON</a>
+      <Logo />
       <div className="nav-links">
         {LINKS.map(([href, txt]) => <a key={href} href={href}>{txt}</a>)}
       </div>
       <div className="nav-icons">
         <a href={linkWhats()} aria-label="Falar no WhatsApp"><IconeWhats /></a>
         <a href={`mailto:${EMAIL}`} aria-label="Enviar e-mail"><IconeEmail /></a>
-        <details className="menu" ref={menu}>
-          <summary aria-label="Abrir menu"><IconeMenu /></summary>
-          <div className="menu-panel">
-            {LINKS.map(([href, , longo]) => (
-              <a key={href} href={href} onClick={fechar}>{longo}</a>
-            ))}
-          </div>
-        </details>
         <button type="button" className="sacola" onClick={abrir} aria-label={`Abrir sacola, ${quantidade} ${quantidade === 1 ? "item" : "itens"}`}>
           <IconeSacola />
           {quantidade > 0 && <span className="badge" key={quantidade} aria-hidden="true">{quantidade}</span>}
         </button>
+        <button type="button" className="abre-menu" onClick={() => setMenu(true)} aria-label="Abrir menu" aria-expanded={menu}><IconeMenu /></button>
       </div>
     </nav>
+    <MenuTela aberto={menu} fechar={() => setMenu(false)} />
+    </>
   );
 }

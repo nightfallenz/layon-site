@@ -59,7 +59,7 @@ export default function Animacoes() {
 
     // rolagem: progresso, menu e parallax
     const barra = document.querySelector<HTMLElement>(".progresso");
-    const heroImg = document.querySelector<HTMLElement>(".hero-bg img");
+    const heroImg = document.querySelector<HTMLElement>(".vitrine-palco");
     let pedido = 0;
     const aoRolar = () => {
       cancelAnimationFrame(pedido);
@@ -68,7 +68,7 @@ export default function Animacoes() {
         const max = document.documentElement.scrollHeight - window.innerHeight;
         if (barra) barra.style.transform = `scaleX(${max > 0 ? Math.min(1, y / max) : 0})`;
         raiz.classList.toggle("rolou", y > 12);
-        if (heroImg && y < window.innerHeight * 1.2) heroImg.style.transform = `translate3d(0, ${y * 0.18}px, 0) scale(${1 + y * 0.00015})`;
+        if (heroImg && y < window.innerHeight * 1.2) heroImg.style.transform = `translate3d(0, ${y * 0.12}px, 0)`;
       });
     };
     aoRolar();
