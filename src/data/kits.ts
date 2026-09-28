@@ -1,4 +1,4 @@
-// Quais kits aparecem na página /kits e na vitrine da página inicial.
+// Quais kits aparecem na página /kits e na vitrine da página inicial (os Premium).
 // Aqui ficam só os NOMES (iguais aos de produtos.json). O preço fica em produtos.json.
 export type GrupoDeKits = { id: string; titulo: string; oQueVem: string; produtos: string[] };
 
@@ -29,12 +29,4 @@ export const KITS_PREMIUM: GrupoDeKits = {
   titulo: "Kit Premium",
   oQueVem: "Perfume 100ml, perfume 15ml, body splash 100ml e hidratante corporal 80ml, na caixa de assinatura.",
   produtos: ["Kit Premium Imortal", "Kit Premium 521 Vip Rosé", "Kit Premium GD", "Kit Premium D by Denise Lemos"],
-};
-
-/** Etiqueta que aparece em cima da foto na vitrine da página inicial */
-export const ETIQUETA_VITRINE: Record<string, { texto: string; escura: boolean }> = {
-  "Kit Premium Imortal": { texto: "Kit completo", escura: true },
-  "Kit Premium 521 Vip Rosé": { texto: "Kit completo", escura: false },
-  "Kit Premium GD": { texto: "Kit completo", escura: true },
-  "Kit Premium D by Denise Lemos": { texto: "Kit completo", escura: false },
 };

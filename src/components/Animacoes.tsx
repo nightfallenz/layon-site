@@ -9,7 +9,7 @@ import { useEffect } from "react";
 
 // O que aparece ao rolar. Para animar algo novo, basta acrescentar o seletor aqui.
 const REVELAR = [
-  ".section .eyebrow", ".section .h2", ".section .lead", ".card", ".pcard", ".coll", ".escolha",
+  ".section .eyebrow", ".section .h2", ".section .lead", ".card", ".kp", ".pcard", ".coll", ".escolha",
   ".feat", ".perks li", ".bloco-head", ".q", ".quiz-or", ".photo", ".float-card", ".news", ".fcol",
   ".cat-tools", ".cat-sub", ".section .actions", ".section .btn-outline", ".hr",
 ].join(",");
