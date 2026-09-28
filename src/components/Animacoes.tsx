@@ -11,7 +11,7 @@ import { useEffect } from "react";
 const REVELAR = [
   ".section .eyebrow", ".section .h2", ".section .lead", ".card", ".pcard", ".coll", ".escolha",
   ".feat", ".perks li", ".bloco-head", ".q", ".quiz-or", ".photo", ".float-card", ".news", ".fcol",
-  ".cat-tools", ".cat-sub", ".section .actions", ".section .btn-outline", ".hr",
+  ".cat-tools", ".cat-sub", ".campanha-txt", ".section .actions", ".section .btn-outline", ".hr",
 ].join(",");
 
 export default function Animacoes() {
@@ -68,6 +68,11 @@ export default function Animacoes() {
         const max = document.documentElement.scrollHeight - window.innerHeight;
         if (barra) barra.style.transform = `scaleX(${max > 0 ? Math.min(1, y / max) : 0})`;
         raiz.classList.toggle("rolou", y > 12);
+        const camp = document.querySelector<HTMLElement>(".campanha-foto img");
+        if (camp && window.innerWidth > 760) {
+          const r = camp.parentElement!.getBoundingClientRect();
+          if (r.bottom > 0 && r.top < window.innerHeight) camp.style.transform = `translate3d(0, ${(r.top / window.innerHeight) * 60 - 60}px, 0)`;
+        }
         if (heroImg && y < window.innerHeight * 1.2) heroImg.style.transform = `translate3d(0, ${y * 0.12}px, 0)`;
       });
     };

@@ -10,6 +10,7 @@ import Linhas from "@/components/Linhas";
 import Consultor from "@/components/Consultor";
 import Rodape from "@/components/Rodape";
 import Faixa from "@/components/Faixa";
+import Campanha from "@/components/Campanha";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Loja>
           <Hero />
           <Faixa />
+          <Campanha />
           <Kits />
           <Catalogo />
           <TesteDoPerfume />

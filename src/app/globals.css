@@ -642,3 +642,26 @@ html{scroll-padding-top:64px}
   .mt-trilho,.pp-anim,.pp-img,.mt-faixa{animation:none}
   .mt-lista a{transition:none}
 }
+
+/* ================= campanha (foto grande) ================= */
+.campanha{position:relative;overflow:hidden;background:#0E1030;color:#fff}
+.campanha-foto{position:relative;height:clamp(560px,86vh,900px)}
+.campanha-foto img{position:absolute;inset:0;width:100%;height:118%;object-fit:cover;object-position:50% 30%;will-change:transform}
+.campanha-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,8,24,.78) 0%,rgba(8,8,24,.35) 38%,rgba(8,8,24,0) 62%)}
+.campanha-txt{position:absolute;left:var(--pad);right:var(--pad);bottom:clamp(40px,7vh,80px);display:flex;flex-direction:column;align-items:flex-start;gap:16px;max-width:620px}
+.campanha .eyebrow{color:rgba(255,255,255,.8)}
+.campanha .eyebrow.line::before{background:#E8D48A}
+.campanha .h2{color:#fff;margin:0}
+.campanha .h2 em{background:none!important;-webkit-text-fill-color:#E8D48A!important;color:#E8D48A;animation:none!important}
+.campanha p{margin:0;font-size:16px;line-height:1.7;color:rgba(255,255,255,.85);max-width:480px}
+.campanha-acoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.campanha .btn-primary{background:#fff;color:#000}
+.campanha .btn-primary:hover{background:#F1EDE6}
+.campanha .btn-outline{border-color:rgba(255,255,255,.7);color:#fff}
+.campanha .btn-outline:hover{background:#fff;color:#000}
+@media (max-width:760px){
+  .campanha-foto{height:auto;aspect-ratio:2752/1536}
+  .campanha-foto img{height:100%}
+  .campanha-foto::after{display:none}
+  .campanha-txt{position:static;padding:36px var(--pad) 48px;max-width:none}
+}
