@@ -24,8 +24,8 @@ export default function ConviteConsultor() {
         </h2>
         <blockquote className="convite-frase ab-2">
           <p>
-            “Eu não vendo perfume. Apresento a cada pessoa a fragrância pela qual ela será lembrada. Se isso também
-            desperta algo em você, há um lugar reservado na minha equipe.”
+            “Uma fragrância bem escolhida chega antes de você e permanece depois que você sai. É com esse cuidado que
+            atendo cada cliente, e é com quem pensa assim que quero construir a minha equipe.”
           </p>
           <cite>Layon Alves, consultor executivo Amakha Paris</cite>
         </blockquote>
