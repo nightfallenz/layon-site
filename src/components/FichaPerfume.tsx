@@ -1,7 +1,7 @@
 "use client";
 // Janela com a ficha do perfume: inspiração, estilo, intensidade, notas e parecidos.
 import { useEffect, useRef } from "react";
-import { linkWhats, mensagemPedido } from "@/data/contato";
+import BotaoComprar from "./BotaoComprar";
 import { fichaDe, imagem, parecidos, type Produto } from "@/lib/catalogo";
 
 const NIVEL = { Suave: 1, Moderado: 2, Intenso: 3 } as const;
@@ -65,7 +65,7 @@ export default function FichaPerfume({ produto, onTrocar, onFechar }: Props) {
                 </div>
               </div>
             )}
-            <a className="btn btn-primary" href={linkWhats(mensagemPedido(produto.nome))} target="_blank" rel="noopener">Pedir no WhatsApp</a>
+            <BotaoComprar produto={produto} grande />
           </div>
         </div>
       )}

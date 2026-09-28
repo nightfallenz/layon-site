@@ -34,6 +34,8 @@ src/
     Consultor.tsx         Seja consultor
     Rodape.tsx            rodapé e botão flutuante do WhatsApp
     Loja.tsx              liga catálogo, ficha e teste entre si
+    Carrinho.tsx          carrinho do site todo + envio do pedido pelo WhatsApp
+    BotaoComprar.tsx      "Adicionar ao carrinho" ou "Consultar no WhatsApp"
     Icones.tsx            ícones
   data/               o conteúdo, separado do visual
     contato.ts            WhatsApp, e-mail, link de cadastro
@@ -42,6 +44,7 @@ src/
     fichas.json           notas olfativas e "inspirado em" (enciclopédia 2025)
   lib/
     catalogo.ts       regras: busca, filtros, parecidos, teste do perfume
+    carrinho.ts       regras do carrinho e texto da mensagem do pedido
 scripts/
   atualizar_catalogo.py   confere o catálogo com a loja oficial da Amakha
 _antigo/
@@ -60,6 +63,11 @@ por um número, com ponto no lugar da vírgula:
 O site mostra "R$ 89,90". Com `null`, mostra "Consulte o valor".
 Isso vale para kits também: o preço fica sempre em `produtos.json`.
 Em `src/data/kits.ts` fica só quais kits aparecem em cada grupo da página /kits.
+
+**Carrinho** — só produto com preço entra no carrinho. Sem preço, o botão vira
+"Consultar no WhatsApp". O pedido não cobra nada no site: ele chega pronto no
+WhatsApp do Layon (itens, total, nome, entrega e forma de pagamento). Para mudar o
+texto da mensagem, edite `mensagemDoPedido` em `src/lib/carrinho.ts`.
 
 **Colocar um perfume de 100ml na página /100ml** — basta dar preço a ele em
 `produtos.json`. A página mostra só os de 100ml que têm preço.

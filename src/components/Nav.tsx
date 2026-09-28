@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import { EMAIL, linkWhats } from "@/data/contato";
 import { IconeEmail, IconeMenu, IconeSacola, IconeWhats } from "./Icones";
+import { useCarrinho } from "./Carrinho";
 
 // [endereço, nome no menu do computador, nome no menu do celular]
 const LINKS = [
@@ -15,6 +16,7 @@ const LINKS = [
 
 export default function Nav() {
   const menu = useRef<HTMLDetailsElement>(null);
+  const { quantidade, abrir } = useCarrinho();
   const fechar = () => menu.current?.removeAttribute("open");
   return (
     <nav className="nav" aria-label="Principal">
@@ -33,7 +35,10 @@ export default function Nav() {
             ))}
           </div>
         </details>
-        <a href="/kits" aria-label="Ver os kits"><IconeSacola /></a>
+        <button type="button" className="sacola" onClick={abrir} aria-label={`Abrir carrinho, ${quantidade} ${quantidade === 1 ? "item" : "itens"}`}>
+          <IconeSacola />
+          {quantidade > 0 && <span className="badge" aria-hidden="true">{quantidade}</span>}
+        </button>
       </div>
     </nav>
   );

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import Carrinho from "@/components/Carrinho";
 
 export const metadata: Metadata = {
   title: "Layon Alves | Perfumes Amakha Paris em Brasília",
@@ -25,7 +26,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <Carrinho>{children}</Carrinho>
+      </body>
     </html>
   );
 }

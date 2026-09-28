@@ -1,10 +1,8 @@
 "use client";
-import { linkWhats, mensagemPedido } from "@/data/contato";
 import { fichaDe, imagem, precoTexto, type Produto } from "@/lib/catalogo";
 import { useLoja } from "./Loja";
 import { GENERO } from "@/lib/produtos";
-
-
+import BotaoComprar from "./BotaoComprar";
 
 export default function CardProduto({ produto }: { produto: Produto }) {
   const { abrirFicha } = useLoja();
@@ -34,7 +32,7 @@ export default function CardProduto({ produto }: { produto: Produto }) {
         <div className="pprice">{precoTexto(produto.preco)}</div>
         <div className="pactions">
           {f && <button type="button" className="pnotes" onClick={abrir}>Ver notas</button>}
-          <a href={linkWhats(mensagemPedido(produto.nome))} target="_blank" rel="noopener"><span>Pedir no WhatsApp</span></a>
+          <BotaoComprar produto={produto} />
         </div>
       </div>
     </article>
