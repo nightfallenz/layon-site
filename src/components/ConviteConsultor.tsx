@@ -8,11 +8,11 @@ export default function ConviteConsultor() {
       <div className="convite-foto">
         <img
           src="/consultor.jpg"
-          srcSet="/consultor-1200.jpg 1200w, /consultor.jpg 2048w"
+          srcSet="/consultor-1200.jpg 1200w, /consultor-1920.jpg 1920w, /consultor.jpg 2752w"
           sizes="100vw"
           alt="Consultor Amakha Paris segurando perfumes de bolso"
-          width={2048}
-          height={1144}
+          width={2752}
+          height={1536}
           decoding="async"
         />
       </div>
