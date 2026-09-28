@@ -511,3 +511,4 @@ html{scroll-padding-top:64px}
 .campo textarea:focus{outline:2px solid #000;outline-offset:0}
 .presente .campo input{background:#fff}
 .presente-linha .campo{min-width:0}.presente-linha .campo input{width:100%;min-width:0}
+.pcard .pimg .tag.tag-ouro{background:#1A1A1A;color:#E8D48A;border-color:#1A1A1A}

@@ -1,5 +1,5 @@
 "use client";
-import { fichaDe, imagem, precoTexto, type Produto } from "@/lib/catalogo";
+import { fichaDe, fotoDe, precoTexto, type Produto } from "@/lib/catalogo";
 import { useLoja } from "./Loja";
 import { GENERO } from "@/lib/produtos";
 import BotaoComprar from "./BotaoComprar";
@@ -24,13 +24,15 @@ export default function CardProduto({ produto }: { produto: Produto }) {
           },
         })}
       >
-        <img src={imagem(produto.imagem, produto.ext)} alt={`${nome} Amakha Paris`} loading="lazy" width={400} height={400} />
-        {f?.intensidade && <span className="tag">{f.intensidade}</span>}
+        <img src={fotoDe(produto)} alt={produto.original ? `${nome} ${produto.original}` : `${nome} Amakha Paris`} loading="lazy" width={400} height={400} />
+        {produto.original ? <span className="tag tag-ouro">Original</span> : f?.intensidade && <span className="tag">{f.intensidade}</span>}
       </div>
       <div className="pbody">
         <div className="pfam">{[GENERO[produto.grupo], f ? f.estilo : produto.familia].filter(Boolean).join(" · ")}</div>
         <h3>{nome}</h3>
-        {f && <div className="pinsp">Inspirado em <b>{f.inspiradoEm}</b> · {f.marca}</div>}
+        {produto.original ? (
+          <div className="pinsp"><b>Original importado</b> · {produto.original}</div>
+        ) : f && <div className="pinsp">Inspirado em <b>{f.inspiradoEm}</b> · {f.marca}</div>}
         <div className="pprice">{precoTexto(produto.preco)}</div>
         <div className="pactions">
           {f && <button type="button" className="pnotes" onClick={abrir}>Ver notas</button>}

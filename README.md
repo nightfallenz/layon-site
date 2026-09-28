@@ -81,6 +81,11 @@ texto da mensagem, edite `mensagemDoPedido` em `src/lib/carrinho.ts`.
 **Colocar um perfume de 100ml na página /100ml** — basta dar preço a ele em
 `produtos.json`. A página mostra só os de 100ml que têm preço.
 
+**Produto com foto própria ou importado original** — em `produtos.json`, use
+`"foto": "/produtos/arquivo.jpg"` (arquivo na pasta `public/produtos/`) e, se for
+importado, `"original": "Nome da marca"`. Ele ganha a etiqueta "Original" e, na ficha,
+aparece a versão Amakha do mesmo cheiro. Exemplo: Al Sabah Ward e Asad em /arabes.
+
 **Prévia do link** — cada página tem um `opengraph-image.tsx` com título, texto,
 preço e as fotos. Mudou o preço? Atualize o texto ali também. As fotos são baixadas
 da Amakha na hora do deploy; se a Amakha estiver fora do ar, a prévia sai só com texto.

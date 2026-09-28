@@ -22,6 +22,9 @@ export default function PaginaArabes() {
       <Bloco titulo="Perfumes 15ml" texto="Clique na foto para ver o original árabe parecido e as notas." preco={precoTexto(perfumes[0]?.preco ?? null)} rotuloPreco="Cada perfume">
         <Grade produtos={perfumes} />
       </Bloco>
+      <Bloco titulo="Originais importados" texto="Os árabes originais, 100ml, lacrados. Clique na foto para ver as notas e a versão Amakha do mesmo cheiro." rotuloPreco="100ml">
+        <Grade produtos={pegar(ARABES.originais)} />
+      </Bloco>
       <Bloco titulo="Kits e combinações" texto="Kit 2 em 1 (perfume 15ml + body splash) e duos para usar em camadas.">
         <Grade produtos={pegar(ARABES.kits)} />
       </Bloco>

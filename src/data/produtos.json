@@ -198,5 +198,7 @@
 {"nome": "Shampoo Control Detox 300ml", "grupo": "C", "familia": null, "imagem": 163793, "ext": "jpg", "preco": null},
 {"nome": "Máscara Matizadora Efeito Perolado 300g", "grupo": "C", "familia": null, "imagem": 163797, "ext": "jpg", "preco": null},
 {"nome": "Máscara Matizadora Acinzentado 300g", "grupo": "C", "familia": null, "imagem": 160161, "ext": "png", "preco": null},
-{"nome": "Máscara Matizadora Platinado 300g", "grupo": "C", "familia": null, "imagem": 160159, "ext": "png", "preco": null}
+{"nome": "Máscara Matizadora Platinado 300g", "grupo": "C", "familia": null, "imagem": 160159, "ext": "png", "preco": null},
+{"nome": "Al Sabah Ward Original 100ml", "grupo": "F", "familia": "Floral", "imagem": 0, "ext": "jpg", "preco": 300, "ficha": "al-sabah-f", "foto": "/produtos/al-sabah-ward-original.jpg", "original": "Al Wataniah"},
+{"nome": "Asad Original 100ml", "grupo": "M", "familia": "Oriental", "imagem": 0, "ext": "jpg", "preco": 320, "ficha": "asadiyy-m", "foto": "/produtos/asad-original.jpg", "original": "Lattafa"}
 ]

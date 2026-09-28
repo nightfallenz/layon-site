@@ -9,6 +9,7 @@ const REGRAS: [RegExp, string][] = [
   [/^Kit Premium (.+)$/, "Kit Premium · $1"],
   [/^Kit Perfumad[oa] (.+)$/, "Kit Perfumado · $1"],
   [/^Body Splash (.+?) 100ml$/, "Body Splash $1"],
+  [/^(.+) Original 100ml$/, "$1 100ml"],
   [/Hasan Rosé/g, "Hasan Rose"],
   [/^Kit D\b/, "Kit D by Denise Lemos"],
   [/· D$/, "· D by Denise Lemos"],

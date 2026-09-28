@@ -3,7 +3,7 @@
 // e fecha o pedido mandando tudo escrito para o WhatsApp do Layon.
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { linkWhats } from "@/data/contato";
-import { imagem, precoTexto, type Produto } from "@/lib/catalogo";
+import { fotoDe, precoTexto, type Produto } from "@/lib/catalogo";
 import {
   PAGAMENTOS, QTD_MAX, mensagemDoPedido, montarItens, quantidadeDe, totalDe,
   type DadosPedido, type Item, type ItemGuardado,
@@ -105,7 +105,7 @@ function Gaveta({ itens, mudarQtd, esvaziar, fechar }: { itens: Item[]; mudarQtd
           <ul className="gaveta-lista">
             {itens.map(({ produto: p, qtd, subtotal }) => (
               <li key={p.nome}>
-                <img src={imagem(p.imagem, p.ext, 200)} alt="" width={72} height={72} />
+                <img src={fotoDe(p, 200)} alt="" width={72} height={72} />
                 <div className="gi-info">
                   <div className="gi-nome">{nomeVitrine(p)}</div>
                   <div className="gi-preco">{precoTexto(p.preco)} cada</div>

@@ -16,6 +16,10 @@ export type Produto = {
   ext: string;
   preco: number | null;
   ficha?: string;
+  /** foto própria em /public (usada no lugar da foto da Amakha) */
+  foto?: string;
+  /** perfume importado original (não Amakha): nome da marca */
+  original?: string;
 };
 
 export type Ficha = {
@@ -41,6 +45,9 @@ export const fichaDe = (p: Produto): Ficha | null => (p.ficha ? FICHAS[p.ficha] 
 
 export const imagem = (id: number, ext = "jpg", tamanho = 400) =>
   `https://amakha.vteximg.com.br/arquivos/ids/${id}-${tamanho}-${tamanho}/p.${ext}`;
+
+/** Foto do produto: a própria (public/) se houver, senão a da Amakha. */
+export const fotoDe = (p: Produto, tamanho = 400) => p.foto ?? imagem(p.imagem, p.ext, tamanho);
 
 export const precoTexto = (preco: number | null) =>
   preco == null ? "Consulte o valor" : preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -101,13 +108,15 @@ export const UM_POR_PERFUME: Produto[] = (() => {
 export function parecidos(p: Produto, quantos = 4): Produto[] {
   const f = fichaDe(p);
   if (!f) return [];
-  return UM_POR_PERFUME.filter((q) => q.ficha !== p.ficha)
+  // no original importado, a primeira sugestão é a versão Amakha do mesmo cheiro
+  const versaoAmakha = p.original ? UM_POR_PERFUME.filter((q) => q.ficha === p.ficha) : [];
+  return versaoAmakha.concat(UM_POR_PERFUME.filter((q) => q.ficha !== p.ficha)
     .map((q) => ({ q, g: fichaDe(q)! }))
     .filter(({ g }) => g.genero === f.genero && g.grupo === f.grupo)
     .map(({ q, g }) => ({ q, nota: (g.intensidade === f.intensidade ? 0 : 1) + (g.estilo === f.estilo ? 0 : 0.5) }))
     .sort((a, b) => a.nota - b.nota)
-    .slice(0, quantos)
-    .map((x) => x.q);
+    .map((x) => x.q)
+  ).slice(0, quantos);
 }
 
 // ---- Teste "Descubra seu perfume" ----
