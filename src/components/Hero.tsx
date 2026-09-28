@@ -1,4 +1,5 @@
 import { imagem } from "@/lib/catalogo";
+import Nevoa from "./Nevoa";
 
 export default function Hero() {
   return (
@@ -8,6 +9,7 @@ export default function Hero() {
         <img src={imagem(161862, "jpg", 900)} alt="Kit Premium 521 Vip Rosé Amakha Paris" fetchPriority="high" />
       </div>
       <div className="hero-fade"></div>
+      <Nevoa />
       <div className="hero-content">
         <div className="eyebrow line fu f1">Coleção 2026</div>
         <h1 className="fu f2">Perfumes que<br /><em>Deixam</em><br />Memória</h1>

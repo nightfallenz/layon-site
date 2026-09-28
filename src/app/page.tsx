@@ -9,6 +9,7 @@ import Historia from "@/components/Historia";
 import Linhas from "@/components/Linhas";
 import Consultor from "@/components/Consultor";
 import Rodape from "@/components/Rodape";
+import Faixa from "@/components/Faixa";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
+        <Faixa />
         <Kits />
         <Loja>
           <Catalogo />

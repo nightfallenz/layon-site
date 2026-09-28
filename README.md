@@ -36,6 +36,9 @@ src/
     Loja.tsx              liga catálogo, ficha e teste entre si
     Carrinho.tsx          carrinho do site todo + envio do pedido pelo WhatsApp
     BotaoComprar.tsx      "Adicionar ao carrinho" ou "Consultar no WhatsApp"
+    Animacoes.tsx         efeitos ao rolar, barra de progresso, parallax do topo
+    Nevoa.tsx             partículas douradas no topo da página inicial
+    Faixa.tsx             faixa preta deslizante abaixo do topo (frases editáveis)
     Icones.tsx            ícones
   data/               o conteúdo, separado do visual
     contato.ts            WhatsApp, e-mail, link de cadastro

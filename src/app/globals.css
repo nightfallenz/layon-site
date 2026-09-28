@@ -360,3 +360,106 @@ html{scroll-padding-top:64px}
 .gaveta-ok{border:1px solid #000;padding:16px;display:flex;flex-direction:column;gap:12px;font-size:14px;line-height:1.5}
 .gaveta-ok p{margin:0}
 .gaveta-ok .btn{min-height:44px;padding:0 16px;width:100%;background:#fff;cursor:pointer}
+
+/* ================= movimento ================= */
+:root{--ease:cubic-bezier(.2,.7,.2,1);--ouro:#C9A227}
+
+/* aparecer ao rolar (só com JS ligado; sem JS tudo fica visível) */
+.anim .rv{opacity:0;transform:translate3d(0,28px,0);transition:opacity .9s var(--ease) var(--d,0ms),transform .9s var(--ease) var(--d,0ms)}
+.anim .rv.in{opacity:1;transform:none}
+.photo{position:relative;overflow:hidden}
+.anim .photo.rv{opacity:1;transform:none}
+.anim .photo.rv::after{content:"";position:absolute;inset:0;background:#fff;transform-origin:top;transition:transform 1.2s var(--ease)}
+.anim .photo.rv.in::after{transform:scaleY(0)}
+.anim .photo.rv .mono{transform:scale(1.15);transition:transform 1.6s var(--ease)}
+.anim .photo.rv.in .mono{transform:none}
+.anim .float-card.rv{transform:translate3d(0,40px,0) scale(.96)}
+.anim .float-card.rv.in{transform:none;transition-delay:.35s}
+.anim .hr.rv{opacity:1;transform:scaleX(0);transform-origin:left;transition:transform 1.1s var(--ease)}
+.anim .hr.rv.in{transform:scaleX(1)}
+
+/* brilho dourado passando nas palavras em itálico dos títulos */
+.h2 em,.hero h1 em{background:linear-gradient(100deg,var(--ink) 0%,var(--ink) 40%,var(--ouro) 50%,var(--ink) 60%,var(--ink) 100%);background-size:250% 100%;background-position:100% 0;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding-right:.08em}
+.hero h1 em{animation:brilho 2.4s var(--ease) 1s both}
+.anim .h2.brilha em{animation:brilho 2.2s var(--ease) .4s both}
+.h2 em{transition:none}
+@keyframes brilho{from{background-position:100% 0}to{background-position:0 0}}
+
+/* topo: névoa dourada e parallax */
+.hero{overflow:hidden}
+.hero-bg img{will-change:transform}
+.nevoa{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero-content{z-index:1}
+
+/* barra de progresso e menu */
+.progresso{position:fixed;top:0;left:0;right:0;height:2px;z-index:70;background:linear-gradient(90deg,var(--ouro),#E8D48A);transform:scaleX(0);transform-origin:left;pointer-events:none}
+.nav{transition:box-shadow .3s ease,background .3s ease}
+.rolou .nav{box-shadow:0 8px 30px -18px rgba(0,0,0,.35);background:rgba(255,255,255,.92)}
+.nav-links a{position:relative}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:right;transition:transform .35s var(--ease)}
+.nav-links a:hover::after{transform:scaleX(1);transform-origin:left}
+
+/* faixa deslizante */
+.faixa{overflow:hidden;background:var(--ink);color:#fff;border-block:1px solid #000}
+.faixa-trilho{display:flex;width:max-content;animation:faixa 38s linear infinite}
+.faixa:hover .faixa-trilho{animation-play-state:paused}
+.faixa span{display:inline-flex;align-items:center;gap:28px;padding:16px 0 16px 28px;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;white-space:nowrap}
+.faixa i{font-style:normal;color:var(--ouro)}
+@keyframes faixa{to{transform:translateX(-50%)}}
+
+/* botões: reflexo passando */
+.btn-primary{position:relative;overflow:hidden;isolation:isolate}
+.btn-primary::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.28) 50%,transparent 70%);transform:translateX(-120%);transition:transform .8s var(--ease)}
+.btn-primary:hover::after{transform:translateX(120%)}
+.btn{transition:background .25s ease,color .25s ease,transform .25s var(--ease)}
+.btn:active{transform:scale(.97)}
+
+/* cards de produto */
+.pcard{transition:border-color .3s ease,transform .45s var(--ease),box-shadow .45s var(--ease)}
+.pcard:hover{transform:translateY(-6px);box-shadow:0 22px 40px -28px rgba(0,0,0,.45)}
+.pcard .pimg{overflow:hidden}
+.pcard .pimg img{transition:transform .7s var(--ease)}
+.pcard:hover .pimg img{transform:scale(1.07) rotate(-1.5deg)}
+.escolha{transition:border-color .2s,transform .45s var(--ease),box-shadow .45s var(--ease)}
+.escolha:hover{transform:translateY(-6px);box-shadow:0 28px 50px -30px rgba(0,0,0,.45)}
+.escolha-fotos img:nth-child(1){transition-delay:.05s}
+.escolha-fotos img:nth-child(3){transition-delay:.1s}
+.escolha:hover .escolha-fotos img:nth-child(1){transform:translateY(-6px) rotate(-6deg)}
+.escolha:hover .escolha-fotos img:nth-child(3){transform:translateY(-6px) rotate(6deg)}
+.coll-txt span{transition:letter-spacing .4s var(--ease)}
+.coll:hover .coll-txt span{letter-spacing:3.5px}
+
+/* sacola: número pulando quando entra item */
+.badge{animation:pulo .45s var(--ease)}
+@keyframes pulo{0%{transform:scale(.4)}60%{transform:scale(1.25)}100%{transform:scale(1)}}
+
+/* ficha do perfume */
+.ficha[open]{animation:ficha-in .45s var(--ease)}
+.ficha[open]::backdrop{animation:fundo-in .3s ease}
+@keyframes ficha-in{from{opacity:0;transform:translateY(24px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes fundo-in{from{opacity:0}}
+.ficha[open] .ficha-img img{animation:frasco-in .9s var(--ease) .1s both}
+@keyframes frasco-in{from{opacity:0;transform:translateY(20px) rotate(-4deg) scale(.92)}to{opacity:1;transform:none}}
+.ficha[open] .pyr div{animation:linha-in .6s var(--ease) both}
+.ficha[open] .pyr div:nth-child(1){animation-delay:.15s}
+.ficha[open] .pyr div:nth-child(2){animation-delay:.25s}
+.ficha[open] .pyr div:nth-child(3){animation-delay:.35s}
+@keyframes linha-in{from{opacity:0;transform:translateX(16px)}to{opacity:1;transform:none}}
+.ficha[open] .bars i.on{animation:barra .5s var(--ease) both}
+.ficha[open] .bars i.on:nth-child(2){animation-delay:.12s}
+.ficha[open] .bars i.on:nth-child(3){animation-delay:.24s}
+@keyframes barra{from{transform:scaleX(0);transform-origin:left}to{transform:scaleX(1);transform-origin:left}}
+
+/* teste do perfume: opção escolhida dá um toque */
+.opt input:checked+label{animation:escolhido .35s var(--ease)}
+@keyframes escolhido{50%{transform:scale(1.04)}}
+.quiz-res h3{animation:fadeUp .6s var(--ease) both}
+
+/* sem movimento para quem pediu */
+@media (prefers-reduced-motion:reduce){
+  .faixa-trilho,.hero h1 em,.badge,.ficha[open],.ficha[open] *,.opt input:checked+label,.quiz-res h3{animation:none!important}
+  .h2 em,.hero h1 em{background:none;-webkit-text-fill-color:currentColor}
+  .pcard:hover,.escolha:hover{transform:none}
+  .pcard:hover .pimg img{transform:none}
+  .progresso{display:none}
+}

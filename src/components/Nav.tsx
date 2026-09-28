@@ -37,7 +37,7 @@ export default function Nav() {
         </details>
         <button type="button" className="sacola" onClick={abrir} aria-label={`Abrir carrinho, ${quantidade} ${quantidade === 1 ? "item" : "itens"}`}>
           <IconeSacola />
-          {quantidade > 0 && <span className="badge" aria-hidden="true">{quantidade}</span>}
+          {quantidade > 0 && <span className="badge" key={quantidade} aria-hidden="true">{quantidade}</span>}
         </button>
       </div>
     </nav>
