@@ -5,7 +5,11 @@ import { KITS_2EM1, KITS_3EM1, KITS_PREMIUM } from "@/data/kits";
 import { precoTexto } from "@/lib/catalogo";
 import { pegar } from "@/lib/produtos";
 
-export const metadata: Metadata = { title: "Kits de presente | Layon Alves Amakha Paris" };
+export const metadata: Metadata = {
+  title: "Kits de presente | Layon Alves Amakha Paris",
+  description: "Kit 3 em 1 por R$ 139, Kit 2 em 1 por R$ 99 e Kits Premium. Entrega em mãos em Brasília e Entorno.",
+  openGraph: { title: "Kits de presente | Layon Alves Amakha Paris", description: "Kit 3 em 1 por R$ 139, Kit 2 em 1 por R$ 99 e Kits Premium. Entrega em mãos em Brasília e Entorno.", locale: "pt_BR", type: "website" },
+};
 
 function precoDoGrupo(nomes: string[]) {
   const precos = [...new Set(pegar(nomes).map((p) => p.preco))];

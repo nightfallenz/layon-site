@@ -4,6 +4,7 @@ import { linkWhats, mensagemPedido } from "@/data/contato";
 import type { Produto } from "@/lib/catalogo";
 import { podeComprar } from "@/lib/carrinho";
 import { useCarrinho } from "./Carrinho";
+import { nomeVitrine } from "@/lib/nomes";
 
 export default function BotaoComprar({ produto, grande = false }: { produto: Produto; grande?: boolean }) {
   const { adicionar } = useCarrinho();
@@ -14,7 +15,7 @@ export default function BotaoComprar({ produto, grande = false }: { produto: Pro
       </button>
     );
   }
-  const href = linkWhats(mensagemPedido(produto.nome));
+  const href = linkWhats(mensagemPedido(nomeVitrine(produto)));
   return grande ? (
     <a className="btn btn-primary" href={href} target="_blank" rel="noopener">Consultar no WhatsApp</a>
   ) : (

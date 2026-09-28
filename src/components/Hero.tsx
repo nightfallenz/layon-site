@@ -22,9 +22,9 @@ export default function Hero() {
           <a className="btn btn-outline" href="#consultor">Quero ser consultor</a>
         </div>
         <div className="stats fu f5">
-          <div><div className="stat-n">4</div><div className="stat-l">Kits completos</div></div>
-          <div><div className="stat-n">15–100</div><div className="stat-l">Mililitros</div></div>
-          <div><div className="stat-n">DF</div><div className="stat-l">Brasília e Entorno</div></div>
+          <div><div className="stat-n">100+</div><div className="stat-l">Fragrâncias</div></div>
+          <div><div className="stat-n">R$ 45</div><div className="stat-l">Perfume 15ml</div></div>
+          <div><div className="stat-n">Em mãos</div><div className="stat-l">Brasília e Entorno</div></div>
         </div>
       </div>
     </section>

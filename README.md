@@ -18,6 +18,8 @@ src/
     15ml/feminino/    página /15ml/feminino
     15ml/masculino/   página /15ml/masculino
     100ml/page.tsx    página /100ml (só os que têm preço)
+    arabes/page.tsx   página /arabes (Linha Árabe)
+    */opengraph-image.tsx   imagem de prévia de cada página (WhatsApp, Instagram)
     layout.tsx        título, descrição e fontes
     globals.css       todo o visual (cores, tamanhos, celular)
     icon.svg          ícone da aba
@@ -43,11 +45,15 @@ src/
   data/               o conteúdo, separado do visual
     contato.ts            WhatsApp, e-mail, link de cadastro
     kits.ts               quais kits aparecem em /kits e na vitrine
+    arabes.ts             quais produtos aparecem em /arabes
     produtos.json         os ~200 produtos do catálogo
     fichas.json           notas olfativas e "inspirado em" (enciclopédia 2025)
   lib/
     catalogo.ts       regras: busca, filtros, parecidos, teste do perfume
     carrinho.ts       regras do carrinho e texto da mensagem do pedido
+    nomes.ts          nome de vitrine ("Duo Fragrâncias GD" vira "Kit 2 em 1 · GD")
+    cartaz.tsx        desenho da imagem de prévia dos links
+  fontes/             Playfair Display e Inter servidas pelo próprio site (licença OFL)
 scripts/
   atualizar_catalogo.py   confere o catálogo com a loja oficial da Amakha
 _antigo/
@@ -74,6 +80,10 @@ texto da mensagem, edite `mensagemDoPedido` em `src/lib/carrinho.ts`.
 
 **Colocar um perfume de 100ml na página /100ml** — basta dar preço a ele em
 `produtos.json`. A página mostra só os de 100ml que têm preço.
+
+**Prévia do link** — cada página tem um `opengraph-image.tsx` com título, texto,
+preço e as fotos. Mudou o preço? Atualize o texto ali também. As fotos são baixadas
+da Amakha na hora do deploy; se a Amakha estiver fora do ar, a prévia sai só com texto.
 
 **Trocar o número do WhatsApp ou o link de cadastro** — só em `src/data/contato.ts`.
 

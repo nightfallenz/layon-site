@@ -3,6 +3,7 @@ import { ETIQUETA_VITRINE, KITS_PREMIUM } from "@/data/kits";
 import { linkWhats, mensagemPedido } from "@/data/contato";
 import { imagem, precoTexto } from "@/lib/catalogo";
 import { pegar } from "@/lib/produtos";
+import { nomeVitrine } from "@/lib/nomes";
 
 export default function Kits() {
   return (
@@ -19,11 +20,11 @@ export default function Kits() {
           return (
             <article className="card" key={k.nome}>
               <div className="card-img">
-                <div className="ph prod"><img src={imagem(k.imagem, k.ext, 600)} alt={`${k.nome} Amakha Paris`} loading="lazy" /></div>
+                <div className="ph prod"><img src={imagem(k.imagem, k.ext, 600)} alt={`${nomeVitrine(k)} Amakha Paris`} loading="lazy" /></div>
                 <span className={`tag ${etiqueta.escura ? "dark" : "light"}`}>{etiqueta.texto}</span>
-                <div className="qv"><a href={linkWhats(mensagemPedido(k.nome))}>Quero este kit</a></div>
+                <div className="qv"><a href={linkWhats(mensagemPedido(nomeVitrine(k)))}>Quero este kit</a></div>
               </div>
-              <h3>{k.nome}</h3>
+              <h3>{nomeVitrine(k)}</h3>
               <div className="price">{precoTexto(k.preco)}</div>
             </article>
           );

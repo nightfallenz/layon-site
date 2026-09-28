@@ -3,7 +3,11 @@ import Pagina from "@/components/Pagina";
 import { imagem, precoTexto } from "@/lib/catalogo";
 import { pegar, perfumes15De } from "@/lib/produtos";
 
-export const metadata: Metadata = { title: "Perfumes 15ml | Layon Alves Amakha Paris" };
+export const metadata: Metadata = {
+  title: "Perfumes 15ml | Layon Alves Amakha Paris",
+  description: "Todos os perfumes 15ml por R$ 45, femininos e masculinos, com o importado parecido e as notas.",
+  openGraph: { title: "Perfumes 15ml | Layon Alves Amakha Paris", description: "Todos os perfumes 15ml por R$ 45, femininos e masculinos, com o importado parecido e as notas.", locale: "pt_BR", type: "website" },
+};
 
 // Os 3 frascos que aparecem na foto de cada cartão
 const OPCOES = [

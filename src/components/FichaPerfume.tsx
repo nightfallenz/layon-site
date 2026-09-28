@@ -2,6 +2,7 @@
 // Janela com a ficha do perfume: inspiração, estilo, intensidade, notas e parecidos.
 import { useEffect, useRef } from "react";
 import BotaoComprar from "./BotaoComprar";
+import { nomeVitrine } from "@/lib/nomes";
 import { fichaDe, imagem, parecidos, type Produto } from "@/lib/catalogo";
 
 const NIVEL = { Suave: 1, Moderado: 2, Intenso: 3 } as const;
@@ -34,12 +35,12 @@ export default function FichaPerfume({ produto, onTrocar, onFechar }: Props) {
       {produto && f && (
         <div className="ficha-in">
           <div className="ficha-img">
-            <img src={imagem(produto.imagem, produto.ext, 600)} alt={`${produto.nome} Amakha Paris`} width={600} height={600} />
+            <img src={imagem(produto.imagem, produto.ext, 600)} alt={`${nomeVitrine(produto)} Amakha Paris`} width={600} height={600} />
           </div>
           <div className="ficha-body">
             <button type="button" className="ficha-x" aria-label="Fechar" onClick={() => ref.current?.close()}>×</button>
             <div className="eyebrow">Amakha Paris</div>
-            <h3 id="ficha-t">{produto.nome}</h3>
+            <h3 id="ficha-t">{nomeVitrine(produto)}</h3>
             <div className="insp">Inspirado em <b>{f.inspiradoEm}</b> · {f.marca}</div>
             <div className="meta">
               <div>Estilo<strong>{f.estilo}</strong></div>
@@ -60,7 +61,7 @@ export default function FichaPerfume({ produto, onTrocar, onFechar }: Props) {
                 <div className="alike-t">Se gostou, experimente também</div>
                 <div className="alike-l">
                   {outros.map((q) => (
-                    <button type="button" key={q.nome} onClick={() => onTrocar(q)}>{q.nome.replace(/\s*15ml$/i, "")}</button>
+                    <button type="button" key={q.nome} onClick={() => onTrocar(q)}>{nomeVitrine(q).replace(/\s*15ml$/i, "")}</button>
                   ))}
                 </div>
               </div>

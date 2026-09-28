@@ -9,6 +9,7 @@ const LINKS = [
   ["/kits", "Kits", "Kits de presente"],
   ["/15ml", "15ml", "Perfumes 15ml"],
   ["/100ml", "100ml", "Perfumes 100ml"],
+  ["/arabes", "Árabes", "Linha Árabe"],
   ["/#catalogo", "Catálogo", "Catálogo completo"],
   ["/#descubra", "Descubra", "Descubra seu perfume"],
   ["/#consultor", "Seja consultor", "Seja consultor"],

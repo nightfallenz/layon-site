@@ -8,6 +8,7 @@ import {
   PAGAMENTOS, QTD_MAX, mensagemDoPedido, montarItens, quantidadeDe, totalDe,
   type DadosPedido, type Item, type ItemGuardado,
 } from "@/lib/carrinho";
+import { nomeVitrine } from "@/lib/nomes";
 
 const CHAVE = "layon-carrinho-v1";
 
@@ -57,7 +58,7 @@ export default function Carrinho({ children }: { children: ReactNode }) {
       const achou = g.find((x) => x.nome === p.nome);
       return achou ? g.map((x) => (x.nome === p.nome ? { ...x, qtd: Math.min(x.qtd + 1, QTD_MAX) } : x)) : [...g, { nome: p.nome, qtd: 1 }];
     });
-    setAviso(p.nome);
+    setAviso(nomeVitrine(p));
     clearTimeout(timer.current);
     timer.current = setTimeout(() => setAviso(null), 3500);
   }, []);
@@ -80,7 +81,7 @@ export default function Carrinho({ children }: { children: ReactNode }) {
   );
 }
 
-const DADOS_INICIAIS: DadosPedido = { nome: "", entrega: "entrega", local: "", pagamento: "Pix", obs: "" };
+const DADOS_INICIAIS: DadosPedido = { nome: "", entrega: "entrega", local: "", pagamento: "Pix", obs: "", presente: false, cartaoDe: "", cartaoPara: "", cartaoMsg: "" };
 
 function Gaveta({ itens, mudarQtd, esvaziar, fechar }: { itens: Item[]; mudarQtd: (n: string, q: number) => void; esvaziar: () => void; fechar: () => void }) {
   const [d, setD] = useState<DadosPedido>(DADOS_INICIAIS);
@@ -106,9 +107,9 @@ function Gaveta({ itens, mudarQtd, esvaziar, fechar }: { itens: Item[]; mudarQtd
               <li key={p.nome}>
                 <img src={imagem(p.imagem, p.ext, 200)} alt="" width={72} height={72} />
                 <div className="gi-info">
-                  <div className="gi-nome">{p.nome}</div>
+                  <div className="gi-nome">{nomeVitrine(p)}</div>
                   <div className="gi-preco">{precoTexto(p.preco)} cada</div>
-                  <div className="qtd" role="group" aria-label={`Quantidade de ${p.nome}`}>
+                  <div className="qtd" role="group" aria-label={`Quantidade de ${nomeVitrine(p)}`}>
                     <button type="button" aria-label="Diminuir" onClick={() => mudarQtd(p.nome, qtd - 1)}>−</button>
                     <span aria-live="polite">{qtd}</span>
                     <button type="button" aria-label="Aumentar" disabled={qtd >= QTD_MAX} onClick={() => mudarQtd(p.nome, qtd + 1)}>+</button>
@@ -163,8 +164,33 @@ function Gaveta({ itens, mudarQtd, esvaziar, fechar }: { itens: Item[]; mudarQtd
               ))}
             </fieldset>
 
+            <div className={`presente${d.presente ? " on" : ""}`}>
+              <label className="presente-chk">
+                <input type="checkbox" checked={d.presente} onChange={(e) => setD({ ...d, presente: e.target.checked })} />
+                <span>
+                  <strong>É para presente</strong>
+                  <small>Vai embalado, com cartão escrito do seu jeito</small>
+                </span>
+              </label>
+              {d.presente && (
+                <div className="presente-campos">
+                  <div className="presente-linha">
+                    <label className="campo">Para
+                      <input value={d.cartaoPara} onChange={(e) => setD({ ...d, cartaoPara: e.target.value })} maxLength={40} placeholder="Ex.: Ana" />
+                    </label>
+                    <label className="campo">De
+                      <input value={d.cartaoDe} onChange={(e) => setD({ ...d, cartaoDe: e.target.value })} maxLength={40} placeholder="Ex.: Pedro" />
+                    </label>
+                  </div>
+                  <label className="campo">Mensagem do cartão <small>(opcional)</small>
+                    <textarea value={d.cartaoMsg} onChange={(e) => setD({ ...d, cartaoMsg: e.target.value })} maxLength={200} rows={3} placeholder="Ex.: Feliz aniversário! Esse cheiro é a sua cara." />
+                  </label>
+                </div>
+              )}
+            </div>
+
             <label className="campo">Observação <small>(opcional)</small>
-              <input value={d.obs} onChange={(e) => setD({ ...d, obs: e.target.value })} placeholder="Ex.: é para presente" maxLength={140} />
+              <input value={d.obs} onChange={(e) => setD({ ...d, obs: e.target.value })} placeholder="Ex.: melhor horário para entrega" maxLength={140} />
             </label>
 
             <button type="submit" className="btn btn-primary gaveta-enviar">{enviado ? "Abrir o WhatsApp de novo" : "Enviar pedido pelo WhatsApp"}</button>

@@ -4,7 +4,11 @@ import Grade from "@/components/Grade";
 import { precoTexto } from "@/lib/catalogo";
 import { PERFUMES_100 } from "@/lib/produtos";
 
-export const metadata: Metadata = { title: "Perfumes 100ml | Layon Alves Amakha Paris" };
+export const metadata: Metadata = {
+  title: "Perfumes 100ml | Layon Alves Amakha Paris",
+  description: "Os 8 femininos e 8 masculinos mais pedidos por R$ 215. Entrega em mãos em Brasília e Entorno.",
+  openGraph: { title: "Perfumes 100ml | Layon Alves Amakha Paris", description: "Os 8 femininos e 8 masculinos mais pedidos por R$ 215. Entrega em mãos em Brasília e Entorno.", locale: "pt_BR", type: "website" },
+};
 
 export default function Pagina100() {
   const fem = PERFUMES_100.filter((p) => p.grupo === "F");
