@@ -40,7 +40,7 @@ export const quantidadeDe = (itens: Item[]) => itens.reduce((s, i) => s + i.qtd,
 
 export function mensagemDoPedido(itens: Item[], d: DadosPedido): string {
   const linhas = [
-    "Olá, Layon! Quero fazer este pedido pelo site:",
+    "Olá, Layon. Gostaria de fazer o seguinte pedido pelo site:",
     "",
     ...itens.map((i) => `• ${i.qtd}x ${nomeVitrine(i.produto)} — ${precoTexto(i.subtotal)}`),
     "",
@@ -48,11 +48,11 @@ export function mensagemDoPedido(itens: Item[], d: DadosPedido): string {
     "",
   ];
   if (d.nome.trim()) linhas.push(`Nome: ${d.nome.trim()}`);
-  linhas.push(d.entrega === "entrega" ? `Entrega em: ${d.local.trim() || "(vou informar)"}` : "Vou retirar com você");
+  linhas.push(d.entrega === "entrega" ? `Entrega em: ${d.local.trim() || "(vou informar)"}` : "Retirada com você");
   if (d.pagamento) linhas.push(`Pagamento: ${d.pagamento}`);
   if (d.obs.trim()) linhas.push(`Observação: ${d.obs.trim()}`);
   if (d.presente) {
-    linhas.push("", "*É para presente* (quero embalado)");
+    linhas.push("", "*Para presente* (com embalagem)");
     const cartao = [
       d.cartaoPara.trim() && `Para: ${d.cartaoPara.trim()}`,
       d.cartaoDe.trim() && `De: ${d.cartaoDe.trim()}`,
@@ -60,6 +60,6 @@ export function mensagemDoPedido(itens: Item[], d: DadosPedido): string {
     ].filter(Boolean) as string[];
     linhas.push(...cartao);
   }
-  linhas.push("", "Pode confirmar se tem tudo disponível?");
+  linhas.push("", "Poderia confirmar a disponibilidade?");
   return linhas.join("\n");
 }

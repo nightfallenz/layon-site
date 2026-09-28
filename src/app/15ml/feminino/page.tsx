@@ -3,8 +3,8 @@ import Lista15 from "@/components/Lista15";
 
 export const metadata: Metadata = {
   title: "Perfumes 15ml Femininos | Layon Alves Amakha Paris",
-  description: "Mais de 50 perfumes femininos 15ml por R$ 45, com o importado parecido e as notas.",
-  openGraph: { title: "Perfumes 15ml Femininos | Layon Alves Amakha Paris", description: "Mais de 50 perfumes femininos 15ml por R$ 45, com o importado parecido e as notas.", locale: "pt_BR", type: "website" },
+  description: "Fragrâncias femininas em 15ml, com a pirâmide olfativa e o clássico que inspira cada uma.",
+  openGraph: { title: "Perfumes 15ml Femininos | Layon Alves Amakha Paris", description: "Fragrâncias femininas em 15ml, com a pirâmide olfativa e o clássico que inspira cada uma.", locale: "pt_BR", type: "website" },
 };
 
 export default function Page() {

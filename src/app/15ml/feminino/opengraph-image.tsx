@@ -9,7 +9,7 @@ export default function Imagem() {
     sobre: "Perfumes 15ml",
     titulo: "Femininos",
     destaque: "15ml",
-    texto: "Mais de 50 fragrâncias. Veja o importado parecido e as notas de cada uma.",
+    texto: "Mais de 50 fragrâncias, cada uma com sua pirâmide olfativa.",
     preco: "R$ 45,00",
     rotuloPreco: "Cada perfume",
     fotos: [162355, 163231, 162295],

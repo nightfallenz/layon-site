@@ -7,10 +7,10 @@ import Animacoes from "@/components/Animacoes";
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://layon-site.vercel.app"),
   title: "Layon Alves | Perfumes Amakha Paris em Brasília",
-  description: "Perfumes e kits Amakha Paris com entrega em mãos em Brasília e Entorno. Seja consultor e venda com a equipe do Layon.",
+  description: "Curadoria pessoal de fragrâncias Amakha Paris, presentes de assinatura e entrega em mãos em Brasília e Entorno.",
   openGraph: {
     title: "Layon Alves | Perfumes Amakha Paris em Brasília",
-    description: "Kits prontos para presentear, entrega em mãos e equipe de consultores.",
+    description: "Curadoria pessoal de fragrâncias, presentes de assinatura e entrega em mãos em Brasília e Entorno.",
     locale: "pt_BR",
     type: "website",
   },

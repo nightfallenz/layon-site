@@ -34,14 +34,14 @@ export default function Grade({ produtos, abasDeGenero = false, busca = false }:
           {busca && (
             <>
               <label className="sr-only" htmlFor="busca-grade">Buscar</label>
-              <input id="busca-grade" className="search" type="search" placeholder="Nome, nota ou perfume famoso" autoComplete="off" value={termo} onChange={(e) => setTermo(e.target.value)} />
+              <input id="busca-grade" className="search" type="search" placeholder="Nome, nota ou clássico" autoComplete="off" value={termo} onChange={(e) => setTermo(e.target.value)} />
             </>
           )}
         </div>
       )}
-      {(abasDeGenero || busca) && <p className="cat-count" aria-live="polite">{lista.length} {lista.length === 1 ? "perfume" : "perfumes"}</p>}
+      {(abasDeGenero || busca) && <p className="cat-count" aria-live="polite">{lista.length} {lista.length === 1 ? "fragrância" : "fragrâncias"}</p>}
       <div className="cat-grid">
-        {lista.length === 0 && <p className="cat-empty">Nenhum perfume encontrado. Me chame no WhatsApp que eu te ajudo.</p>}
+        {lista.length === 0 && <p className="cat-empty">Nenhuma fragrância encontrada. Fale com o Layon para uma indicação.</p>}
         {lista.map((p) => <CardProduto key={p.nome} produto={p} />)}
       </div>
     </>

@@ -6,8 +6,8 @@ import { PERFUMES_100 } from "@/lib/produtos";
 
 export const metadata: Metadata = {
   title: "Perfumes 100ml | Layon Alves Amakha Paris",
-  description: "Os 8 femininos e 8 masculinos mais pedidos por R$ 215. Entrega em mãos em Brasília e Entorno.",
-  openGraph: { title: "Perfumes 100ml | Layon Alves Amakha Paris", description: "Os 8 femininos e 8 masculinos mais pedidos por R$ 215. Entrega em mãos em Brasília e Entorno.", locale: "pt_BR", type: "website" },
+  description: "As fragrâncias mais escolhidas no frasco de 100ml. Entrega em mãos em Brasília e Entorno.",
+  openGraph: { title: "Perfumes 100ml | Layon Alves Amakha Paris", description: "As fragrâncias mais escolhidas no frasco de 100ml. Entrega em mãos em Brasília e Entorno.", locale: "pt_BR", type: "website" },
 };
 
 export default function Pagina100() {
@@ -17,8 +17,8 @@ export default function Pagina100() {
   return (
     <Pagina
       sobretitulo="Perfumes 100ml"
-      titulo={<>Para Quem Quer <em>Ser Lembrado</em></>}
-      texto="Os mais pedidos no frasco grande. Clique na foto para ver com qual importado ele é parecido e as notas."
+      titulo={<>O Frasco <em>de Assinatura</em></>}
+      texto="As fragrâncias mais escolhidas, no formato para uso diário. Toque em cada uma para conhecer a pirâmide olfativa."
     >
       <Bloco titulo="Femininos" preco={preco} rotuloPreco="Cada perfume"><Grade produtos={fem} /></Bloco>
       <Bloco titulo="Masculinos" preco={preco} rotuloPreco="Cada perfume"><Grade produtos={masc} /></Bloco>

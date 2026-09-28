@@ -11,14 +11,14 @@ export default function BotaoComprar({ produto, grande = false }: { produto: Pro
   if (podeComprar(produto)) {
     return (
       <button type="button" className={grande ? "btn btn-primary" : "padd"} onClick={() => adicionar(produto)}>
-        {grande ? "Adicionar ao carrinho" : <span>Adicionar ao carrinho</span>}
+        {grande ? "Adicionar à sacola" : <span>Adicionar à sacola</span>}
       </button>
     );
   }
   const href = linkWhats(mensagemPedido(nomeVitrine(produto)));
   return grande ? (
-    <a className="btn btn-primary" href={href} target="_blank" rel="noopener">Consultar no WhatsApp</a>
+    <a className="btn btn-primary" href={href} target="_blank" rel="noopener">Consultar disponibilidade</a>
   ) : (
-    <a href={href} target="_blank" rel="noopener"><span>Consultar no WhatsApp</span></a>
+    <a href={href} target="_blank" rel="noopener"><span>Consultar disponibilidade</span></a>
   );
 }

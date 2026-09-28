@@ -8,11 +8,11 @@ import { nomeVitrine } from "@/lib/nomes";
 export default function Kits() {
   return (
     <section id="kits" className="section cream center">
-      <div className="eyebrow">O presente certo</div>
-      <h2 className="h2">Kits em Destaque</h2>
+      <div className="eyebrow">A arte de presentear</div>
+      <h2 className="h2">Presentes de <em>Assinatura</em></h2>
       <p className="lead">
-        Perfume 100ml, perfume 15ml, body splash e hidratante da mesma fragrância, numa caixa só. Você não precisa montar nada: é só
-        entregar e ver a reação.
+        Uma mesma fragrância em todas as suas formas, do perfume ao hidratante, reunida numa caixa pronta para ser entregue. O
+        gesto já chega completo.
       </p>
       <div className="grid4">
         {pegar(KITS_PREMIUM.produtos).map((k) => {
@@ -22,7 +22,7 @@ export default function Kits() {
               <div className="card-img">
                 <div className="ph prod"><img src={imagem(k.imagem, k.ext, 600)} alt={`${nomeVitrine(k)} Amakha Paris`} loading="lazy" /></div>
                 <span className={`tag ${etiqueta.escura ? "dark" : "light"}`}>{etiqueta.texto}</span>
-                <div className="qv"><a href={linkWhats(mensagemPedido(nomeVitrine(k)))}>Quero este kit</a></div>
+                <div className="qv"><a href={linkWhats(mensagemPedido(nomeVitrine(k)))}>Solicitar</a></div>
               </div>
               <h3>{nomeVitrine(k)}</h3>
               <div className="price">{precoTexto(k.preco)}</div>
@@ -30,7 +30,7 @@ export default function Kits() {
           );
         })}
       </div>
-      <a className="btn btn-outline" style={{ marginTop: 64 }} href="/kits">Ver todos os kits</a>
+      <a className="btn btn-outline" style={{ marginTop: 64 }} href="/kits">Todos os presentes</a>
     </section>
   );
 }

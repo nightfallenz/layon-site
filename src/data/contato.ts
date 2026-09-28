@@ -11,4 +11,4 @@ export function linkWhats(mensagem?: string): string {
 }
 
 /** Mensagem padrão de "Pedir no WhatsApp" de um produto. */
-export const mensagemPedido = (produto: string) => `Olá, Layon! Tenho interesse no ${produto}. Tem disponível?`;
+export const mensagemPedido = (produto: string) => `Olá, Layon. Tenho interesse em ${produto}. Poderia confirmar a disponibilidade?`;

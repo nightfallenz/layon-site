@@ -7,8 +7,8 @@ import { pegar } from "@/lib/produtos";
 
 export const metadata: Metadata = {
   title: "Kits de presente | Layon Alves Amakha Paris",
-  description: "Kit 3 em 1 por R$ 139, Kit 2 em 1 por R$ 99 e Kits Premium. Entrega em mãos em Brasília e Entorno.",
-  openGraph: { title: "Kits de presente | Layon Alves Amakha Paris", description: "Kit 3 em 1 por R$ 139, Kit 2 em 1 por R$ 99 e Kits Premium. Entrega em mãos em Brasília e Entorno.", locale: "pt_BR", type: "website" },
+  description: "Kits 3 em 1, 2 em 1 e Premium: uma mesma fragrância em diferentes formas, apresentada em caixa. Entrega em mãos em Brasília.",
+  openGraph: { title: "Kits de presente | Layon Alves Amakha Paris", description: "Kits 3 em 1, 2 em 1 e Premium: uma mesma fragrância em diferentes formas, apresentada em caixa. Entrega em mãos em Brasília.", locale: "pt_BR", type: "website" },
 };
 
 function precoDoGrupo(nomes: string[]) {
@@ -19,9 +19,9 @@ function precoDoGrupo(nomes: string[]) {
 export default function PaginaKits() {
   return (
     <Pagina
-      sobretitulo="Kits"
-      titulo={<>Presente Pronto, <em>Sem Erro</em></>}
-      texto="Tudo da mesma fragrância, já na caixa. Escolha o kit, me chame no WhatsApp e eu entrego em mãos em Brasília e Entorno."
+      sobretitulo="Presentes"
+      titulo={<>O Presente, <em>Já Completo</em></>}
+      texto="Cada kit reúne uma mesma fragrância em diferentes formas, apresentada em caixa. Escolha, e o Layon entrega em mãos em Brasília e Entorno."
     >
       {[KITS_3EM1, KITS_2EM1, KITS_PREMIUM].map((g) => (
         <Bloco key={g.id} titulo={g.titulo} texto={g.oQueVem} preco={precoDoGrupo(g.produtos)} rotuloPreco="Cada kit">

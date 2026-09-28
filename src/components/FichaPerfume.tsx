@@ -42,7 +42,7 @@ export default function FichaPerfume({ produto, onTrocar, onFechar }: Props) {
             <div className="eyebrow">{produto.original ? `Original · ${produto.original}` : "Amakha Paris"}</div>
             <h3 id="ficha-t">{nomeVitrine(produto)}</h3>
             {produto.original ? (
-              <div className="insp">Perfume <b>original importado</b>, 100ml. Quer o mesmo cheiro por menos? Veja a versão Amakha abaixo.</div>
+              <div className="insp">Perfume <b>original importado</b>, 100ml, lacrado. Logo abaixo, a versão Amakha da mesma família olfativa.</div>
             ) : (
               <div className="insp">Inspirado em <b>{f.inspiradoEm}</b> · {f.marca}</div>
             )}
@@ -62,7 +62,7 @@ export default function FichaPerfume({ produto, onTrocar, onFechar }: Props) {
             </div>
             {outros.length > 0 && (
               <div className="alike">
-                <div className="alike-t">{produto.original ? "Versão Amakha e parecidos" : "Se gostou, experimente também"}</div>
+                <div className="alike-t">{produto.original ? "Versão Amakha e afins" : "Da mesma família olfativa"}</div>
                 <div className="alike-l">
                   {outros.map((q) => (
                     <button type="button" key={q.nome} onClick={() => onTrocar(q)}>{nomeVitrine(q).replace(/\s*15ml$/i, "")}</button>

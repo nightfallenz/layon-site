@@ -24,10 +24,11 @@ export default function Catalogo() {
 
   return (
     <section id="catalogo" className="section center">
-      <div className="eyebrow">Catálogo</div>
-      <h2 className="h2">Escolha Aqui o Seu Perfume</h2>
+      <div className="eyebrow">A coleção</div>
+      <h2 className="h2">Encontre a Sua <em>Assinatura</em></h2>
       <p className="lead">
-        Veja com qual importado cada perfume é parecido, clique na foto para conhecer as notas e faça seu pedido direto no WhatsApp.
+        Cada fragrância acompanhada da sua pirâmide olfativa e do clássico que a inspira. Explore com calma: quando decidir, o
+        pedido segue direto para o Layon.
       </p>
       <div className="cat-tools">
         <div className="pills" role="group" aria-label="Filtrar catálogo">
@@ -48,7 +49,7 @@ export default function Catalogo() {
           id="busca"
           className="search"
           type="search"
-          placeholder="Nome, nota ou perfume famoso: ex. Sauvage"
+          placeholder="Nome, nota ou clássico: Sauvage, baunilha…"
           autoComplete="off"
           value={filtro.termo}
           onChange={(e) => muda({ termo: e.target.value })}
@@ -65,21 +66,21 @@ export default function Catalogo() {
           <option value="">Qualquer intensidade</option>
           {INTENSIDADES.map((i) => <option key={i}>{i}</option>)}
         </select>
-        <span className="cat-hint">Na dúvida? <a href="#descubra">Faça o teste do perfume</a></span>
+        <span className="cat-hint">Precisa de orientação? <a href="#descubra">Descubra o seu perfume</a></span>
       </div>
-      <p className="cat-count" aria-live="polite">{lista.length} {lista.length === 1 ? "produto" : "produtos"}</p>
+      <p className="cat-count" aria-live="polite">{lista.length} {lista.length === 1 ? "item" : "itens"}</p>
       <div className="cat-grid">
-        {lista.length === 0 && <p className="cat-empty">Nenhum produto encontrado. Tente outro nome ou me chame no WhatsApp.</p>}
+        {lista.length === 0 && <p className="cat-empty">Nenhuma fragrância encontrada. Fale com o Layon: ele indica a mais próxima do que você procura.</p>}
         {lista.slice(0, limite).map((p) => <CardProduto key={p.nome} produto={p} />)}
       </div>
       {lista.length > limite && (
         <button type="button" className="btn btn-outline" style={{ marginTop: 48, background: "#fff", cursor: "pointer" }} onClick={() => setLimite(limite + POR_PAGINA)}>
-          Mostrar mais produtos
+          Ver mais fragrâncias
         </button>
       )}
       <p className="cat-legal">
-        As referências &quot;inspirado em&quot; indicam apenas a família de cheiro, para você comparar com perfumes que já conhece. Os produtos
-        são Amakha Paris, sem ligação com as marcas citadas.
+        As referências indicam apenas a família olfativa, como guia de comparação. As fragrâncias são Amakha Paris e não têm vínculo
+        com as marcas citadas.
       </p>
     </section>
   );

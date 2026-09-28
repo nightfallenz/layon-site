@@ -7,8 +7,8 @@ import { pegar } from "@/lib/produtos";
 
 export const metadata: Metadata = {
   title: "Linha Árabe | Layon Alves Amakha Paris",
-  description: "Perfumes intensos inspirados na perfumaria árabe: Zaya, Al Sabah, Hasan Rose, Asadiyy, Malik Nuit e Hasan Black.",
-  openGraph: { title: "Linha Árabe | Layon Alves Amakha Paris", description: "Perfumes intensos inspirados na perfumaria árabe: Zaya, Al Sabah, Hasan Rose, Asadiyy, Malik Nuit e Hasan Black.", locale: "pt_BR", type: "website" },
+  description: "Oud, âmbar e rosas da perfumaria árabe: Zaya, Al Sabah, Hasan Rose, Asadiyy, Malik Nuit, Hasan Black e originais importados.",
+  openGraph: { title: "Linha Árabe | Layon Alves Amakha Paris", description: "Oud, âmbar e rosas da perfumaria árabe: Zaya, Al Sabah, Hasan Rose, Asadiyy, Malik Nuit, Hasan Black e originais importados.", locale: "pt_BR", type: "website" },
 };
 
 export default function PaginaArabes() {
@@ -16,19 +16,19 @@ export default function PaginaArabes() {
   return (
     <Pagina
       sobretitulo="Linha Árabe"
-      titulo={<>Intensos, Doces e <em>Inesquecíveis</em></>}
-      texto="Inspirados na perfumaria árabe: oud, âmbar, baunilha e rosas que ficam na pele e no ambiente. Para quem gosta de ser notado de longe."
+      titulo={<>A Opulência <em>do Oriente</em></>}
+      texto="Oud, âmbar, baunilha e rosas: a tradição da perfumaria árabe, com projeção generosa e um rastro que permanece."
     >
-      <Bloco titulo="Perfumes 15ml" texto="Clique na foto para ver o original árabe parecido e as notas." preco={precoTexto(perfumes[0]?.preco ?? null)} rotuloPreco="Cada perfume">
+      <Bloco titulo="Perfumes 15ml" texto="Toque na fragrância para conhecer as notas e o original que a inspira." preco={precoTexto(perfumes[0]?.preco ?? null)} rotuloPreco="Cada perfume">
         <Grade produtos={perfumes} />
       </Bloco>
-      <Bloco titulo="Originais importados" texto="Os árabes originais, 100ml, lacrados. Clique na foto para ver as notas e a versão Amakha do mesmo cheiro." rotuloPreco="100ml">
+      <Bloco titulo="Originais importados" texto="Os originais árabes, 100ml, lacrados. Na ficha, a versão Amakha da mesma família olfativa." rotuloPreco="100ml">
         <Grade produtos={pegar(ARABES.originais)} />
       </Bloco>
-      <Bloco titulo="Kits e combinações" texto="Kit 2 em 1 (perfume 15ml + body splash) e duos para usar em camadas.">
+      <Bloco titulo="Kits e combinações" texto="Kit 2 em 1 e duos pensados para uso em camadas.">
         <Grade produtos={pegar(ARABES.kits)} />
       </Bloco>
-      <Bloco titulo="Body splash" texto="O mesmo cheiro, mais leve, para o dia a dia e o pós-banho.">
+      <Bloco titulo="Body splash" texto="A mesma assinatura, mais leve, para o dia e o pós-banho.">
         <Grade produtos={pegar(ARABES.corpo)} />
       </Bloco>
     </Pagina>

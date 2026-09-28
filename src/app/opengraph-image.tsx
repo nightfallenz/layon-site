@@ -9,7 +9,7 @@ export default function Imagem() {
     sobre: "Perfumaria em Brasília",
     titulo: "Perfumes que",
     destaque: "Deixam Memória",
-    texto: "Kits para presente, perfumes 15ml e 100ml, Linha Árabe e entrega em mãos.",
+    texto: "Curadoria pessoal de fragrâncias, presentes de assinatura e entrega em mãos.",
     fotos: [161862],
   });
 }

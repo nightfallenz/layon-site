@@ -73,8 +73,8 @@ export default function Carrinho({ children }: { children: ReactNode }) {
       </dialog>
       {aviso && (
         <div className="toast" role="status">
-          <span><b>Adicionado:</b> {aviso}</span>
-          <button type="button" onClick={abrir}>Ver carrinho</button>
+          <span><b>Na sacola:</b> {aviso}</span>
+          <button type="button" onClick={abrir}>Ver sacola</button>
         </div>
       )}
     </Contexto.Provider>
@@ -91,14 +91,14 @@ function Gaveta({ itens, mudarQtd, esvaziar, fechar }: { itens: Item[]; mudarQtd
   return (
     <div className="gaveta-in">
       <div className="gaveta-top">
-        <h2 id="gaveta-t">Seu pedido</h2>
-        <button type="button" className="gaveta-x" aria-label="Fechar carrinho" onClick={fechar}>×</button>
+        <h2 id="gaveta-t">Sua sacola</h2>
+        <button type="button" className="gaveta-x" aria-label="Fechar sacola" onClick={fechar}>×</button>
       </div>
 
       {itens.length === 0 ? (
         <div className="gaveta-vazia">
-          <p>{enviado ? "Pronto! O Layon vai te responder no WhatsApp." : "Seu carrinho está vazio."}</p>
-          <a className="btn btn-outline" href="/15ml" onClick={fechar}>Ver perfumes</a>
+          <p>{enviado ? "Pedido enviado. O Layon responde em breve pelo WhatsApp." : "Sua sacola está vazia."}</p>
+          <a className="btn btn-outline" href="/15ml" onClick={fechar}>Explorar a coleção</a>
         </div>
       ) : (
         <>
@@ -133,9 +133,9 @@ function Gaveta({ itens, mudarQtd, esvaziar, fechar }: { itens: Item[]; mudarQtd
           >
             {enviado && (
               <div className="gaveta-ok" role="status">
-                <p>Abrimos o WhatsApp com o seu pedido. É só tocar em enviar lá.</p>
+                <p>O WhatsApp foi aberto com o seu pedido. Basta confirmar o envio por lá.</p>
                 <div>
-                  <button type="button" className="btn btn-outline" onClick={() => { esvaziar(); setD(DADOS_INICIAIS); }}>Já enviei, esvaziar carrinho</button>
+                  <button type="button" className="btn btn-outline" onClick={() => { esvaziar(); setD(DADOS_INICIAIS); }}>Pedido enviado, limpar sacola</button>
                 </div>
               </div>
             )}
@@ -146,7 +146,7 @@ function Gaveta({ itens, mudarQtd, esvaziar, fechar }: { itens: Item[]; mudarQtd
             </label>
 
             <fieldset className="campo-op">
-              <legend>Como você quer receber?</legend>
+              <legend>Como prefere receber?</legend>
               <label><input type="radio" name="entrega" checked={d.entrega === "entrega"} onChange={() => setD({ ...d, entrega: "entrega" })} /> Entrega em mãos</label>
               <label><input type="radio" name="entrega" checked={d.entrega === "retirada"} onChange={() => setD({ ...d, entrega: "retirada" })} /> Retirar com o Layon</label>
             </fieldset>
@@ -169,7 +169,7 @@ function Gaveta({ itens, mudarQtd, esvaziar, fechar }: { itens: Item[]; mudarQtd
                 <input type="checkbox" checked={d.presente} onChange={(e) => setD({ ...d, presente: e.target.checked })} />
                 <span>
                   <strong>É para presente</strong>
-                  <small>Vai embalado, com cartão escrito do seu jeito</small>
+                  <small>Embalagem de presente e cartão com a sua mensagem</small>
                 </span>
               </label>
               {d.presente && (
@@ -183,7 +183,7 @@ function Gaveta({ itens, mudarQtd, esvaziar, fechar }: { itens: Item[]; mudarQtd
                     </label>
                   </div>
                   <label className="campo">Mensagem do cartão <small>(opcional)</small>
-                    <textarea value={d.cartaoMsg} onChange={(e) => setD({ ...d, cartaoMsg: e.target.value })} maxLength={200} rows={3} placeholder="Ex.: Feliz aniversário! Esse cheiro é a sua cara." />
+                    <textarea value={d.cartaoMsg} onChange={(e) => setD({ ...d, cartaoMsg: e.target.value })} maxLength={200} rows={3} placeholder="Ex.: Feliz aniversário. Esta fragrância é a sua cara." />
                   </label>
                 </div>
               )}
@@ -193,9 +193,9 @@ function Gaveta({ itens, mudarQtd, esvaziar, fechar }: { itens: Item[]; mudarQtd
               <input value={d.obs} onChange={(e) => setD({ ...d, obs: e.target.value })} placeholder="Ex.: melhor horário para entrega" maxLength={140} />
             </label>
 
-            <button type="submit" className="btn btn-primary gaveta-enviar">{enviado ? "Abrir o WhatsApp de novo" : "Enviar pedido pelo WhatsApp"}</button>
-            <p className="gaveta-nota">Nada é cobrado aqui. O pedido chega pronto no WhatsApp do Layon, que confirma o estoque, a entrega e o pagamento com você.</p>
-            <button type="button" className="gi-rem" style={{ alignSelf: "center" }} onClick={esvaziar}>Esvaziar carrinho</button>
+            <button type="submit" className="btn btn-primary gaveta-enviar">{enviado ? "Abrir o WhatsApp novamente" : "Enviar pedido ao Layon"}</button>
+            <p className="gaveta-nota">Nenhum valor é cobrado aqui. Seu pedido segue para o Layon, que confirma disponibilidade, entrega e pagamento pessoalmente.</p>
+            <button type="button" className="gi-rem" style={{ alignSelf: "center" }} onClick={esvaziar}>Limpar sacola</button>
           </form>
         </>
       )}

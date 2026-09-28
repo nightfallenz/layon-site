@@ -8,25 +8,25 @@ type Opcao<T> = { valor: T; nome: string; dica?: string };
 
 const PERGUNTAS = [
   {
-    campo: "para", titulo: "É para quem?",
+    campo: "para", titulo: "Para quem é a fragrância?",
     opcoes: [{ valor: "F", nome: "Para ela" }, { valor: "M", nome: "Para ele" }],
   },
   {
-    campo: "cheiro", titulo: "Que tipo de cheiro te conquista?",
+    campo: "cheiro", titulo: "Qual acorde mais agrada?",
     opcoes: [
-      { valor: "Adocicado", nome: "Doce", dica: "baunilha, caramelo" },
-      { valor: "Floral", nome: "Floral", dica: "jasmim, rosa" },
-      { valor: "Frutal", nome: "Frutado", dica: "frutas vermelhas, pera" },
-      { valor: "Refrescante", nome: "Fresco", dica: "cítrico, marinho" },
-      { valor: "Amadeirado", nome: "Marcante", dica: "madeiras, couro" },
+      { valor: "Adocicado", nome: "Gourmand", dica: "baunilha, caramelo, praliné" },
+      { valor: "Floral", nome: "Floral", dica: "jasmim, rosa, flor de laranjeira" },
+      { valor: "Frutal", nome: "Frutado", dica: "frutas vermelhas, pera, lichia" },
+      { valor: "Refrescante", nome: "Fresco", dica: "cítricos, notas aquáticas" },
+      { valor: "Amadeirado", nome: "Amadeirado", dica: "madeiras, couro, âmbar" },
     ],
   },
   {
-    campo: "intensidade", titulo: "Quanto você quer que ele apareça?",
+    campo: "intensidade", titulo: "Que presença você deseja?",
     opcoes: [
-      { valor: "Suave", nome: "Discreto", dica: "trabalho, dia a dia" },
-      { valor: "Moderado", nome: "Na medida", dica: "vai bem em tudo" },
-      { valor: "Intenso", nome: "Que todo mundo sinta", dica: "noite, festa" },
+      { valor: "Suave", nome: "Sutil", dica: "próximo à pele, para o dia" },
+      { valor: "Moderado", nome: "Equilibrada", dica: "versátil, do dia à noite" },
+      { valor: "Intenso", nome: "Marcante", dica: "rastro presente, para a noite" },
     ],
   },
 ] as const satisfies readonly { campo: keyof Resposta; titulo: string; opcoes: readonly Opcao<string>[] }[];
@@ -42,19 +42,19 @@ export default function TesteDoPerfume() {
   let resultado = null;
   if (ref.trim().length >= 3) {
     resultado = porNome.length ? (
-      <Resultado titulo={porNome.length === 1 ? "Achei o seu" : "Achei estes"} texto={`Perfumes Amakha Paris na mesma linha de cheiro de "${ref.trim()}".`} lista={porNome} />
+      <Resultado titulo="Na mesma família olfativa" texto={`Fragrâncias Amakha Paris que dialogam com ${ref.trim()}.`} lista={porNome} />
     ) : (
-      <p style={{ color: "var(--muted)" }}>Não achei esse na lista. Me chama no WhatsApp que eu te indico o mais parecido.</p>
+      <p style={{ color: "var(--muted)" }}>Esse clássico ainda não está no nosso guia. Fale com o Layon: ele indica a fragrância mais próxima.</p>
     );
   } else if (completo) {
-    resultado = <Resultado titulo="Seus 3 perfumes" texto="Clique na foto para ver as notas. Quer sentir antes? Me chama que eu te ajudo a escolher." lista={sugestoes} />;
+    resultado = <Resultado titulo="Nossa seleção para você" texto="Toque na fragrância para conhecer a pirâmide olfativa. Se preferir, o Layon orienta a escolha pessoalmente." lista={sugestoes} />;
   }
 
   return (
     <section id="descubra" className="section cream center">
-      <div className="eyebrow">Teste rápido</div>
+      <div className="eyebrow">Consultoria olfativa</div>
       <h2 className="h2">Descubra o Seu Perfume</h2>
-      <p className="lead">Três perguntas e eu te mostro os perfumes que mais combinam com você. Leva 20 segundos.</p>
+      <p className="lead">Três perguntas para chegarmos às fragrâncias que combinam com você.</p>
       <form className="quiz" onSubmit={(e) => e.preventDefault()}>
         {PERGUNTAS.map((q, i) => (
           <fieldset className="q" key={q.campo}>
@@ -78,7 +78,7 @@ export default function TesteDoPerfume() {
         ))}
         <div className="quiz-or">ou</div>
         <fieldset className="q" style={{ marginBottom: 0 }}>
-          <legend>Já tem um perfume famoso que você ama?</legend>
+          <legend>Ou parta de um clássico que você já ama</legend>
           <div className="ref-row">
             <label className="sr-only" htmlFor="q-ref">Perfume famoso</label>
             <input id="q-ref" className="search" type="search" placeholder="Ex.: La Vie Est Belle, Invictus, 212 VIP" autoComplete="off" list="refs" value={ref} onChange={(e) => setRef(e.target.value)} />

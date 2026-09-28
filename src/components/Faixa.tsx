@@ -1,11 +1,11 @@
 // Faixa que desliza devagar logo abaixo do topo, com os diferenciais do Layon.
 const FRASES = [
-  "Entrega em mãos em Brasília e Entorno",
-  "Perfumes 15ml por R$ 45,00",
-  "Kits prontos para presentear",
-  "Veja o importado parecido e as notas",
-  "Peça pelo WhatsApp",
-  "Seja consultor Amakha Paris",
+  "Entrega em mãos · Brasília e Entorno",
+  "Curadoria pessoal",
+  "Presentes com embalagem e cartão",
+  "Pirâmide olfativa de cada fragrância",
+  "Atendimento reservado",
+  "Linha Árabe e originais importados",
 ];
 
 export default function Faixa() {
