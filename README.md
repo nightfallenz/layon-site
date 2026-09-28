@@ -22,7 +22,7 @@ src/
     Nav.tsx               menu do topo (links, sacola e botão do menu em tela cheia)
     MenuTela.tsx          menu em tela cheia com faixa de frascos
     Logo.tsx              logo "layon." cursiva, com efeito de escrita
-    Hero.tsx  Vitrine.tsx Nevoa.tsx  topo da página inicial (arco com frascos)
+    Campanha.tsx Nevoa.tsx  abertura da página inicial (foto do casal animada)
     Faixa.tsx             faixa preta deslizante
     Kits.tsx  Catalogo.tsx  TesteDoPerfume.tsx  Historia.tsx  Linhas.tsx  Consultor.tsx
     CardProduto.tsx       cartão de produto (foto e nome levam à página do produto)

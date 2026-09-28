@@ -11,7 +11,7 @@ import { useEffect } from "react";
 const REVELAR = [
   ".section .eyebrow", ".section .h2", ".section .lead", ".card", ".pcard", ".coll", ".escolha",
   ".feat", ".perks li", ".bloco-head", ".q", ".quiz-or", ".photo", ".float-card", ".news", ".fcol",
-  ".cat-tools", ".cat-sub", ".campanha-txt", ".section .actions", ".section .btn-outline", ".hr",
+  ".cat-tools", ".cat-sub", ".section .actions", ".section .btn-outline", ".hr",
 ].join(",");
 
 export default function Animacoes() {

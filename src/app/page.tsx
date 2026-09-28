@@ -1,6 +1,5 @@
 // A página inteira é só a ordem das seções. Para mudar uma seção, abra o componente dela em src/components.
 import Nav from "@/components/Nav";
-import Hero from "@/components/Hero";
 import Kits from "@/components/Kits";
 import Loja from "@/components/Loja";
 import Catalogo from "@/components/Catalogo";
@@ -18,9 +17,8 @@ export default function Home() {
       <Nav />
       <main>
         <Loja>
-          <Hero />
-          <Faixa />
           <Campanha />
+          <Faixa />
           <Kits />
           <Catalogo />
           <TesteDoPerfume />
