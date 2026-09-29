@@ -14,7 +14,37 @@ const REVELAR = [
   ".cat-tools", ".cat-sub", ".section .actions", ".section .btn-outline", ".hr",
 ].join(",");
 
+/** Rola até o convite de consultor deixando os botões "Fazer meu cadastro" e "Conversar" à vista:
+ *  se o bloco inteiro cabe na tela, mostra do título aos botões; se não cabe, os botões ficam no pé da tela. */
+function irParaConsultor(suave: boolean) {
+  const bloco = document.getElementById("consultor");
+  const fim = bloco?.querySelector(".note") ?? bloco?.querySelector(".actions");
+  if (!bloco || !fim) return false;
+  const menu = window.innerWidth <= 760 ? 64 : 81;
+  const y = window.scrollY;
+  const topo = y + bloco.getBoundingClientRect().top - menu - 24;
+  const botoes = y + fim.getBoundingClientRect().bottom - window.innerHeight + 40;
+  window.scrollTo({ top: Math.max(topo, botoes), behavior: suave ? "smooth" : "auto" });
+  return true;
+}
+
 export default function Animacoes() {
+  useEffect(() => {
+    const clique = (e: MouseEvent) => {
+      const a = (e.target as HTMLElement).closest?.("a[href]") as HTMLAnchorElement | null;
+      if (!a || a.pathname !== location.pathname || a.hash !== "#consultor") return;
+      if (irParaConsultor(!window.matchMedia("(prefers-reduced-motion: reduce)").matches)) {
+        e.preventDefault();
+        history.replaceState(null, "", "#consultor");
+      }
+    };
+    document.addEventListener("click", clique);
+    // chegando de outra página já com /#consultor no endereço
+    let t = 0;
+    if (location.hash === "#consultor") t = window.setTimeout(() => irParaConsultor(false), 300);
+    return () => { document.removeEventListener("click", clique); window.clearTimeout(t); };
+  }, []);
+
   useEffect(() => {
     const raiz = document.documentElement;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;

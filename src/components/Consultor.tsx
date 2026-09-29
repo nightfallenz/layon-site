@@ -10,8 +10,9 @@ const O_QUE_VOCE_RECEBE = [
 
 export default function Consultor() {
   return (
-    <section id="consultor" className="section split consultor">
-      <div className="body">
+    <section className="section split consultor">
+      {/* o endereço /#consultor aponta para o texto (e não para a seção), para os botões aparecerem na tela */}
+      <div className="body" id="consultor">
         <div className="eyebrow line">Seja consultor Amakha Paris</div>
         <h2 className="h2" style={{ marginBottom: 24 }}>Do gosto pela perfumaria<br /><em>a um negócio próprio.</em></h2>
         <p>
