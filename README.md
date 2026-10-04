@@ -1,9 +1,9 @@
 # Site do Layon — Perfumes Amakha Paris
 
 Site de vendas e de recrutamento de consultores do Layon Alves (Brasília e Entorno).
-Feito em **Next.js + TypeScript**, publicado na **Vercel**.
+Feito em **Next.js + TypeScript**, publicado na **Cloudflare** (site estático, export do Next.js).
 
-No ar: https://layon-site.vercel.app
+No ar: https://layonamakhaparis.com.br
 
 ---
 
@@ -88,7 +88,7 @@ Ele nunca mexe em preço nem em ficha, e não apaga nada sozinho.
 
 ## Rodar no computador
 
-Precisa do Node.js 20 ou mais novo (o mesmo que roda o `npx vercel`).
+Precisa do Node.js 20 ou mais novo (o mesmo que roda o `npx wrangler`).
 
 ```
 cd C:\layon-site
@@ -103,7 +103,7 @@ em vez de quebrar o site no ar.
 ## Publicar
 
 ```
-npx vercel --prod
+npx wrangler deploy
 ```
 
 ## Cuidados

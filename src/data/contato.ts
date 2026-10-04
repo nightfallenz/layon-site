@@ -1,5 +1,5 @@
 // Tudo que é contato do Layon fica aqui. Mudou o número? Muda só neste arquivo.
-export const WHATSAPP = "556195177575";
+export const WHATSAPP = "5561998111417";
 export const EMAIL = "layonnew29@gmail.com";
 export const CADASTRO_CONSULTOR = "https://escritorio.amakhaparis.com.br/join/2176396";
 export const REGIAO = "Brasília e Entorno";

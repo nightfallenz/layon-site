@@ -5,7 +5,7 @@ import Carrinho from "@/components/Carrinho";
 import Animacoes from "@/components/Animacoes";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://layon-site.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://layonamakhaparis.com.br"),
   title: "Layon Alves | Perfumes Amakha Paris em Brasília",
   description: "Curadoria pessoal de fragrâncias Amakha Paris, kits completos e entrega em mãos em Brasília e Entorno.",
   openGraph: {

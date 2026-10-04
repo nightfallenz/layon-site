@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 import { cartaz, TAMANHO } from "@/lib/cartaz";
 
 export const size = TAMANHO;
