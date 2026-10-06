@@ -2,10 +2,9 @@
 import Nav from "@/components/Nav";
 import Kits from "@/components/Kits";
 import Loja from "@/components/Loja";
-import Catalogo from "@/components/Catalogo";
 import TesteDoPerfume from "@/components/TesteDoPerfume";
 import Historia from "@/components/Historia";
-import Linhas from "@/components/Linhas";
+import CompraPor from "@/components/CompraPor";
 import Consultor from "@/components/Consultor";
 import Rodape from "@/components/Rodape";
 import Faixa from "@/components/Faixa";
@@ -20,10 +19,9 @@ export default function Home() {
           <Abertura />
           <Faixa />
           <Kits />
-          <Catalogo />
           <TesteDoPerfume />
           <Historia />
-          <Linhas />
+          <CompraPor />
         </Loja>
         <Consultor />
       </main>

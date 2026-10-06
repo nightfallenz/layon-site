@@ -867,3 +867,24 @@ html{scroll-padding-top:64px}
 .pcard:hover .pimg img{transform:scale(1.04)}
 .pcard a:focus-visible,.pcard button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 @media (prefers-reduced-motion:reduce){.pcard:hover,.pcard:hover .pimg img{transform:none}}
+
+/* Fase 2.2 a 2.4: busca grande, gaveta de filtros, atalhos, aviso, esqueleto da foto, botões quadrados */
+.cat-pagina{padding-top:0}
+.cat-pagina .cat-tools{flex-direction:column;align-items:stretch;gap:16px;margin-bottom:20px}
+.search-grande{min-height:56px;font-size:16px;width:100%;min-width:0}
+.cat-pagina .pills{justify-content:center}
+.cat-mais{width:100%;text-align:left;margin:0 0 20px}
+.cat-mais summary{display:inline-flex;align-items:center;min-height:44px;padding:0 4px;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;cursor:pointer;color:var(--ink)}
+.cat-mais summary:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.cat-mais .cat-sub{margin:8px 0 0}
+.btn-mais{margin-top:48px;background:#fff;cursor:pointer}
+.aviso-kits{max-width:720px;margin:0 auto;padding:0 var(--pad);text-align:center;font-size:14px;color:var(--muted)}
+.mt-extra{display:flex;flex-wrap:wrap;gap:8px 28px;margin:0;padding:20px var(--pad) 8px}
+.mt-extra a{font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.mt-extra a:hover{color:var(--ink)}
+.pcard .pimg{background:linear-gradient(100deg,var(--cream) 30%,#fff 50%,var(--cream) 70%) 0 0/200% 100%;animation:esqueleto 1.6s linear infinite}
+.pcard .pimg.carregou{animation:none;background:var(--cream)}
+@keyframes esqueleto{to{background-position:-200% 0}}
+@media (prefers-reduced-motion:reduce){.pcard .pimg{animation:none}}
+.btn-primary,.btn-descubra{border-radius:0}
+.cat-grid[hidden],.cat-count[hidden]{display:none}

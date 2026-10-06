@@ -22,16 +22,8 @@ Fases pequenas, cada uma com `npm run check` + build + Revisão + conferência 3
 ## Decisões do Eike (06/10)
 Sem campo `indisponivel` (não criar). Sem texto 'resposta em minutos' (o robô do WhatsApp responde). Demais itens: seguir recomendações (catálogo em /catalogo, criar /corpo, botões quadrados).
 
-## Decisões antigas
-1. Catalogo completo sai da home e vai para `/catalogo`?
-2. Existe esgotado "de verdade"? Criar campo `indisponivel` em `produtos.json`?
-3. Prazo de resposta no WhatsApp ("em minutos") só com confirmação do Layon.
-4. Criar `/corpo` ou manter body splash e corpo e cabelo só no catálogo?
-5. Raio dos botões: quadrado (recomendado) ou 12px em tudo.
-6. Remover `Linhas.tsx` da home se ficar redundante (ver no navegador).
-
 ## Próximo passo
-Eike responde 1, 2 e 4 → implementar Fase 2.1. Preços do Layon entram em `produtos.json` quando chegarem (atualizar também o texto das prévias `opengraph-image.tsx`).
+Conferir visual (390x844 e 1440x900) das páginas novas; preços do Layon entram em `produtos.json` (atualizar também as prévias `opengraph-image.tsx`); limpeza: HSTS, sitemap/robots, Search Console, remover `vercel.json`, desligar projeto na Vercel e apagar `.env.local`.
 
 ## Como rodar e testar
 `npm run check` e `npm run build`. Publicar: push na `main` (Cloudflare faz o deploy).

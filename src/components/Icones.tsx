@@ -26,3 +26,6 @@ export const IconeRelogio = ({ tamanho = 18 }: P) => (
 export const IconeCheck = ({ tamanho = 20 }: P) => (
   <svg width={tamanho} height={tamanho} viewBox="0 0 24 24" {...base}><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
 );
+export const IconeBusca = ({ tamanho = 20 }: P) => (
+  <svg width={tamanho} height={tamanho} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5" /><path d="M16 16l4.5 4.5" /></svg>
+);

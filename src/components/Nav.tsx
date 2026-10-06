@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { EMAIL, linkWhats } from "@/data/contato";
-import { IconeEmail, IconeMenu, IconeSacola, IconeWhats } from "./Icones";
+import { IconeBusca, IconeEmail, IconeMenu, IconeSacola, IconeWhats } from "./Icones";
 import { useCarrinho } from "./Carrinho";
 import Logo from "./Logo";
 import MenuTela from "./MenuTela";
@@ -12,7 +12,8 @@ const LINKS = [
   ["/15ml", "15ml", "Perfumes 15ml"],
   ["/100ml", "100ml", "Perfumes 100ml"],
   ["/arabes", "Árabes", "Linha Árabe"],
-  ["/#catalogo", "Catálogo", "Catálogo completo"],
+  ["/corpo", "Corpo", "Corpo e cabelo"],
+  ["/catalogo", "Catálogo", "Catálogo completo"],
   ["/#descubra", "Descubra", "Descubra seu perfume"],
   ["/#consultor", "Seja consultor", "Seja consultor"],
 ] as const;
@@ -28,6 +29,7 @@ export default function Nav() {
         {LINKS.map(([href, txt]) => <a key={href} href={href}>{txt}</a>)}
       </div>
       <div className="nav-icons">
+        <a href="/catalogo#busca" aria-label="Buscar no catálogo"><IconeBusca /></a>
         <a href={linkWhats()} aria-label="Falar no WhatsApp"><IconeWhats /></a>
         <a href={`mailto:${EMAIL}`} aria-label="Enviar e-mail"><IconeEmail /></a>
         <button type="button" className="sacola" onClick={abrir} aria-label={`Abrir sacola, ${quantidade} ${quantidade === 1 ? "item" : "itens"}`}>

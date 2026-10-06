@@ -14,7 +14,7 @@ export default function CardProduto({ produto }: { produto: Produto }) {
   return (
     <article className="pcard">
       <a className="pimg" href={linkDe(produto)} aria-label={nome}>
-        <img src={fotoDe(produto)} alt={produto.original ? `${nome} ${produto.original}` : `${nome} Amakha Paris`} loading="lazy" onError={(e) => { e.currentTarget.style.visibility = "hidden"; }} width={400} height={400} />
+        <img src={fotoDe(produto)} srcSet={produto.foto ? undefined : `${fotoDe(produto, 300)} 300w, ${fotoDe(produto, 400)} 400w, ${fotoDe(produto, 600)} 600w`} sizes="(max-width:760px) 46vw, (max-width:1100px) 31vw, 300px" alt={produto.original ? `${nome} ${produto.original}` : `${nome} Amakha Paris`} loading="lazy" onLoad={(e) => e.currentTarget.parentElement?.classList.add("carregou")} onError={(e) => { e.currentTarget.style.visibility = "hidden"; }} width={400} height={400} />
         {produto.original ? <span className="tag tag-ouro">Original</span> : f?.intensidade && <span className="tag">{f.intensidade}</span>}
       </a>
       <div className="pbody">

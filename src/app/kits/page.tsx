@@ -25,6 +25,7 @@ export default function PaginaKits() {
       atalhos={[KITS_PREMIUM, KITS_3EM1, KITS_2EM1].map((g) => ({ href: `#${g.id}`, txt: g.titulo }))}
       texto="Cada kit reúne uma mesma fragrância em diferentes formas, para uma perfumação que dura do banho à noite. É para presente? Basta marcar na sacola."
     >
+      <p className="aviso-kits">Kits sem valor informado: toque em “Perguntar no WhatsApp” e o Layon passa o valor na hora do pedido.</p>
       <Bloco id={KITS_PREMIUM.id} titulo={KITS_PREMIUM.titulo} texto={KITS_PREMIUM.oQueVem} preco={precoDoGrupo(KITS_PREMIUM.produtos)} rotuloPreco="Cada kit">
         <div className="kp-grade">
           {pegar(KITS_PREMIUM.produtos).map((k) => <CardKitPremium key={k.nome} kit={k} />)}

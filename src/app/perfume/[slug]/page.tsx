@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: P): Promise<Metadata> {
 }
 
 const CATEGORIA: Record<string, [string, string]> = {
-  F: ["Femininos", "/15ml/feminino"], M: ["Masculinos", "/15ml/masculino"], U: ["Unissex", "/#catalogo"],
-  K: ["Kits completos", "/kits"], B: ["Body splash", "/#catalogo"], C: ["Corpo e cabelo", "/#catalogo"],
+  F: ["Femininos", "/15ml/feminino"], M: ["Masculinos", "/15ml/masculino"], U: ["Unissex", "/catalogo"],
+  K: ["Kits completos", "/kits"], B: ["Body splash", "/corpo#body-splash"], C: ["Corpo e cabelo", "/corpo#corpo-cabelo"],
 };
 const NIVEL = { Suave: 1, Moderado: 2, Intenso: 3 } as const;
 
@@ -40,7 +40,7 @@ export default async function PaginaPerfume({ params }: P) {
   const conteudo = conteudoDoKit(p);
   const nome = nomeVitrine(p);
   const tamanhos = tamanhosDe(p);
-  const [cat, catHref] = CATEGORIA[p.grupo] ?? ["Catálogo", "/#catalogo"];
+  const [cat, catHref] = CATEGORIA[p.grupo] ?? ["Catálogo", "/catalogo"];
   const outros = parecidos(fragrancia ?? p, 4);
   const nivel = f?.intensidade ? NIVEL[f.intensidade] : 0;
   const notas = f ? [...f.topo, ...f.coracao, ...f.fundo] : [];

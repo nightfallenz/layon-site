@@ -16,13 +16,10 @@ export default function MenuTela({ aberto, fechar }: { aberto: boolean; fechar: 
       { nome: "Femininos", href: "/15ml/feminino", produtos: perfumes15De("F") },
       { nome: "Masculinos", href: "/15ml/masculino", produtos: perfumes15De("M") },
       { nome: "Perfumes 100ml", href: "/100ml", produtos: PERFUMES_100 },
-      { nome: "Kits Premium", href: "/kits#premium", produtos: pegar(KITS_PREMIUM.produtos) },
-      { nome: "Kits 3 em 1", href: "/kits#3em1", produtos: pegar(KITS_3EM1.produtos) },
-      { nome: "Kits 2 em 1", href: "/kits#2em1", produtos: pegar(KITS_2EM1.produtos) },
+      { nome: "Kits", href: "/kits", produtos: pegar([...KITS_PREMIUM.produtos, ...KITS_3EM1.produtos, ...KITS_2EM1.produtos]) },
       { nome: "Linha Árabe", href: "/arabes", produtos: pegar([...ARABES.originais, ...ARABES.perfumes, ...ARABES.kits]) },
-      { nome: "Catálogo", href: "/#catalogo", produtos: PRODUTOS.filter((p) => p.preco != null) },
-      { nome: "Descubra seu perfume", href: "/#descubra", produtos: PERFUMES_100 },
-      { nome: "Seja consultor", href: "/#consultor", produtos: PERFUMES_100.slice(0, 12) },
+      { nome: "Corpo e cabelo", href: "/corpo", produtos: PRODUTOS.filter((p) => p.grupo === "B" || p.grupo === "C") },
+      { nome: "Catálogo completo", href: "/catalogo", produtos: PRODUTOS.filter((p) => p.preco != null) },
     ],
     []
   );
@@ -62,6 +59,7 @@ export default function MenuTela({ aberto, fechar }: { aberto: boolean; fechar: 
           </li>
         ))}
       </ul>
+      <p className="mt-extra"><a href="/#descubra" tabIndex={aberto ? 0 : -1} onClick={fechar}>Descubra seu perfume</a><a href="/#consultor" tabIndex={aberto ? 0 : -1} onClick={fechar}>Seja consultor</a></p>
       <div className="mt-faixa" key={ativo} aria-hidden="true">
         <div className="mt-trilho">
           {[...faixa, ...faixa].map((p, i) => (

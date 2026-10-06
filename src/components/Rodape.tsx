@@ -16,7 +16,7 @@ export default function Rodape() {
             <Logo comoTexto />
             <span style={{ lineHeight: 1.7, maxWidth: 300 }}>Perfumaria com atendimento pessoal. Consultor independente Amakha Paris em Brasília e Entorno.</span>
           </div>
-          <div className="fcol"><div className="ttl">Comprar</div><a href="/kits">Kits completos</a><a href="/15ml">Perfumes 15ml</a><a href="/100ml">Perfumes 100ml</a><a href="/arabes">Linha Árabe</a><a href="/#catalogo">Catálogo completo</a></div>
+          <div className="fcol"><div className="ttl">Comprar</div><a href="/kits">Kits completos</a><a href="/15ml">Perfumes 15ml</a><a href="/100ml">Perfumes 100ml</a><a href="/arabes">Linha Árabe</a><a href="/corpo">Corpo e cabelo</a><a href="/catalogo">Catálogo completo</a></div>
           <div className="fcol"><div className="ttl">Seja consultor</div><a href={CADASTRO_CONSULTOR}>Cadastro oficial</a><a href="/#consultor">Entrar para a equipe</a><a href={linkWhats("Olá, Layon. Gostaria de saber mais sobre a equipe de consultores.")}>Conversar</a></div>
           <div className="fcol"><div className="ttl">Contato</div><a href={linkWhats()}>WhatsApp</a><a href={`mailto:${EMAIL}`}>E-mail</a><span>Entrega em Brasília e Entorno</span></div>
         </div>
