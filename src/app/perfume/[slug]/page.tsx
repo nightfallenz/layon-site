@@ -62,7 +62,7 @@ export default async function PaginaPerfume({ params }: P) {
                   ))}
                 </div>
               )}
-              <img className="pp-img" src={fotoDe(p, 1000)} alt={`${nome} ${p.original ?? "Amakha Paris"}`} width={1000} height={1000} fetchPriority="high" />
+              <img className="pp-img" src={fotoDe(p, 1200)} alt={`${nome} ${p.original ?? "Amakha Paris"}`} width={1000} height={1000} fetchPriority="high" />
             </div>
 
             <div className="pp-info">

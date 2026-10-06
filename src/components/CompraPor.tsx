@@ -16,7 +16,7 @@ export default function CompraPor() {
       <div className="grid-linhas">
         {LINHAS.map((l) => (
           <a className="coll" href={l.href} key={l.titulo}>
-            <div className="ph prod"><img src={imagem(l.imagem, "jpg", 600)} alt="" loading="lazy" /></div>
+            <div className="ph prod"><img src={imagem(l.imagem, "jpg", 900)} alt="" loading="lazy" /></div>
             <div className="coll-shade"></div>
             <div className="coll-txt"><h3>{l.titulo}</h3><div>{l.texto}</div><span>Explorar</span></div>
           </a>

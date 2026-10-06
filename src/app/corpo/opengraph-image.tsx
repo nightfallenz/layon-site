@@ -11,7 +11,9 @@ export default function Imagem() {
     sobre: "Corpo e cabelo",
     titulo: "O ritual",
     destaque: "pós-banho",
-    texto: "Body splash e cuidados que prolongam a fragrância na pele.",
+    texto: "Body splash, hidratantes e cuidados para o ritual pós-banho.",
+    preco: "R$ 26,90",
+    rotuloPreco: "A partir de",
     fotos: [162527, 162445, 156632],
   });
 }

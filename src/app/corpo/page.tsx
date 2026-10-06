@@ -17,7 +17,7 @@ export default function PaginaCorpo() {
       sobretitulo="Corpo e cabelo"
       titulo={<>O Ritual <em>Pós-Banho</em></>}
       atalhos={[{ href: "#body-splash", txt: "Body splash" }, { href: "#corpo-cabelo", txt: "Corpo e cabelo" }]}
-      texto="Body splash, hidratantes e cuidados para o ritual pós-banho. O valor de cada item o Layon informa no WhatsApp."
+      texto="Body splash, hidratantes e cuidados para o ritual pós-banho."
     >
       <Bloco id="body-splash" titulo="Body splash" texto="Névoa perfumada para refrescar o corpo ao longo do dia.">
         <Grade produtos={PRODUTOS.filter((p) => p.grupo === "B")} />

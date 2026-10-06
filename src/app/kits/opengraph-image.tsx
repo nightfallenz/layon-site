@@ -12,7 +12,7 @@ export default function Imagem() {
     titulo: "A fragrância",
     destaque: "completa",
     texto: "Perfume, body splash e hidratante da mesma fragrância, num só kit.",
-    preco: "R$ 99,00",
+    preco: "R$ 90,00",
     rotuloPreco: "A partir de",
     fotos: [163873, 162556, 161869],
   });

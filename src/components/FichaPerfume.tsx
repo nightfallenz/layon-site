@@ -36,7 +36,7 @@ export default function FichaPerfume({ produto, onTrocar, onFechar }: Props) {
       {produto && f && (
         <div className="ficha-in">
           <div className="ficha-img">
-            <img src={fotoDe(produto, 600)} alt={`${nomeVitrine(produto)} ${produto.original ?? "Amakha Paris"}`} width={600} height={600} />
+            <img src={fotoDe(produto, 1000)} alt={`${nomeVitrine(produto)} ${produto.original ?? "Amakha Paris"}`} width={1000} height={1000} />
           </div>
           <div className="ficha-body">
             <button type="button" className="ficha-x" aria-label="Fechar" onClick={() => ref.current?.close()}>×</button>

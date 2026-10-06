@@ -19,14 +19,18 @@ export default function CardKitPremium({ kit }: { kit: Produto }) {
   const base = kit.nome.replace(/^Kit Premium /, "");
   const p100 = achar(`${base} 100ml`);
   const p15 = achar(`${base} 15ml`);
+  const splash = achar(`Body Splash ${base} 100ml`);
+  const creme = achar(`Creme Hidratante ${base} 80ml`);
   const ficha = p100 ? fichaDe(p100) : null;
-  const avulso = p100?.preco != null && p15?.preco != null ? p100.preco + p15.preco : null;
+  const itens = [p100, p15, splash, creme].map((p) => p?.preco);
+  const soma = itens.every((v) => v != null) ? (itens as number[]).reduce((a, b) => a + b, 0) : null;
+  const avulso = soma != null && kit.preco != null && soma > kit.preco ? soma : null; // só mostra se de fato for mais barato no kit
   const link = linkDe(kit);
 
   return (
     <article className="kp">
       <a className="kp-foto" href={link} tabIndex={-1} aria-hidden="true">
-        <img src={fotoDe(kit, 600)} alt="" loading="lazy" />
+        <img src={fotoDe(kit, 800)} srcSet={kit.foto ? undefined : `${fotoDe(kit, 600)} 600w, ${fotoDe(kit, 900)} 900w, ${fotoDe(kit, 1200)} 1200w`} sizes="(max-width:600px) 92vw, (max-width:900px) 46vw, 380px" alt="" loading="lazy" />
         <span className="kp-selo">Kit completo</span>
         {ficha && <span className="kp-genero">{GENERO[ficha.genero]}</span>}
       </a>
@@ -41,7 +45,7 @@ export default function CardKitPremium({ kit }: { kit: Produto }) {
         </ul>
         <div className="kp-preco">
           <span className="kp-valor">{precoTexto(kit.preco)}</span>
-          {avulso && <span className="kp-conta">Só os dois perfumes, avulsos, somam {precoTexto(avulso)}</span>}
+          {avulso && <span className="kp-conta">Os quatro itens, avulsos, somam {precoTexto(avulso)}</span>}
         </div>
         <BotaoComprar produto={kit} grande />
         <a className="kp-ver" href={link}>Ver detalhes do kit</a>
