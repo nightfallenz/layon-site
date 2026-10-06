@@ -22,7 +22,7 @@ export default function Rodape() {
         </div>
         <div className="fbottom">
           <div>© {new Date().getFullYear()} Layon Alves. Consultor independente Amakha Paris.</div>
-          <div>Revenda: resultados variam, sem garantia de ganhos.</div>
+          <div>Revenda: resultados variam, sem garantia de ganhos. · <a href="/privacidade">Política de Privacidade</a></div>
         </div>
       </footer>
       <a className="wa-float" href={linkWhats("Olá, Layon. Vim pelo site.")} aria-label="Falar com o Layon no WhatsApp"><IconeWhats tamanho={26} /></a>
