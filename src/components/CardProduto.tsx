@@ -14,7 +14,7 @@ export default function CardProduto({ produto }: { produto: Produto }) {
   return (
     <article className="pcard">
       <a className="pimg" href={linkDe(produto)} aria-label={nome}>
-        <img src={fotoDe(produto)} alt={produto.original ? `${nome} ${produto.original}` : `${nome} Amakha Paris`} loading="lazy" width={400} height={400} />
+        <img src={fotoDe(produto)} alt={produto.original ? `${nome} ${produto.original}` : `${nome} Amakha Paris`} loading="lazy" onError={(e) => { e.currentTarget.style.visibility = "hidden"; }} width={400} height={400} />
         {produto.original ? <span className="tag tag-ouro">Original</span> : f?.intensidade && <span className="tag">{f.intensidade}</span>}
       </a>
       <div className="pbody">
@@ -23,7 +23,7 @@ export default function CardProduto({ produto }: { produto: Produto }) {
         {produto.original ? (
           <div className="pinsp"><b>Original importado</b> · {produto.original}</div>
         ) : f && <div className="pinsp">Inspirado em <b>{f.inspiradoEm}</b> · {f.marca}</div>}
-        <div className="pprice">{precoTexto(produto.preco)}</div>
+        <div className={produto.preco == null ? "pprice sem-preco" : "pprice"}>{precoTexto(produto.preco)}</div>
         <div className="pactions">
           {f && <button type="button" className="pnotes" onClick={abrir}>Ver notas</button>}
           <BotaoComprar produto={produto} />

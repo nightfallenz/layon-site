@@ -17,8 +17,8 @@ export default function BotaoComprar({ produto, grande = false }: { produto: Pro
   }
   const href = linkWhats(mensagemPedido(nomeVitrine(produto)));
   return grande ? (
-    <a className="btn btn-primary" href={href} target="_blank" rel="noopener">Consultar disponibilidade</a>
+    <a className="btn btn-primary" href={href} target="_blank" rel="noopener">Perguntar no WhatsApp</a>
   ) : (
-    <a href={href} target="_blank" rel="noopener"><span>Consultar disponibilidade</span></a>
+    <a href={href} target="_blank" rel="noopener"><span>Perguntar no WhatsApp</span></a>
   );
 }

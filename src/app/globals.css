@@ -419,7 +419,6 @@ html{scroll-padding-top:64px}
 .pcard:hover{transform:translateY(-6px);box-shadow:0 22px 40px -28px rgba(0,0,0,.45)}
 .pcard .pimg{overflow:hidden}
 .pcard .pimg img{transition:transform .7s var(--ease)}
-.pcard:hover .pimg img{transform:scale(1.07) rotate(-1.5deg)}
 .escolha{transition:border-color .2s,transform .45s var(--ease),box-shadow .45s var(--ease)}
 .escolha:hover{transform:translateY(-6px);box-shadow:0 28px 50px -30px rgba(0,0,0,.45)}
 .escolha-fotos img:nth-child(1){transition-delay:.05s}
@@ -859,3 +858,12 @@ html{scroll-padding-top:64px}
 
 /* ao clicar em "Seja consultor", a tela para no texto com os botões à vista */
 #consultor{scroll-margin-top:24px}
+
+/* Fase 2.1: contraste do rótulo, preço em destaque, hover discreto */
+.pcard .pfam{color:#7A6830}
+.pcard .pprice{font-size:16px;font-weight:600;color:var(--ink)}
+.pcard .pprice.sem-preco{font-size:13px;font-weight:400;color:var(--muted)}
+.pcard:hover{transform:translateY(-3px);box-shadow:0 14px 28px -24px rgba(0,0,0,.4)}
+.pcard:hover .pimg img{transform:scale(1.04)}
+.pcard a:focus-visible,.pcard button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.pcard:hover,.pcard:hover .pimg img{transform:none}}

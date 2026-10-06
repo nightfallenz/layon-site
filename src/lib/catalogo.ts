@@ -90,7 +90,7 @@ export function filtrar(f: Filtro): Produto[] {
     }
     const texto = textoDeBusca.get(p) ?? "";
     return palavras.every((w) => texto.includes(w));
-  });
+  }).sort((a, b) => Number(a.preco == null) - Number(b.preco == null)); // com preço primeiro (ordenação estável)
 }
 
 /** Um produto por perfume (prefere o de 15ml), sem body splash nem kit. Usado no teste e nos parecidos. */
