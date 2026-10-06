@@ -710,7 +710,7 @@ html{scroll-padding-top:64px}
 }
 
 /* ================= cartão do Kit Premium ================= */
-.kp-grade{width:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;text-align:left}
+.kp-grade{width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;text-align:left}
 .kp{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid #E4D9BF;padding:12px;transition:border-color .4s,box-shadow .4s,transform .4s cubic-bezier(.2,.7,.2,1)}
 .kp::after{content:"";position:absolute;inset:5px;border:1px solid rgba(184,155,94,.18);pointer-events:none;transition:border-color .4s}
 .kp:hover{border-color:#B89B5E;box-shadow:0 22px 48px -24px rgba(90,70,30,.35);transform:translateY(-4px)}
@@ -739,7 +739,7 @@ html{scroll-padding-top:64px}
 .kp .btn{width:100%;cursor:pointer;border:0;font-family:var(--sans)}
 .kp-ver{align-self:center;margin-top:12px;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);text-decoration:none;border-bottom:1px solid transparent;transition:color .3s,border-color .3s}
 .kp-ver:hover{color:var(--ink);border-bottom-color:var(--ink)}
-@media (max-width:1180px){.kp-grade{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:900px){.kp-grade{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:600px){.kp-grade{grid-template-columns:1fr;gap:20px}.kp-insp{min-height:0}.kp h3{font-size:24px}}
 @media (prefers-reduced-motion:reduce){.kp,.kp-foto img{transition:none}.kp:hover{transform:none}.kp:hover .kp-foto img{transform:none}}
 

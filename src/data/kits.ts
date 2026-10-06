@@ -28,5 +28,5 @@ export const KITS_PREMIUM: GrupoDeKits = {
   id: "premium",
   titulo: "Kit Premium",
   oQueVem: "Perfume 100ml, perfume 15ml, body splash 100ml e hidratante corporal 80ml, na caixa de assinatura.",
-  produtos: ["Kit Premium Imortal", "Kit Premium 521 Vip Rosé", "Kit Premium GD", "Kit Premium D by Denise Lemos"],
+  produtos: ["Kit Premium Athena", "Kit Premium Imortal", "Kit Premium 521 Vip Rosé", "Kit Premium D by Denise Lemos", "Kit Premium Escandalosa", "Kit Premium GD"],
 };

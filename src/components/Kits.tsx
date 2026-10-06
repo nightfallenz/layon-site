@@ -13,7 +13,7 @@ export default function Kits() {
         completo, do banho à noite, com a mesma assinatura.
       </p>
       <div className="kp-grade">
-        {pegar(KITS_PREMIUM.produtos).slice(0, 3).map((k) => <CardKitPremium key={k.nome} kit={k} />)}
+        {pegar(KITS_PREMIUM.produtos).map((k) => <CardKitPremium key={k.nome} kit={k} />)}
       </div>
       <a className="btn btn-outline" style={{ marginTop: 64 }} href="/kits">Ver todos os kits</a>
     </section>

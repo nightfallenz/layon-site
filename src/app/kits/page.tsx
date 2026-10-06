@@ -5,6 +5,7 @@ import CardKitPremium from "@/components/CardKitPremium";
 import { KITS_2EM1, KITS_3EM1, KITS_PREMIUM } from "@/data/kits";
 import { precoTexto } from "@/lib/catalogo";
 import { pegar } from "@/lib/produtos";
+import { PRODUTOS } from "@/lib/catalogo";
 
 export const metadata: Metadata = {
   title: "Kits completos | Layon Alves Amakha Paris",
@@ -17,12 +18,16 @@ function precoDoGrupo(nomes: string[]) {
   return precos.length === 1 && precos[0] != null ? precoTexto(precos[0]) : undefined;
 }
 
+const NOS_GRUPOS = new Set([...KITS_PREMIUM.produtos, ...KITS_3EM1.produtos, ...KITS_2EM1.produtos]);
+// tudo o que é kit no catálogo e não está nos três grupos (coleções, estojos, kits de corpo)
+const OUTROS = PRODUTOS.filter((p) => p.grupo === "K" && !NOS_GRUPOS.has(p.nome));
+
 export default function PaginaKits() {
   return (
     <Pagina
       sobretitulo="Kits completos"
       titulo={<>A Fragrância <em>Completa</em></>}
-      atalhos={[KITS_PREMIUM, KITS_3EM1, KITS_2EM1].map((g) => ({ href: `#${g.id}`, txt: g.titulo }))}
+      atalhos={[...[KITS_PREMIUM, KITS_3EM1, KITS_2EM1].map((g) => ({ href: `#${g.id}`, txt: g.titulo })), { href: "#colecoes", txt: "Coleções e outros" }]}
       texto="Cada kit reúne uma mesma fragrância em diferentes formas, para uma perfumação que dura do banho à noite. É para presente? Basta marcar na sacola."
     >
       <p className="aviso-kits">Kits sem valor informado: toque em “Perguntar no WhatsApp” e o Layon passa o valor na hora do pedido.</p>
@@ -36,6 +41,9 @@ export default function PaginaKits() {
           <Grade produtos={pegar(g.produtos)} />
         </Bloco>
       ))}
+      <Bloco id="colecoes" titulo="Coleções e outros kits" texto="Coleções de perfumes de bolsa, estojos e kits de corpo.">
+        <Grade produtos={OUTROS} />
+      </Bloco>
     </Pagina>
   );
 }
