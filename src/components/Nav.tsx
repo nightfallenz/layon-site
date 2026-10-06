@@ -8,12 +8,9 @@ import MenuTela from "./MenuTela";
 
 // Links do topo (no computador). No celular e no botão de menu, abre o menu em tela cheia.
 const LINKS = [
-  ["/kits", "Kits", "Kits completos"],
-  ["/15ml", "15ml", "Perfumes 15ml"],
-  ["/100ml", "100ml", "Perfumes 100ml"],
-  ["/arabes", "Árabes", "Linha Árabe"],
-  ["/corpo", "Corpo", "Corpo e cabelo"],
   ["/catalogo", "Catálogo", "Catálogo completo"],
+  ["/kits", "Kits", "Kits completos"],
+  ["/corpo", "Corpo", "Corpo e cabelo"],
   ["/#descubra", "Descubra", "Descubra seu perfume"],
   ["/#consultor", "Seja consultor", "Seja consultor"],
 ] as const;

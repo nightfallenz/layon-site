@@ -3,7 +3,7 @@ import { imagem } from "@/lib/catalogo";
 // Atalhos da página inicial: cada cartão leva para uma página ou para o catálogo já filtrado.
 const LINHAS: { titulo: string; texto: string; imagem: number; href: string }[] = [
   { titulo: "Perfumes 15ml", texto: "O formato que acompanha você o dia inteiro", imagem: 163231, href: "/15ml" },
-  { titulo: "Perfumes 100ml", texto: "O frasco de assinatura", imagem: 163212, href: "/100ml" },
+  { titulo: "Perfumes 100ml", texto: "O frasco de assinatura", imagem: 163209, href: "/100ml" },
   { titulo: "Linha Árabe", texto: "Oud, âmbar e rosas de rastro prolongado", imagem: 162175, href: "/arabes" },
   { titulo: "Corpo e Cabelo", texto: "Body splash e cuidados para o ritual pós-banho", imagem: 162527, href: "/corpo" },
 ];
