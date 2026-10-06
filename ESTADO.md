@@ -33,4 +33,5 @@ Só falta: preços do Layon em `produtos.json` (atualizar prévias `opengraph-im
 - Preços do Layon aplicados em produtos.json (ainda sem preço: Shampoo/Condicionador/Máscara Mel Capilar avulsos, Shampoo Anticaspa D-off, Affection/Seduction 15ml e Duos). Itens novos da loja oficial: Affection, Seduction e seus Duos.
 - Fotos: 100ml usavam a foto do frasco 15ml; ids trocados pelos oficiais. Originais da Amakha têm 1200px (alguns 500 a 800px); srcSet agora vai até 1200w.
 - Home: vitrine compacta de 6 kits (Kits.tsx, classes .kv-*); cartão completo só em /kits. Nav do PC enxuto (Catálogo, Kits, Corpo, Descubra, Seja consultor).
-- Pendente: confirmar com o Layon os Kits Premium 521/GD/D/Imortal (349,90) e o combo Linha Mel Capilar (235).
+- Decidido pelo Eike: Kits Premium 521/GD/D/Imortal ficam em 349,90 (a lista do Layon provavelmente errou); Affection/Seduction 15ml e Duos Affection/Seduction ficam sem preço por enquanto.
+- Combo "Linha Mel Capilar (Shampoo, Condicionador e Máscara)" criado a R$ 235 (grupo C). Foto própria `public/linha-mel-capilar.jpg`, montada com as 3 fotos oficiais dos frascos (campo `foto`).
