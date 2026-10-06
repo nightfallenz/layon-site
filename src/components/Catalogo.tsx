@@ -34,7 +34,7 @@ export default function Catalogo() {
   useEffect(() => {
     const u = new URLSearchParams(window.location.search);
     const g = u.get("grupo") ?? "";
-    setFiltro({ ...FILTRO_INICIAL, grupo: GRUPOS.includes(g) ? (g as Filtro["grupo"]) : "all", termo: u.get("q") ?? "" });
+    setFiltro({ ...FILTRO_INICIAL, grupo: GRUPOS.includes(g) ? (g as Filtro["grupo"]) : "all", termo: (u.get("q") ?? "").slice(0, 80) });
     setPronto(true);
     // só na abertura da página
     // eslint-disable-next-line react-hooks/exhaustive-deps

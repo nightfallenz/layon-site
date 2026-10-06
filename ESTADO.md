@@ -23,7 +23,7 @@ Fases pequenas, cada uma com `npm run check` + build + Revisão + conferência 3
 Sem campo `indisponivel` (não criar). Sem texto 'resposta em minutos' (o robô do WhatsApp responde). Demais itens: seguir recomendações (catálogo em /catalogo, criar /corpo, botões quadrados).
 
 ## Próximo passo
-Conferir visual (390x844 e 1440x900) das páginas novas; preços do Layon entram em `produtos.json` (atualizar também as prévias `opengraph-image.tsx`); limpeza: HSTS, sitemap/robots, Search Console, remover `vercel.json`, desligar projeto na Vercel e apagar `.env.local`.
+Só falta: preços do Layon em `produtos.json` (atualizar prévias `opengraph-image.tsx`, o texto de /corpo e o aviso de /kits, que dizem que o valor sai pelo WhatsApp). Manual do Eike: Search Console (enviar sitemap), desligar projeto na Vercel, apagar `.env.local`.
 
 ## Como rodar e testar
 `npm run check` e `npm run build`. Publicar: push na `main` (Cloudflare faz o deploy).

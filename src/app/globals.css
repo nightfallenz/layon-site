@@ -888,3 +888,4 @@ html{scroll-padding-top:64px}
 @media (prefers-reduced-motion:reduce){.pcard .pimg{animation:none}}
 .btn-primary,.btn-descubra{border-radius:0}
 .cat-grid[hidden],.cat-count[hidden]{display:none}
+@media (max-width:760px){.cat-pagina .pills{justify-content:flex-start}}

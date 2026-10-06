@@ -19,7 +19,7 @@ export default function MenuTela({ aberto, fechar }: { aberto: boolean; fechar: 
       { nome: "Kits", href: "/kits", produtos: pegar([...KITS_PREMIUM.produtos, ...KITS_3EM1.produtos, ...KITS_2EM1.produtos]) },
       { nome: "Linha Árabe", href: "/arabes", produtos: pegar([...ARABES.originais, ...ARABES.perfumes, ...ARABES.kits]) },
       { nome: "Corpo e cabelo", href: "/corpo", produtos: PRODUTOS.filter((p) => p.grupo === "B" || p.grupo === "C") },
-      { nome: "Catálogo completo", href: "/catalogo", produtos: PRODUTOS.filter((p) => p.preco != null) },
+      { nome: "Catálogo completo", href: "/catalogo", produtos: PRODUTOS },
     ],
     []
   );
