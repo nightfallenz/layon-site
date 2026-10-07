@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: P): Promise<Metadata> {
   if (!p) return {};
   const f = fichaCompleta(p);
   const titulo = `${nomeVitrine(p)} | Layon Alves Amakha Paris`;
-  const desc = f ? descricaoDe(p, f) : `${nomeVitrine(p)} Amakha Paris, com entrega em mãos em Brasília e Entorno.`;
+  const desc = f ? descricaoDe(p, f) : `${nomeVitrine(p)} Amakha Paris, com entrega por Uber Flash ou 99Entrega em Brasília e Entorno.`;
   return { title: titulo, description: desc, openGraph: { title: titulo, description: desc, images: [fotoDe(p, 800)], locale: "pt_BR", type: "website" } };
 }
 

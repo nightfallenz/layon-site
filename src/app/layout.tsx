@@ -7,10 +7,10 @@ import Animacoes from "@/components/Animacoes";
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://layonamakhaparis.com.br"),
   title: "Layon Alves | Perfumes Amakha Paris em Brasília",
-  description: "Curadoria pessoal de fragrâncias Amakha Paris, kits completos e entrega em mãos em Brasília e Entorno.",
+  description: "Curadoria pessoal de fragrâncias Amakha Paris, kits completos e entrega por Uber Flash ou 99Entrega em Brasília e Entorno.",
   openGraph: {
     title: "Layon Alves | Perfumes Amakha Paris em Brasília",
-    description: "Curadoria pessoal de fragrâncias, kits completos e entrega em mãos em Brasília e Entorno.",
+    description: "Curadoria pessoal de fragrâncias, kits completos e entrega por Uber Flash ou 99Entrega em Brasília e Entorno.",
     locale: "pt_BR",
     type: "website",
   },

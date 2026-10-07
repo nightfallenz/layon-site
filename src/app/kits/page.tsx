@@ -9,8 +9,8 @@ import { PRODUTOS } from "@/lib/catalogo";
 
 export const metadata: Metadata = {
   title: "Kits completos | Layon Alves Amakha Paris",
-  description: "Kits 3 em 1, 2 em 1 e Premium: perfume, body splash e hidratante da mesma fragrância. Entrega em mãos em Brasília.",
-  openGraph: { title: "Kits completos | Layon Alves Amakha Paris", description: "Kits 3 em 1, 2 em 1 e Premium: perfume, body splash e hidratante da mesma fragrância. Entrega em mãos em Brasília.", locale: "pt_BR", type: "website" },
+  description: "Kits 3 em 1, 2 em 1 e Premium: perfume, body splash e hidratante da mesma fragrância. Entrega por Uber Flash ou 99Entrega em Brasília.",
+  openGraph: { title: "Kits completos | Layon Alves Amakha Paris", description: "Kits 3 em 1, 2 em 1 e Premium: perfume, body splash e hidratante da mesma fragrância. Entrega por Uber Flash ou 99Entrega em Brasília.", locale: "pt_BR", type: "website" },
 };
 
 function precoDoGrupo(nomes: string[]) {

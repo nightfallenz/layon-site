@@ -68,7 +68,7 @@ export async function cartaz(o: Opcoes) {
               </div>
             )}
             <div style={{ display: "flex", flexDirection: "column", fontSize: 20, color: "#6B6B6B", paddingBottom: 12 }}>
-              <span>Entrega em mãos</span>
+              <span>Entrega por aplicativo</span>
               <span>Brasília e Entorno</span>
             </div>
           </div>

@@ -1,6 +1,6 @@
 // Faixa que desliza devagar logo abaixo do topo, com os diferenciais do Layon.
 const FRASES = [
-  "Entrega em mãos · Brasília e Entorno",
+  "Entrega por Uber Flash ou 99Entrega · Brasília e Entorno",
   "Curadoria pessoal",
   "Kits completos da mesma fragrância",
   "Pirâmide olfativa de cada fragrância",

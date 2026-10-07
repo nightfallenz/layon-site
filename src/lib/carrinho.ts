@@ -48,7 +48,7 @@ export function mensagemDoPedido(itens: Item[], d: DadosPedido): string {
     "",
   ];
   if (d.nome.trim()) linhas.push(`Nome: ${d.nome.trim()}`);
-  linhas.push(d.entrega === "entrega" ? `Entrega em: ${d.local.trim() || "(vou informar)"}` : "Retirada com você");
+  linhas.push(d.entrega === "entrega" ? `Entrega em: ${d.local.trim() || "(vou informar)"} (Uber Flash ou 99Entrega, frete por minha conta, a combinar)` : "Retirada com você");
   if (d.pagamento) linhas.push(`Pagamento: ${d.pagamento}`);
   if (d.obs.trim()) linhas.push(`Observação: ${d.obs.trim()}`);
   if (d.presente) {

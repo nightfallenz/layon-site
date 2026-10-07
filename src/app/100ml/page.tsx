@@ -6,8 +6,8 @@ import { PERFUMES_100 } from "@/lib/produtos";
 
 export const metadata: Metadata = {
   title: "Perfumes 100ml | Layon Alves Amakha Paris",
-  description: "As fragrâncias mais escolhidas no frasco de 100ml. Entrega em mãos em Brasília e Entorno.",
-  openGraph: { title: "Perfumes 100ml | Layon Alves Amakha Paris", description: "As fragrâncias mais escolhidas no frasco de 100ml. Entrega em mãos em Brasília e Entorno.", locale: "pt_BR", type: "website" },
+  description: "As fragrâncias mais escolhidas no frasco de 100ml. Entrega por Uber Flash ou 99Entrega em Brasília e Entorno.",
+  openGraph: { title: "Perfumes 100ml | Layon Alves Amakha Paris", description: "As fragrâncias mais escolhidas no frasco de 100ml. Entrega por Uber Flash ou 99Entrega em Brasília e Entorno.", locale: "pt_BR", type: "website" },
 };
 
 export default function Pagina100() {

@@ -29,6 +29,9 @@ Só falta: preços do Layon em `produtos.json` (atualizar prévias `opengraph-im
 `npm run check` e `npm run build`. Publicar: push na `main` (Cloudflare faz o deploy).
 
 
+## Atualização 07/10 (frete)
+- Opção A: "entrega em mãos" virou "Entrega por Uber Flash ou 99Entrega" (frete por conta do cliente, valor combinado com o Layon; retirada com o Layon continua). Aviso no carrinho, rodapé, Faixa, Historia, metadados e mensagem do WhatsApp. Robô do n8n com a mesma regra. Build OK, Revisão aprovou. NÃO commitado/publicado: aguarda OK do Eike.
+
 ## Atualização 06/10 (noite)
 - Preços do Layon aplicados em produtos.json (ainda sem preço: Shampoo/Condicionador/Máscara Mel Capilar avulsos, Shampoo Anticaspa D-off, Affection/Seduction 15ml e Duos). Itens novos da loja oficial: Affection, Seduction e seus Duos.
 - Fotos: 100ml usavam a foto do frasco 15ml; ids trocados pelos oficiais. Originais da Amakha têm 1200px (alguns 500 a 800px); srcSet agora vai até 1200w.

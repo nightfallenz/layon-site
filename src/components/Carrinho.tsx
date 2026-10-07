@@ -147,13 +147,17 @@ function Gaveta({ itens, mudarQtd, esvaziar, fechar }: { itens: Item[]; mudarQtd
 
             <fieldset className="campo-op">
               <legend>Como prefere receber?</legend>
-              <label><input type="radio" name="entrega" checked={d.entrega === "entrega"} onChange={() => setD({ ...d, entrega: "entrega" })} /> Entrega em mãos</label>
+              <label><input type="radio" name="entrega" checked={d.entrega === "entrega"} onChange={() => setD({ ...d, entrega: "entrega" })} /> Entrega por Uber Flash ou 99Entrega</label>
               <label><input type="radio" name="entrega" checked={d.entrega === "retirada"} onChange={() => setD({ ...d, entrega: "retirada" })} /> Retirar com o Layon</label>
             </fieldset>
 
             {d.entrega === "entrega" && (
-              <label className="campo">Bairro ou cidade
-                <input value={d.local} onChange={(e) => setD({ ...d, local: e.target.value })} placeholder="Ex.: Águas Claras" autoComplete="address-level2" required maxLength={80} />
+              <p className="gaveta-nota">Frete por conta do cliente. O valor do Uber Flash e do 99Entrega muda o tempo todo; o Layon combina a entrega com você.</p>
+            )}
+
+            {d.entrega === "entrega" && (
+              <label className="campo">Endereço completo
+                <input value={d.local} onChange={(e) => setD({ ...d, local: e.target.value })} placeholder="Rua, número, complemento, bairro, cidade e CEP" autoComplete="street-address" required maxLength={200} />
               </label>
             )}
 
@@ -194,7 +198,7 @@ function Gaveta({ itens, mudarQtd, esvaziar, fechar }: { itens: Item[]; mudarQtd
             </label>
 
             <button type="submit" className="btn btn-primary gaveta-enviar">{enviado ? "Abrir o WhatsApp novamente" : "Enviar pedido ao Layon"}</button>
-            <p className="gaveta-nota">Nenhum valor é cobrado aqui. Seu pedido segue para o Layon, que confirma disponibilidade, entrega e pagamento pessoalmente.</p>
+            <p className="gaveta-nota">Nenhum valor é cobrado aqui. Seu pedido segue para o Layon, que confirma disponibilidade, entrega e pagamento pessoalmente. O frete (Uber Flash ou 99Entrega) é pago por você e varia a todo momento, por isso o Layon combina o valor com você.</p>
             <button type="button" className="gi-rem" style={{ alignSelf: "center" }} onClick={esvaziar}>Limpar sacola</button>
           </form>
         </>

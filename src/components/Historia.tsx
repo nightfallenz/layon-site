@@ -4,7 +4,7 @@ import { IconeCoracao, IconeEstrela, IconeRelogio } from "./Icones";
 const DIFERENCIAIS = [
   { icone: <IconeEstrela />, titulo: "Autênticos", texto: "Produtos oficiais Amakha Paris" },
   { icone: <IconeCoracao />, titulo: "Atendimento pessoal", texto: "Direto com o Layon, sem intermediários" },
-  { icone: <IconeRelogio />, titulo: "Entrega em mãos", texto: "Brasília e Entorno" },
+  { icone: <IconeRelogio />, titulo: "Entrega por aplicativo", texto: "Brasília e Entorno, frete por conta do cliente" },
 ];
 
 export default function Historia() {
@@ -21,7 +21,7 @@ export default function Historia() {
         <p>
           Sou Layon Alves, consultor executivo Amakha Paris em Brasília. Meu trabalho começa antes da venda: entender para quem é a
           fragrância, em que momento será usada e que lembrança deve deixar. A partir daí, apresento poucas opções, bem escolhidas,
-          e faço a entrega pessoalmente.
+          e combino a entrega com você (Uber Flash ou 99Entrega, com frete por sua conta, ou retirada comigo).
         </p>
         <p>Para quem aprecia perfumaria e deseja transformar esse gosto em negócio, há espaço na equipe.</p>
         <div className="hr"></div>
