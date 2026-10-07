@@ -152,7 +152,7 @@ function Gaveta({ itens, mudarQtd, esvaziar, fechar }: { itens: Item[]; mudarQtd
             </fieldset>
 
             {d.entrega === "entrega" && (
-              <p className="gaveta-nota">Frete por conta do cliente. O valor do Uber Flash e do 99Entrega muda o tempo todo; o Layon combina a entrega com você.</p>
+              <p className="gaveta-nota">O frete fica por conta do cliente. Os valores do Uber Flash e do 99Entrega mudam a todo momento, por isso o Layon confirma com você o valor da entrega antes de enviar.</p>
             )}
 
             {d.entrega === "entrega" && (
