@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Pagina, { Bloco } from "@/components/Pagina";
 import { EMAIL, REGIAO, linkWhats } from "@/data/contato";
-import { SENTRY_DSN, SENTRY_DESDE } from "@/data/monitoramento";
 
 export const metadata: Metadata = {
   title: "Política de Privacidade | Layon Alves Amakha Paris",
@@ -9,8 +8,7 @@ export const metadata: Metadata = {
   openGraph: { title: "Política de Privacidade | Layon Alves Amakha Paris", description: "Como usamos os dados de quem fala com a gente pelo WhatsApp ou pelo site.", locale: "pt_BR", type: "website" },
 };
 
-// com o monitoramento de erros ligado, a política ganha um parágrafo e a data passa a ser a do dia em que ligou
-const ATUALIZADO = SENTRY_DSN && SENTRY_DESDE ? SENTRY_DESDE : "6 de outubro de 2026";
+const ATUALIZADO = "6 de outubro de 2026";
 
 export default function PaginaPrivacidade() {
   return (
@@ -24,7 +22,6 @@ export default function PaginaPrivacidade() {
       </Bloco>
       <Bloco titulo="Quais dados recebemos">
         <p>Quando você chama no WhatsApp, recebemos o seu número de telefone, o nome do seu perfil e o conteúdo das mensagens que você envia (texto, e dados que você mesmo informar, como endereço de entrega). No site, o carrinho guarda os itens no seu aparelho para montar o pedido; ele não cobra nada nem coleta pagamento.</p>
-        {SENTRY_DSN && <p>Para encontrar e corrigir falhas do site, quando uma página dá erro o navegador envia ao serviço de monitoramento Sentry o tipo do erro, o endereço da página e o modelo do navegador e do aparelho. Não enviamos nome, telefone, IP, cookies nem o que você digita. Esse serviço pode processar os dados fora do Brasil.</p>}
       </Bloco>
       <Bloco titulo="Para que usamos">
         <p>Responder suas dúvidas, informar produtos e preços, combinar pedido e entrega, e avisar sobre lançamentos e reposições se você pediu para entrar na lista. Parte das respostas pode ser feita por um assistente automático; quando preciso, o Layon assume a conversa pessoalmente.</p>
